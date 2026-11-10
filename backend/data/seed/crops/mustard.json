@@ -1,0 +1,150 @@
+{
+  "id": "mustard",
+  "nameEn": "Mustard",
+  "nameHi": "सरसों (Mustard)",
+  "scientificName": "Brassica juncea",
+  "badge": "High Oil Content",
+  "badgeType": "rabi",
+  "varietyTag": "Pusa Bold / Varuna / RH-749",
+  "tagline": "High-yielding winter oilseed with minimal water demand",
+  "idealSoil": "Loam to Heavy Clay",
+  "idealSoilHi": "मध्यम दोमट मिट्टी",
+  "duration": "100–125 Days",
+  "waterNeed": "Low (2-3 irrigations)",
+  "waterLevel": "low",
+  "metricTitle": "Oil Recovery",
+  "metricValue": "38–42% Oil",
+  "hubs": "Rajasthan, Uttar Pradesh, Haryana, Madhya Pradesh, West Bengal",
+  "descriptionEn": "Excellent winter cash crop with minimal water expenditure compared to conventional wheat.",
+  "descriptionHi": "सर्दियों की प्रमुख तिलहन फसल। कम पानी और 2-3 सिंचाई में भरपूर तेल व पैदावार देती है।",
+  "avgYield": "8 - 12 Quintal / Acre (approx.)",
+  "marketPrice": "₹5,200 - ₹5,800 / Qtl (approx.)",
+  "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuCRF1h2Ws30fjhGKmr3Ug3lOj6-TIcFfWGtUH4nv_slIdjENn4VwqNy6VGr_MVLudazCAGdS1gwS7-GBjy5TZOMnGPf3rQBwdMOtK-uCVUz1fRuIUJpQXI4dvDBmDMdsYS4Pp3EukjH9iqxx2YivbyEKGo_xBYj5U68oju9aXiHUK09GDA_pT2A19DZrZuocxvJgPFdpLEpKlvhpJDdHPWTkSrhpN02FBW8v7YTlpLYw7xUZsP6MJOp",
+  "imageAlt": "Vibrant bright yellow blooming mustard flowers spread across an expansive winter field",
+  "category": ["rabi", "cash"],
+  "popularityScore": 92,
+  "profitScore": 89,
+  "durationDays": 110,
+  "seedRate": "1.5–2 kg / acre",
+  "sowingDepth": "2–3 cm",
+  "spacing": "45 cm x 15 cm",
+  "harvestingIndicator": "Pods turn yellowish-brown; seeds rattle inside pods.",
+  "introTipEn": "Apply Sulphur in the basal dose to significantly boost oil content and seed size. Give first irrigation strictly at 28–30 DAS.",
+  "introTipHi": "बुवाई के समय सल्फर जरूर दें, इससे तेल की मात्रा और दानों का वजन बढ़ता है। पहली सिंचाई 28-30 दिन पर करें।",
+  "efficiencyGain": "18% higher oil recovery with elemental sulphur",
+  "micronutrientNote": "Sulphur is crucial for Brassica oil synthesis. Apply 15 kg/acre elemental sulphur.",
+  "stagnationAlert": "Mustard is intolerant to water stagnation. Avoid over-irrigation during rosette stage.",
+  "seasons": ["rabi"],
+  "soils": ["loamy", "clay"],
+  "fertilizerStages": [
+    {
+      "stageOrder": 1,
+      "stageEn": "Basal Dose (बुवाई के समय)",
+      "stageHi": "बुवाई के समय",
+      "timingEn": "At sowing",
+      "timingHi": "बुवाई के समय",
+      "fertilizerEn": "DAP + MOP + Bentonite Sulphur",
+      "fertilizerHi": "डीएपी + पोटाश + बेंटोनाइट सल्फर",
+      "quantityPerAcre": "30 kg DAP + 15 kg MOP + 15 kg Sulphur",
+      "applicationMethod": "Incorporate into seedbed before sowing"
+    },
+    {
+      "stageOrder": 2,
+      "stageEn": "First Top Dressing (28–32 DAS / First Irrigation)",
+      "stageHi": "पहली सिंचाई के समय",
+      "timingEn": "28–32 DAS",
+      "timingHi": "28–32 दिन",
+      "fertilizerEn": "Neem-Coated Urea",
+      "fertilizerHi": "नीम लेपित यूरिया",
+      "quantityPerAcre": "30 kg Urea",
+      "applicationMethod": "Broadcast just before light irrigation"
+    },
+    {
+      "stageOrder": 3,
+      "stageEn": "Foliar Booster (50–55 DAS / Flowering)",
+      "stageHi": "फूल आते समय",
+      "timingEn": "50–55 DAS",
+      "timingHi": "50–55 दिन",
+      "fertilizerEn": "Water-Soluble 19:19:19 spray",
+      "fertilizerHi": "घुलनशील 19:19:19",
+      "quantityPerAcre": "1.0 kg spray / acre",
+      "applicationMethod": "Foliar spray during afternoon"
+    }
+  ],
+  "irrigation": {
+    "frequencyEn": "Only 2–3 Irrigations needed in entire season",
+    "frequencyHi": "पूरी फसल अवधि में केवल 2–3 सिंचाई",
+    "criticalStagesEn": "Rosette Stage (28–32 DAS) and Siliqua Pod Filling (60–65 DAS)",
+    "criticalStagesHi": "रोसेट अवस्था (28–32 दिन) और फली भराव (60–65 दिन)",
+    "runtimePerZone": "2.0 hours per rotation",
+    "waterConserved": "~50% less water than wheat",
+    "tipsEn": "Mustard is intolerant to water stagnation. Avoid over-irrigation during rosette stage.",
+    "tipsHi": "सरसों में पानी रुकने न दें। अत्यधिक पानी से पौधे पीले पड़ जाते हैं।"
+  },
+  "pestsDiseases": [
+    {
+      "nameEn": "Mustard Aphid (Mahu)",
+      "nameHi": "सरसों माहू / चेपा",
+      "symptomsEn": "Dense colonies of tiny green-black insects covering inflorescence and tender pods.",
+      "symptomsHi": "फूलों और फलियों पर हरे-काले माहू कीटों का भारी जमाव।",
+      "controlEn": "Spray Dimethoate 30% EC (1.5 ml/L) or Thiamethoxam 25% WG (0.4 g/L) at 10% flowering.",
+      "controlHi": "डायमेथोएट या थियामेथॉक्सम (0.4 ग्राम/लीटर) का छिड़काव करें।",
+      "severity": "High Alert",
+      "type": "pest"
+    },
+    {
+      "nameEn": "White Rust (Albugo candida)",
+      "nameHi": "सफेद रतुआ रोग",
+      "symptomsEn": "White porcelain-like pustules on undersides of leaves and swollen stagheads.",
+      "symptomsHi": "पत्तियों की निचली सतह पर सफेद फफोले और फूलों का विकृत होना।",
+      "controlEn": "Spray Metalaxyl 8% + Mancozeb 64% WP (2 g/L) upon early symptoms.",
+      "controlHi": "मेटालेक्सिल + मैंकोजेब (2 ग्राम/लीटर) का छिड़काव करें।",
+      "severity": "Medium Risk",
+      "type": "disease"
+    },
+    {
+      "nameEn": "Mustard Sawfly",
+      "nameHi": "आरा मक्खी",
+      "symptomsEn": "Black caterpillars bite holes in young seedling leaves.",
+      "symptomsHi": "काली सुंडी छोटे पौधों की पत्तियों को खाती है।",
+      "controlEn": "Spray Malathion 50% EC (1.5 ml/L) on young seedlings.",
+      "controlHi": "मैलाथियान (1.5 मिली/लीटर) का छिड़काव करें।",
+      "severity": "Preventive",
+      "type": "pest"
+    }
+  ],
+  "harvestSteps": [
+    {
+      "stepOrder": 1,
+      "letter": "A",
+      "titleEn": "Pod Yellowing",
+      "titleHi": "फलियों का पीला पड़ना",
+      "textEn": "Harvest when 75% of pods turn straw yellow and seeds turn hard brown.",
+      "textHi": "75% फलियां पीली हो जाएं और दाने गहरे भूरे हो जाएं।"
+    },
+    {
+      "stepOrder": 2,
+      "letter": "B",
+      "titleEn": "Morning Harvest",
+      "titleHi": "सुबह के समय कटाई",
+      "textEn": "Cut crop in early morning when pods are moist with dew to avoid shattering loss.",
+      "textHi": "ओस के समय सुबह कटाई करें ताकि फलियां चटकें नहीं।"
+    },
+    {
+      "stepOrder": 3,
+      "letter": "C",
+      "titleEn": "Sun Drying",
+      "titleHi": "खलिहान में सुखाना",
+      "textEn": "Stack bundles in shocks for 4–6 days on threshing floor.",
+      "textHi": "खलिहान में बंडल बनाकर 4-6 दिन धूप में सुखाएं।"
+    },
+    {
+      "stepOrder": 4,
+      "letter": "D",
+      "titleEn": "Threshing & Yield",
+      "titleHi": "गहाई एवं उपज",
+      "textEn": "Thresh with mechanical thresher. Expected yield: 8–12 Qtl/acre.",
+      "textHi": "थ्रेशर से गहाई करें। संभावित उपज: 8–12 क्विंटल/एकड़।"
+    }
+  ]
+}

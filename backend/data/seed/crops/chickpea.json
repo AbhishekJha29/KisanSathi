@@ -1,0 +1,150 @@
+{
+  "id": "chickpea",
+  "nameEn": "Chickpea (Chana)",
+  "nameHi": "चना (Chickpea / Chana)",
+  "scientificName": "Cicer arietinum",
+  "badge": "Pulse Champion",
+  "badgeType": "rabi",
+  "varietyTag": "JG-11 / Radhey / JAKI-9218",
+  "tagline": "India's largest produced Rabi pulse",
+  "idealSoil": "Well-drained Sandy Loam to Clay Loam",
+  "idealSoilHi": "दोमट एवं हल्की मटियार मिट्टी",
+  "duration": "100–120 Days",
+  "waterNeed": "Low (1–2 Irrigations)",
+  "waterLevel": "low",
+  "metricTitle": "National Pulse",
+  "metricValue": ">45% Pulse Share",
+  "hubs": "Madhya Pradesh, Maharashtra, Rajasthan, Uttar Pradesh, Karnataka",
+  "descriptionEn": "Premier winter pulse crop of India. Tolerant to residual moisture and improves soil nitrogen naturally.",
+  "descriptionHi": "भारत की प्रमुख दलहनी फसल। फूल आते समय सिंचाई न करें, फलियां बनते समय हल्की सिंचाई लाभप्रद है।",
+  "avgYield": "7 - 11 Quintal / Acre (approx.)",
+  "marketPrice": "₹5,400 - ₹6,100 / Qtl (approx.)",
+  "imageUrl": "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?auto=format&fit=crop&w=600&q=80",
+  "imageAlt": "Field of healthy chickpea chana crop bearing pods",
+  "category": ["rabi"],
+  "popularityScore": 92,
+  "profitScore": 87,
+  "durationDays": 110,
+  "seedRate": "30–35 kg / acre (Desi) or 40–45 kg (Kabuli)",
+  "sowingDepth": "6–8 cm deep in conserved moisture",
+  "spacing": "30 cm x 10 cm",
+  "harvestingIndicator": "Plants turn yellow-brown and leaves start shedding; pods rattle on shaking.",
+  "introTipEn": "Never irrigate at peak flowering stage as it causes flower drop. Give light irrigation during pod development.",
+  "introTipHi": "फूल आते समय कभी सिंचाई न करें, इससे फूल झड़ जाते हैं। फलियां बनते समय हल्की सिंचाई लाभप्रद है।",
+  "efficiencyGain": "22% yield improvement with PSB + Rhizobium inoculation",
+  "micronutrientNote": "Apply Sulphur 10 kg/acre and spray 2% Urea at early pod formation to boost protein filling.",
+  "stagnationAlert": "Chickpea is highly sensitive to excess soil moisture; prevent any waterlogging.",
+  "seasons": ["rabi"],
+  "soils": ["sandy", "loamy", "clay"],
+  "fertilizerStages": [
+    {
+      "stageOrder": 1,
+      "stageEn": "Basal Dose (बुवाई के समय)",
+      "stageHi": "बुवाई के समय",
+      "timingEn": "At sowing",
+      "timingHi": "बुवाई के समय",
+      "fertilizerEn": "DAP + Muriate of Potash + Sulphur",
+      "fertilizerHi": "डीएपी + पोटाश + सल्फर",
+      "quantityPerAcre": "DAP 35 kg + MOP 15 kg + Sulphur 10 kg / acre",
+      "applicationMethod": "Drill deep into seed furrow"
+    },
+    {
+      "stageOrder": 2,
+      "stageEn": "Biological Booster (Seed Inoculation)",
+      "stageHi": "बीजोपचार",
+      "timingEn": "Before sowing",
+      "timingHi": "बुवाई पूर्व",
+      "fertilizerEn": "Rhizobium + PSB Culture",
+      "fertilizerHi": "राइजोबियम + पीएसबी संवर्धन",
+      "quantityPerAcre": "250 g each per 10 kg seed",
+      "applicationMethod": "Seed coating with jaggery slurry"
+    },
+    {
+      "stageOrder": 3,
+      "stageEn": "Pod Development Spray (65–70 DAS)",
+      "stageHi": "फलियां बनते समय",
+      "timingEn": "65–70 DAS",
+      "timingHi": "65–70 दिन",
+      "fertilizerEn": "2% Urea Foliar Spray",
+      "fertilizerHi": "2% यूरिया पर्णीय छिड़काव",
+      "quantityPerAcre": "2 kg Urea in 100 L water",
+      "applicationMethod": "Foliar spray during pod development"
+    }
+  ],
+  "irrigation": {
+    "frequencyEn": "Only 1–2 light irrigations across entire season",
+    "frequencyHi": "पूरी फसल अवधि में केवल 1–2 हल्की सिंचाई",
+    "criticalStagesEn": "Pre-flowering (40–45 DAS) and Pod Development (65–75 DAS)",
+    "criticalStagesHi": "फूल पूर्व (40–45 दिन) और फली विकास (65–75 दिन)",
+    "runtimePerZone": "1.5 hours per rotation",
+    "waterConserved": "~40% via sprinkler",
+    "tipsEn": "Do not irrigate during peak flowering to prevent excessive vegetative growth and flower drop.",
+    "tipsHi": "फूल खिलते समय पानी बिल्कुल न दें।"
+  },
+  "pestsDiseases": [
+    {
+      "nameEn": "Gram Pod Borer (Helicoverpa)",
+      "nameHi": "चना फली छेदक (हेलिकोवर्पा)",
+      "symptomsEn": "Defoliation in young crop and circular bored holes in developing pods with eaten seeds.",
+      "symptomsHi": "फलियों में गोल छेद और अंदर के दानों को खाना।",
+      "controlEn": "Install 4 Pheromone traps/acre; spray Emamectin Benzoate 5% SG (80 g/acre) or Chlorantraniliprole (60 ml/acre).",
+      "controlHi": "फेरोमोन ट्रैप लगाएं और इमामेक्टिन बेंजोएट (80 ग्राम/एकड़) का छिड़काव करें।",
+      "severity": "High Alert",
+      "type": "pest"
+    },
+    {
+      "nameEn": "Fusarium Wilt",
+      "nameHi": "उकठा रोग (विल्ट)",
+      "symptomsEn": "Drooping of petiole and rachis; internal vascular tissue turns brown-black.",
+      "symptomsHi": "पौधों का अचानक मुरझाना और तने के अंदर काला पड़ना।",
+      "controlEn": "Seed treatment with Trichoderma viride (10 g/kg) and avoid continuous chickpea cropping.",
+      "controlHi": "ट्राइकोडर्मा (10 ग्राम/किग्रा) से बीजोपचार करें और फसल चक्र अपनाएं।",
+      "severity": "High Alert",
+      "type": "disease"
+    },
+    {
+      "nameEn": "Dry Root Rot",
+      "nameHi": "शुष्क जड़ सड़न",
+      "symptomsEn": "Roots become black, brittle, and shred easily when pulled.",
+      "symptomsHi": "जड़ें सूखकर काली और भुरभुरी हो जाती हैं।",
+      "controlEn": "Soil application of Trichoderma and avoid soil moisture stress at pod stage.",
+      "controlHi": "ट्राइकोडर्मा का प्रयोग करें और खेत में उचित नमी रखें।",
+      "severity": "Medium Risk",
+      "type": "disease"
+    }
+  ],
+  "harvestSteps": [
+    {
+      "stepOrder": 1,
+      "letter": "A",
+      "titleEn": "Maturity Check",
+      "titleHi": "पकाव की जांच",
+      "textEn": "Plants turn yellow-brown and leaves start shedding; pods rattle on shaking.",
+      "textHi": "पौधे पीले-भूरे हो जाएं और फलियां हिलाने पर दाने खड़खड़ाएं।"
+    },
+    {
+      "stepOrder": 2,
+      "letter": "B",
+      "titleEn": "Manual Pulling or Reaping",
+      "titleHi": "कटाई",
+      "textEn": "Harvest in morning hours with sickle to prevent pod shattering.",
+      "textHi": "सुबह के समय दरांती से कटाई करें।"
+    },
+    {
+      "stepOrder": 3,
+      "letter": "C",
+      "titleEn": "Sun Drying",
+      "titleHi": "धूप में सुखाना",
+      "textEn": "Dry harvested bundles in field for 4–6 days until thoroughly dry.",
+      "textHi": "खलिहान में 4-6 दिन धूप में सुखाएं।"
+    },
+    {
+      "stepOrder": 4,
+      "letter": "D",
+      "titleEn": "Threshing & Storage",
+      "titleHi": "गहाई एवं भंडारण",
+      "textEn": "Thresh with pulse thresher. Store at 10% moisture. Expected yield: 7–11 Qtl/acre.",
+      "textHi": "थ्रेशर से गहाई करें और 10% नमी पर रखें। संभावित उपज: 7–11 क्विंटल/एकड़।"
+    }
+  ]
+}

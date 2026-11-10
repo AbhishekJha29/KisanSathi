@@ -1,0 +1,150 @@
+{
+  "id": "groundnut",
+  "nameEn": "Groundnut",
+  "nameHi": "मूंगफली (Groundnut)",
+  "scientificName": "Arachis hypogaea",
+  "badge": "Golden Legume",
+  "badgeType": "kharif",
+  "varietyTag": "GG-20 / TAG-24 / Kadiri",
+  "tagline": "High-value legume and premier edible oil source",
+  "idealSoil": "Well-drained Sandy Loam",
+  "idealSoilHi": "रेतीली दोमट मिट्टी",
+  "duration": "105–125 Days",
+  "waterNeed": "Moderate (Sprinkler / Rainfed)",
+  "waterLevel": "medium",
+  "metricTitle": "Soil Benefit",
+  "metricValue": "+Nitrogen Fixer",
+  "hubs": "Gujarat, Andhra Pradesh, Rajasthan, Tamil Nadu, Karnataka",
+  "descriptionEn": "Major oilseed and protein-rich food legume. Outstanding response to Gypsum application (200 kg/acre) at pod pegging.",
+  "descriptionHi": "प्रमुख तिलहन फसल। सुई (Peg) बनते समय जिप्सम डालने और हल्की सिंचाई से दानों का भराव शानदार होता है।",
+  "avgYield": "12 - 18 Quintal / Acre (approx.)",
+  "marketPrice": "₹6,200 - ₹7,100 / Qtl (approx.)",
+  "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuCv7EIgRG93C-Upbd9nLCF40GN1XchIJ-qYuqDRtcGMJDr-cOG4bV9mJ1N7oCZIqSn3A2KbW1z8JFP-MNnTnL4IuLit25o8UNQ9jGjE9Z1TIhwDf2LrAuCwgc7K_BsVyz2hLl7uURk2Ff29U0w6lpJw51P34HEOLvbWNz18-c9qDDoxqd18MCrABx50u3x9cPP1-DNnZf4Zegvv472DyX6e6cA3XSlDTDKJY55OsKX4uDCuwjHAcvrE",
+  "imageAlt": "Harvested freshly uprooted groundnut bunches with healthy tan peanut shells clinging to roots",
+  "category": ["kharif", "summer", "cash"],
+  "popularityScore": 95,
+  "profitScore": 89,
+  "durationDays": 115,
+  "seedRate": "40–50 kg kernels / acre (GG-20)",
+  "sowingDepth": "5 cm with uniform moisture",
+  "spacing": "30 cm row-to-row x 10 cm plant-to-plant",
+  "harvestingIndicator": "Leaves turn yellow and shed; inside shell develops blackish net veining.",
+  "introTipEn": "Apply Agricultural Gypsum at the pegging stage (35–40 DAS) to deliver calcium directly to developing pods and prevent hollow pods.",
+  "introTipHi": "सुई (Peg) बनते समय (35-40 दिन) जिप्सम जरूर डालें। इससे दानों का भराव शानदार होगा और पोचे दाने नहीं बनेंगे।",
+  "efficiencyGain": "28% higher pod weight with gypsum & micro-irrigation",
+  "micronutrientNote": "Zinc and Boron prevent hollow-heart disease inside pods. Apply Borax 4 kg/acre in basal dose.",
+  "stagnationAlert": "Avoid waterlogging near maturity. Excess soil moisture causes pod blackening and fungal aflatoxin.",
+  "seasons": ["kharif", "zaid"],
+  "soils": ["sandy", "loamy"],
+  "fertilizerStages": [
+    {
+      "stageOrder": 1,
+      "stageEn": "Basal Dose (बुवाई के समय)",
+      "stageHi": "बुवाई के समय",
+      "timingEn": "At sowing",
+      "timingHi": "बुवाई के समय",
+      "fertilizerEn": "DAP + MOP + Gypsum",
+      "fertilizerHi": "डीएपी + पोटाश + जिप्सम",
+      "quantityPerAcre": "25 kg DAP + 20 kg MOP + 100 kg Gypsum",
+      "applicationMethod": "Broad placement in furrows before seeding"
+    },
+    {
+      "stageOrder": 2,
+      "stageEn": "Top Dressing (35–40 DAS / Pegging)",
+      "stageHi": "सुई बनते समय (Pegging)",
+      "timingEn": "35–40 DAS",
+      "timingHi": "35–40 दिन",
+      "fertilizerEn": "Agricultural Gypsum",
+      "fertilizerHi": "कृषि जिप्सम",
+      "quantityPerAcre": "100 kg Gypsum",
+      "applicationMethod": "Band placement near root zone with light earthing up"
+    },
+    {
+      "stageOrder": 3,
+      "stageEn": "Foliar Booster (50–55 DAS / Pod Filling)",
+      "stageHi": "फली भरते समय",
+      "timingEn": "50–55 DAS",
+      "timingHi": "50–55 दिन",
+      "fertilizerEn": "Water-Soluble 00:52:34 + Boron (0.2%)",
+      "fertilizerHi": "घुलनशील 00:52:34 + बोरॉन",
+      "quantityPerAcre": "1.5 kg foliar spray",
+      "applicationMethod": "Fine mist spraying during cool morning hours"
+    }
+  ],
+  "irrigation": {
+    "frequencyEn": "Every 6–8 Days (Maintain friable topsoil during peg entry)",
+    "frequencyHi": "हर 6–8 दिन (सुई प्रवेश के समय मिट्टी भुरभुरी रखें)",
+    "criticalStagesEn": "Flowering & Pegging (30–50 DAS), Pod Development (60–85 DAS), Pre-Harvest (100+ DAS)",
+    "criticalStagesHi": "फूल व सुई बनना (30–50 दिन), फली विकास (60–85 दिन), कटाई पूर्व (100+ दिन)",
+    "runtimePerZone": "2.0 hours per sprinkler shift",
+    "waterConserved": "~35% via Sprinkler irrigation",
+    "tipsEn": "Avoid waterlogging near maturity. Excess soil moisture causes pod blackening and fungal aflatoxin.",
+    "tipsHi": "पकाव के समय जलभराव से बचें। अधिक नमी से फफूंद लगती है।"
+  },
+  "pestsDiseases": [
+    {
+      "nameEn": "Tikka Leaf Spot",
+      "nameHi": "टिक्का रोग",
+      "symptomsEn": "Dark brown spots with yellow chlorotic halos causing premature defoliation.",
+      "symptomsHi": "पत्तियों पर पीले घेरे वाले गहरे भूरे धब्बे जिससे पत्तियां झड़ती हैं।",
+      "controlEn": "Spray Hexaconazole 5% SC (2 ml/L) or Chlorothalonil 75% WP (2 g/L).",
+      "controlHi": "हेक्साकोनाजोल 5% SC (2 मिली/लीटर) या क्लोरोथैलोनिल का छिड़काव करें।",
+      "severity": "High Alert",
+      "type": "disease"
+    },
+    {
+      "nameEn": "Stem & Collar Rot",
+      "nameHi": "तना व कॉलर सड़न",
+      "symptomsEn": "White fungal mycelium at soil level leading to sudden wilting.",
+      "symptomsHi": "जमीन की सतह पर सफेद फफूंद और पौधे का अचानक मुरझाना।",
+      "controlEn": "Soil application of Trichoderma viride (2 kg/acre) enriched in farmyard manure.",
+      "controlHi": "ट्राइकोडर्मा विरिडी (2 किग्रा/एकड़) गोबर की खाद में मिलाकर डालें।",
+      "severity": "Medium Risk",
+      "type": "disease"
+    },
+    {
+      "nameEn": "White Grub",
+      "nameHi": "सफेद लट",
+      "symptomsEn": "Root cutting underground leading to dead patches across the field.",
+      "symptomsHi": "जड़ों को काटना जिससे खेत में सूखे पैच बन जाते हैं।",
+      "controlEn": "Soil drenching with Chlorpyrifos 20 EC (1.5 L/acre) with first irrigation.",
+      "controlHi": "पहली सिंचाई के साथ क्लोरपायरीफॉस 20 EC (1.5 लीटर/एकड़) का प्रयोग करें।",
+      "severity": "Preventive",
+      "type": "pest"
+    }
+  ],
+  "harvestSteps": [
+    {
+      "stepOrder": 1,
+      "letter": "A",
+      "titleEn": "Pod Testing",
+      "titleHi": "फली की जांच",
+      "textEn": "Pull sample plants; check for dark inner pericarp veining in >75% of shells.",
+      "textHi": "छिलके के अंदर 75% से अधिक फलियों में गहरे रंग की नसें देखें।"
+    },
+    {
+      "stepOrder": 2,
+      "letter": "B",
+      "titleEn": "Uprooting",
+      "titleHi": "उखाड़ना",
+      "textEn": "Uproot when soil is slightly moist. Avoid pulling in dry hard soil to prevent pod loss.",
+      "textHi": "हल्की नमी में उखाड़ें ताकि फलियां जमीन में न टूटें।"
+    },
+    {
+      "stepOrder": 3,
+      "letter": "C",
+      "titleEn": "Field Curing",
+      "titleHi": "धूप में सुखाना",
+      "textEn": "Invert plants under sun for 3–5 days to reduce pod moisture.",
+      "textHi": "पौधों को उल्टा करके 3-5 दिन धूप में सुखाएं।"
+    },
+    {
+      "stepOrder": 4,
+      "letter": "D",
+      "titleEn": "Threshing & Storage",
+      "titleHi": "गहाई एवं भंडारण",
+      "textEn": "Thresh pods when dry and rattle. Expected yield: 12–18 Qtl/acre.",
+      "textHi": "दानों की खड़खड़ाहट पर थ्रेशिंग करें। संभावित उपज: 12–18 क्विंटल/एकड़।"
+    }
+  ]
+}

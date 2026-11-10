@@ -1,0 +1,23 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Python virtual environments
+venv/
+.venv/
+
+# Python bytecode & cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Backend local environment & databases
+backend/.env
+backend/data/*.db
+!backend/data/.gitkeep
+!backend/data/seed/**

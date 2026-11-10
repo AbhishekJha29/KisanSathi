@@ -1,0 +1,150 @@
+{
+  "id": "onion",
+  "nameEn": "Onion",
+  "nameHi": "प्याज (Onion)",
+  "scientificName": "Allium cepa",
+  "badge": "Market Bellwether",
+  "badgeType": "rabi",
+  "varietyTag": "Nashik Red / Bhima Super / Pusa Red",
+  "tagline": "Essential vegetable spice with dynamic market value",
+  "idealSoil": "Rich Friable Loam",
+  "idealSoilHi": "उपजाऊ भुरभुरी दोमट मिट्टी",
+  "duration": "120–140 Days",
+  "waterNeed": "Medium (Regular Light Watering)",
+  "waterLevel": "medium",
+  "metricTitle": "Market Demand",
+  "metricValue": "Constant Kitchen Need",
+  "hubs": "Maharashtra, Madhya Pradesh, Karnataka, Gujarat, Rajasthan, Bihar",
+  "descriptionEn": "Vital culinary commodity across India. Requires balanced potash and sulphur for firm bulbs and extended storage shelf life.",
+  "descriptionHi": "रसोई की अनिवार्य नकदी फसल। कंद बनते समय पोटाश व सल्फर देने से प्याज का आकार व भंडारण क्षमता बढ़ती है।",
+  "avgYield": "80 - 120 Quintal / Acre (approx.)",
+  "marketPrice": "₹1,500 - ₹2,400 / Qtl (approx.)",
+  "imageUrl": "https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=600&q=80",
+  "imageAlt": "Mature red onions drying in field after harvest",
+  "category": ["rabi", "kharif", "cash"],
+  "popularityScore": 94,
+  "profitScore": 90,
+  "durationDays": 130,
+  "seedRate": "3.5–4 kg seed / acre (nursery raised)",
+  "sowingDepth": "Transplant 40-day old seedlings at 2 cm depth",
+  "spacing": "15 cm x 10 cm",
+  "harvestingIndicator": "50% of plant tops fall over (neck fall); dry in shade for 5-7 days before storage.",
+  "introTipEn": "Ensure adequate Potash and Sulphur nutrition; stop Nitrogen fertilization 50 days after transplanting to prevent thick necks and rotting in storage.",
+  "introTipHi": "पोटाश और सल्फर का समुचित प्रयोग करें; रोपाई के 50 दिन बाद यूरिया देना बंद कर दें ताकि प्याज भंडारण में खराब न हो।",
+  "efficiencyGain": "30% longer storage shelf life with balanced sulphur & curing",
+  "micronutrientNote": "Apply Sulphur 15 kg/acre basal and Zinc Sulphate foliar spray (0.2%) at bulb initiation.",
+  "stagnationAlert": "Onion cannot tolerate standing water; shallow root rot occurs quickly.",
+  "seasons": ["rabi", "kharif"],
+  "soils": ["loamy"],
+  "fertilizerStages": [
+    {
+      "stageOrder": 1,
+      "stageEn": "Basal Dose (रोपाई के समय)",
+      "stageHi": "रोपाई के समय",
+      "timingEn": "At transplanting",
+      "timingHi": "रोपाई के समय",
+      "fertilizerEn": "DAP + Muriate of Potash + Sulphur",
+      "fertilizerHi": "डीएपी + पोटाश + सल्फर",
+      "quantityPerAcre": "DAP 40 kg + MOP 30 kg + Sulphur 15 kg / acre",
+      "applicationMethod": "Incorporate thoroughly into raised bed topsoil"
+    },
+    {
+      "stageOrder": 2,
+      "stageEn": "First Top Dressing (30 DAT)",
+      "stageHi": "पहली टॉप-ड्रेसिंग (30 दिन)",
+      "timingEn": "30 DAT",
+      "timingHi": "30 दिन",
+      "fertilizerEn": "Neem-Coated Urea",
+      "fertilizerHi": "नीम लेपित यूरिया",
+      "quantityPerAcre": "Urea 30 kg / acre",
+      "applicationMethod": "Broadcast along rows followed by light weeding"
+    },
+    {
+      "stageOrder": 3,
+      "stageEn": "Second Top Dressing (45 DAT)",
+      "stageHi": "दूसरी टॉप-ड्रेसिंग (45 दिन)",
+      "timingEn": "45 DAT",
+      "timingHi": "45 दिन",
+      "fertilizerEn": "Neem-Coated Urea",
+      "fertilizerHi": "नीम लेपित यूरिया",
+      "quantityPerAcre": "Urea 25 kg / acre",
+      "applicationMethod": "Final Nitrogen dose; stop N before bulb development"
+    }
+  ],
+  "irrigation": {
+    "frequencyEn": "Every 6–8 Days in winter, 4–5 Days in warm weather",
+    "frequencyHi": "सर्दी में हर 6–8 दिन, गर्मी में हर 4–5 दिन",
+    "criticalStagesEn": "Seedling establishment (1–15 DAT) and Bulb Enlargement (60–90 DAT)",
+    "criticalStagesHi": "पौध जमाव (1–15 दिन) और कंद फुलाव (60–90 दिन)",
+    "runtimePerZone": "1.5 hours per rotation",
+    "waterConserved": "~35% with micro-sprinkler / drip",
+    "tipsEn": "Withdraw irrigation 12–15 days before harvesting to encourage neck fall and bulb maturity.",
+    "tipsHi": "गर्दन गिरने और कंद पकने के लिए खुदाई से 12-15 दिन पहले पानी बंद कर दें।"
+  },
+  "pestsDiseases": [
+    {
+      "nameEn": "Thrips",
+      "nameHi": "थ्रिप्स (चुरा कीट)",
+      "symptomsEn": "Silvery white patches and curling on central leaves; tip burning.",
+      "symptomsHi": "पत्तियों पर चांदी जैसे सफेद धब्बे और पत्तियों का मुड़ना।",
+      "controlEn": "Spray Fipronil 5% SC (1.5 ml/L) or Spinetoram 11.7% SC (0.5 ml/L) with sticking agent.",
+      "controlHi": "फिप्रोनिल 5% SC (1.5 मिली/लीटर) चिपकाने वाले पदार्थ के साथ छिड़कें।",
+      "severity": "High Alert",
+      "type": "pest"
+    },
+    {
+      "nameEn": "Purple Blotch",
+      "nameHi": "बैंगनी धब्बा रोग",
+      "symptomsEn": "Sunken purplish-brown lesions on leaves surrounded by yellow chlorotic margin.",
+      "symptomsHi": "पत्तियों पर बैंगनी-भूरे रंग के धंसे हुए धब्बे।",
+      "controlEn": "Foliar spray with Mancozeb 75 WP (2.5 g/L) + Tebuconazole (1 ml/L).",
+      "controlHi": "मैंकोजेब + टेबुकोनाजोल का पर्णीय छिड़काव करें।",
+      "severity": "Medium Risk",
+      "type": "disease"
+    },
+    {
+      "nameEn": "Stemphylium Blight",
+      "nameHi": "स्टेमफिलियम झुलसा",
+      "symptomsEn": "Small yellow to orange spots on leaves coalescing into severe blighting.",
+      "symptomsHi": "पत्तियों पर छोटे पीले-नारंगी धब्बे जो फैलकर झुलसा बनाते हैं।",
+      "controlEn": "Spray Difenoconazole 25% EC (1 ml/L) or Azoxystrobin (1 ml/L).",
+      "controlHi": "डाइफेनोकोनाजोल या एजोक्सीस्ट्रोबिन का छिड़काव करें।",
+      "severity": "Preventive",
+      "type": "disease"
+    }
+  ],
+  "harvestSteps": [
+    {
+      "stepOrder": 1,
+      "letter": "A",
+      "titleEn": "Neck Fall Check",
+      "titleHi": "गर्दन गिरने की जांच",
+      "textEn": "Harvest when 50% of plant tops fall over (neck fall).",
+      "textHi": "जब खेत में 50% पौधों की पत्तियां नीचे झुक जाएं तब कटाई करें।"
+    },
+    {
+      "stepOrder": 2,
+      "letter": "B",
+      "titleEn": "Manual Pulling",
+      "titleHi": "उखाड़ना",
+      "textEn": "Uproot bulbs gently in dry soil without injuring basal plate.",
+      "textHi": "कंदों को जड़ सहित सावधानी से उखाड़ें।"
+    },
+    {
+      "stepOrder": 3,
+      "letter": "C",
+      "titleEn": "Field Windrowing & Curing",
+      "titleHi": "छाया में सुखाना",
+      "textEn": "Cure in shade for 5–7 days with foliage covering bulbs to prevent sun-scald.",
+      "textHi": "छायादार स्थान पर 5-7 दिन तक सुखाएं ताकि छिलका मजबूत हो।"
+    },
+    {
+      "stepOrder": 4,
+      "letter": "D",
+      "titleEn": "Neck Trimming & Storage",
+      "titleHi": "छंटाई एवं भंडारण",
+      "textEn": "Trim tops leaving 2–3 cm neck; store in well-ventilated chawls. Expected yield: 80–120 Qtl/acre.",
+      "textHi": "2-3 सेमी गर्दन छोड़कर काटें और हवादार भंडार में रखें। संभावित उपज: 80–120 क्विंटल/एकड़।"
+    }
+  ]
+}

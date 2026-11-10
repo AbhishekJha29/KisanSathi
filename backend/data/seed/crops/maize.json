@@ -1,0 +1,150 @@
+{
+  "id": "maize",
+  "nameEn": "Maize (Corn)",
+  "nameHi": "मक्का (Maize)",
+  "scientificName": "Zea mays",
+  "badge": "Queen of Cereals",
+  "badgeType": "kharif",
+  "varietyTag": "DHM-117 / Pioneer / NK-6240",
+  "tagline": "Multi-utility industrial grain and livestock feed",
+  "idealSoil": "Well-drained Loamy Soil",
+  "idealSoilHi": "अच्छी जल निकास वाली दोमट मिट्टी",
+  "duration": "90–110 Days",
+  "waterNeed": "Medium (Knee-high & Tasseling critical)",
+  "waterLevel": "medium",
+  "metricTitle": "Industry Demand",
+  "metricValue": "Starch & Feed",
+  "hubs": "Karnataka, Madhya Pradesh, Bihar, Maharashtra, Rajasthan, Andhra Pradesh",
+  "descriptionEn": "Third most important cereal in India. Fast growing crop with high yield potential and starch value.",
+  "descriptionHi": "बहुउपयोगी फसल। घुटने की ऊंचाई और भुट्टे पर बाल (Silking) आते समय नमी बनाए रखना आवश्यक है।",
+  "avgYield": "20 - 28 Quintal / Acre (approx.)",
+  "marketPrice": "₹2,050 - ₹2,350 / Qtl (approx.)",
+  "imageUrl": "https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=600&q=80",
+  "imageAlt": "Fresh healthy corn cobs ripening on tall green maize stalks",
+  "category": ["kharif", "rabi", "cash"],
+  "popularityScore": 91,
+  "profitScore": 85,
+  "durationDays": 100,
+  "seedRate": "7–8 kg / acre (Hybrid)",
+  "sowingDepth": "4–5 cm",
+  "spacing": "60 cm x 20 cm",
+  "harvestingIndicator": "Cob husk leaves turn dry papery brown and black layer forms at seed base.",
+  "introTipEn": "Side-dress Urea at knee-high stage and maintain adequate moisture during tasseling and silking to maximize cob length and kernel fill.",
+  "introTipHi": "घुटने की ऊंचाई पर यूरिया की टॉप-ड्रेसिंग करें। भुट्टे पर बाल (Silking) आते समय नमी की कमी न होने दें।",
+  "efficiencyGain": "22% higher grain weight with split nitrogen doses",
+  "micronutrientNote": "Zinc deficiency causes white stripes on young upper leaves. Apply ZnSO4 10 kg/acre basal.",
+  "stagnationAlert": "Maize is very sensitive to waterlogging. Drain excess water within 12 hours to prevent root death.",
+  "seasons": ["kharif", "rabi", "zaid"],
+  "soils": ["loamy"],
+  "fertilizerStages": [
+    {
+      "stageOrder": 1,
+      "stageEn": "Basal Dose (बुवाई के समय)",
+      "stageHi": "बुवाई के समय",
+      "timingEn": "At sowing",
+      "timingHi": "बुवाई के समय",
+      "fertilizerEn": "DAP + MOP + Zinc Sulphate",
+      "fertilizerHi": "डीएपी + पोटाश + जिंक सल्फेट",
+      "quantityPerAcre": "40 kg DAP + 20 kg MOP + 10 kg ZnSO4",
+      "applicationMethod": "Drill 5 cm below seed line"
+    },
+    {
+      "stageOrder": 2,
+      "stageEn": "First Top Dressing (25–30 DAS / Knee-High)",
+      "stageHi": "घुटने की ऊंचाई (Knee-high)",
+      "timingEn": "25–30 DAS",
+      "timingHi": "25–30 दिन",
+      "fertilizerEn": "Neem-Coated Urea",
+      "fertilizerHi": "नीम लेपित यूरिया",
+      "quantityPerAcre": "35 kg Urea",
+      "applicationMethod": "Side-dress along plant row followed by earthing up"
+    },
+    {
+      "stageOrder": 3,
+      "stageEn": "Second Top Dressing (50–55 DAS / Tasseling)",
+      "stageHi": "मंजरी / बाली निकलते समय",
+      "timingEn": "50–55 DAS",
+      "timingHi": "50–55 दिन",
+      "fertilizerEn": "Neem-Coated Urea + 00:52:34 foliar",
+      "fertilizerHi": "नीम लेपित यूरिया + 00:52:34",
+      "quantityPerAcre": "30 kg Urea",
+      "applicationMethod": "Broadcast with light irrigation"
+    }
+  ],
+  "irrigation": {
+    "frequencyEn": "Every 8–10 Days (Critical: Tasseling & Silking)",
+    "frequencyHi": "हर 8–10 दिन (संवेदनशील: मंजरी व भुट्टे पर बाल आना)",
+    "criticalStagesEn": "Knee-High Stage (25–35 DAS), Tasseling & Silking (50–65 DAS), Grain Dough Stage (75–85 DAS)",
+    "criticalStagesHi": "घुटने की ऊंचाई (25–35 दिन), मंजरी व बाल आना (50–65 दिन), दाना भराव (75–85 दिन)",
+    "runtimePerZone": "2.0 hours per plot",
+    "waterConserved": "~28% with furrow irrigation",
+    "tipsEn": "Maize is very sensitive to waterlogging. Drain excess water within 12 hours to prevent root death.",
+    "tipsHi": "मक्का जलभराव सहन नहीं कर सकती। 12 घंटे के भीतर पानी निकाल दें।"
+  },
+  "pestsDiseases": [
+    {
+      "nameEn": "Fall Armyworm (FAW)",
+      "nameHi": "सैनिक कीट (FAW)",
+      "symptomsEn": "Shot-holes and ragged window-paning on leaves with heavy frass in central whorls.",
+      "symptomsHi": "पत्तियों में छेद और पोंगे में भूरे रंग का मल।",
+      "controlEn": "Spray Spinetoram 11.7% SC (0.5 ml/L) or Chlorantraniliprole 18.5% SC (0.4 ml/L) directly into whorls.",
+      "controlHi": "स्पिनेटोरम 11.7% SC (0.5 मिली/लीटर) का पोंगे के अंदर छिड़काव करें।",
+      "severity": "High Alert",
+      "type": "pest"
+    },
+    {
+      "nameEn": "Stem Borer",
+      "nameHi": "तना छेदक",
+      "symptomsEn": "Dead heart in young plants and pinholes on leaves.",
+      "symptomsHi": "छोटे पौधों में तना सूखना और पत्तियों पर सुराख।",
+      "controlEn": "Whorl application of Carbofuran 3G or Cartap 4G at 3 kg/acre.",
+      "controlHi": "कार्टाप 4G (3 किग्रा/एकड़) का पोंगे में प्रयोग करें।",
+      "severity": "Medium Risk",
+      "type": "pest"
+    },
+    {
+      "nameEn": "Turcicum Leaf Blight",
+      "nameHi": "पत्ती झुलसा",
+      "symptomsEn": "Long boat-shaped grayish-brown lesions on lower leaves progressing upwards.",
+      "symptomsHi": "निचली पत्तियों पर नाव के आकार के लंबे भूरे धब्बे।",
+      "controlEn": "Foliar spray with Mancozeb 75% WP (2.5 g/L water).",
+      "controlHi": "मैंकोजेब 75% WP (2.5 ग्राम/लीटर) का छिड़काव करें।",
+      "severity": "Preventive",
+      "type": "disease"
+    }
+  ],
+  "harvestSteps": [
+    {
+      "stepOrder": 1,
+      "letter": "A",
+      "titleEn": "Cob Maturity Testing",
+      "titleHi": "भुट्टे की परिपक्वता",
+      "textEn": "Check for brown dry husk leaves and dark black layer at kernel base.",
+      "textHi": "भुट्टे के छिलके भूरे और दानों के आधार पर काली परत देखें।"
+    },
+    {
+      "stepOrder": 2,
+      "letter": "B",
+      "titleEn": "Cob Harvesting",
+      "titleHi": "तुड़ाई एवं सुखाना",
+      "textEn": "De-husk cobs and spread on dry concrete yard under sun for 4–5 days.",
+      "textHi": "भुट्टे छीलकर धूप में 4-5 दिन सुखाएं।"
+    },
+    {
+      "stepOrder": 3,
+      "letter": "C",
+      "titleEn": "Mechanical Shelling",
+      "titleHi": "दाने निकालना",
+      "textEn": "Shell kernels using power threshers when kernel moisture reaches 14%.",
+      "textHi": "दानों में नमी 14% होने पर थ्रेशर से दाने निकालें।"
+    },
+    {
+      "stepOrder": 4,
+      "letter": "D",
+      "titleEn": "Storage & Target Yield",
+      "titleHi": "भंडारण व उपज",
+      "textEn": "Store clean dry grain in aerated bags. Expected yield: 20–28 Qtl/acre.",
+      "textHi": "हवादार बोरियों में भंडारित करें। संभावित उपज: 20–28 क्विंटल/एकड़।"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "jowar",
+  "nameEn": "Jowar (Sorghum)",
+  "nameHi": "ज्वार (Sorghum)",
+  "scientificName": "Sorghum bicolor",
+  "badge": "Nutri-Cereal",
+  "badgeType": "kharif",
+  "varietyTag": "CSV-15 / CSH-16 / Phule Suchitra",
+  "tagline": "Hardy drought-tolerant dual grain and fodder crop",
+  "idealSoil": "Medium to Deep Clay & Loamy Soil",
+  "idealSoilHi": "मध्यम से भारी दोमट व काली मिट्टी",
+  "duration": "100–115 Days",
+  "waterNeed": "Low (Drought Resilient)",
+  "waterLevel": "low",
+  "metricTitle": "Nutri-Cereal",
+  "metricValue": "High Fiber",
+  "hubs": "Maharashtra, Karnataka, Rajasthan, Tamil Nadu, Andhra Pradesh, Madhya Pradesh",
+  "descriptionEn": "Stalwart dryland cereal crop offering high dietary fiber, gluten-free nutrition, and sweet cattle fodder.",
+  "descriptionHi": "सूखा सहन करने वाला पौष्टिक मोटा अनाज। दाने के साथ-साथ पशुओं के लिए पौष्टिक चारे का उत्तम स्रोत।",
+  "avgYield": "10 - 15 Quintal / Acre (approx.)",
+  "marketPrice": "₹2,600 - ₹3,200 / Qtl (approx.)",
+  "imageUrl": "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=600&q=80",
+  "imageAlt": "Ripe sorghum jowar heads standing tall under sunny skies",
+  "category": ["kharif", "rabi"],
+  "popularityScore": 87,
+  "profitScore": 82,
+  "durationDays": 105,
+  "seedRate": "3.5–4 kg / acre",
+  "sowingDepth": "3–4 cm",
+  "spacing": "45 cm x 15 cm",
+  "harvestingIndicator": "Grains harden and black spot appears at grain hilum attachment point.",
+  "introTipEn": "Control Shoot Fly in the first 30 days using systemic seed treatment; side-dress Urea at 30 DAS for dense grain head filling and sweet stover.",
+  "introTipHi": "शुरुआती 30 दिनों में तना मक्खी से बचाव करें और 30 दिन पर यूरिया देकर बालियों में दाना भराव बढ़ाएं।",
+  "efficiencyGain": "20% higher grain weight with timely shoot fly control",
+  "micronutrientNote": "Apply Zinc Sulphate 5 kg/acre if interveinal bleaching appears on young leaves.",
+  "stagnationAlert": "Tolerates dry spells well but avoid stagnant water during seedling emergence.",
+  "seasons": ["kharif", "rabi"],
+  "soils": ["clay", "loamy"],
+  "fertilizerStages": [
+    {
+      "stageOrder": 1,
+      "stageEn": "Basal Dose (बुवाई के समय)",
+      "stageHi": "बुवाई के समय",
+      "timingEn": "At sowing",
+      "timingHi": "बुवाई के समय",
+      "fertilizerEn": "DAP + Urea + MOP",
+      "fertilizerHi": "डीएपी + यूरिया + पोटाश",
+      "quantityPerAcre": "DAP 30 kg + Urea 15 kg + MOP 15 kg / acre",
+      "applicationMethod": "Drill into seedbed along furrows"
+    },
+    {
+      "stageOrder": 2,
+      "stageEn": "Top Dressing (30 DAS)",
+      "stageHi": "पहली टॉप-ड्रेसिंग (30 दिन)",
+      "timingEn": "30 DAS",
+      "timingHi": "30 दिन",
+      "fertilizerEn": "Neem-Coated Urea",
+      "fertilizerHi": "नीम लेपित यूरिया",
+      "quantityPerAcre": "Urea 25 kg / acre",
+      "applicationMethod": "Side-dress along plant rows followed by intercultivation"
+    },
+    {
+      "stageOrder": 3,
+      "stageEn": "Grain Filling Support (Boot Stage)",
+      "stageHi": "बाली निकलते समय",
+      "timingEn": "50–55 DAS",
+      "timingHi": "50–55 दिन",
+      "fertilizerEn": "Zinc Sulphate Foliar Spray",
+      "fertilizerHi": "जिंक सल्फेट छिड़काव",
+      "quantityPerAcre": "500 g ZnSO4 in 100 L water",
+      "applicationMethod": "Foliar spray if deficiency symptoms appear"
+    }
+  ],
+  "irrigation": {
+    "frequencyEn": "Primarily rainfed; 1–2 life-saving irrigations during dry spells",
+    "frequencyHi": "मुख्य रूप से वर्षा आधारित; सूखे में 1–2 जीवनरक्षक सिंचाई",
+    "criticalStagesEn": "Booting (45–55 DAS) and Grain Dough Stage (70–80 DAS)",
+    "criticalStagesHi": "बाली निकलना (45–55 दिन) और दाना भराव (70–80 दिन)",
+    "runtimePerZone": "1.5 hours per rotation",
+    "waterConserved": "~55% less water than maize or rice",
+    "tipsEn": "Ensure adequate moisture at flowering to prevent blasting of pollen.",
+    "tipsHi": "फूल आते समय पानी की कमी न होने दें।"
+  },
+  "pestsDiseases": [
+    {
+      "nameEn": "Sorghum Shoot Fly (Atherigona soccata)",
+      "nameHi": "ज्वार तना मक्खी",
+      "symptomsEn": "Dead hearts in 1–4 week old seedlings with rotten central shoots emitting bad odor.",
+      "symptomsHi": "1-4 सप्ताह के पौधों में कल्ले का सूखना और दुर्गंध आना।",
+      "controlEn": "Seed treatment with Imidacloprid 70 WS (10 g/kg) or Thiamethoxam 30 FS; early sowing within 7–10 days of monsoon onset.",
+      "controlHi": "इमिडाक्लोप्रिड से बीजोपचार करें और मानसून शुरू होते ही बुवाई करें।",
+      "severity": "High Alert",
+      "type": "pest"
+    },
+    {
+      "nameEn": "Stem Borer (Chilo partellus)",
+      "nameHi": "तना छेदक",
+      "symptomsEn": "Pinholes in leaves and internal red tunneling with dead hearts at 30+ DAS.",
+      "symptomsHi": "पत्तियों में छेद और तने के अंदर लाल सुरंग।",
+      "controlEn": "Apply Cartap Hydrochloride 4G (4 kg/acre) into central plant whorls.",
+      "controlHi": "कार्टाप 4G का पोंगे में प्रयोग करें।",
+      "severity": "Medium Risk",
+      "type": "pest"
+    },
+    {
+      "nameEn": "Grain Mold",
+      "nameHi": "दाना फफूंद (ग्रेन मोल्ड)",
+      "symptomsEn": "Black, pink, or white fungal growth over developing grains during humid weather.",
+      "symptomsHi": "बालियों के दानों पर काली, गुलाबी या सफेद फफूंद लगना।",
+      "controlEn": "Spray Mancozeb 75 WP (2.5 g/L) at 50% flowering if rains coincide with grain maturity.",
+      "controlHi": "फूल आते समय मैंकोजेब (2.5 ग्राम/लीटर) का छिड़काव करें।",
+      "severity": "Preventive",
+      "type": "disease"
+    }
+  ],
+  "harvestSteps": [
+    {
+      "stepOrder": 1,
+      "letter": "A",
+      "titleEn": "Maturity Check",
+      "titleHi": "पकाव जांच",
+      "textEn": "Grains harden and distinct black layer appears at grain hilum attachment point.",
+      "textHi": "दाने सख्त हो जाएं और दाने के जोड़ पर काला निशान दिखे।"
+    },
+    {
+      "stepOrder": 2,
+      "letter": "B",
+      "titleEn": "Earhead Cutting",
+      "titleHi": "बालियां काटना",
+      "textEn": "Cut earheads with sickle and collect in clean baskets.",
+      "textHi": "दरांती से पकी बालियां काटकर अलग करें।"
+    },
+    {
+      "stepOrder": 3,
+      "letter": "C",
+      "titleEn": "Threshing Floor Drying",
+      "titleHi": "खलिहान में सुखाना",
+      "textEn": "Dry earheads in sun for 3–5 days until grain moisture falls below 12%.",
+      "textHi": "खलिहान में 3-5 दिन धूप में सुखाएं।"
+    },
+    {
+      "stepOrder": 4,
+      "letter": "D",
+      "titleEn": "Mechanical Threshing & Stover",
+      "titleHi": "थ्रेशिंग व कड़बी संरक्षण",
+      "textEn": "Thresh with sorghum thresher; harvest and stack fodder stalks (kadbi) dry. Expected yield: 10–15 Qtl/acre.",
+      "textHi": "थ्रेशर से गहाई करें और कड़बी को पशु चारे के लिए संभालें। संभावित उपज: 10–15 क्विंटल/एकड़।"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "tomato",
+  "nameEn": "Tomato",
+  "nameHi": "टमाटर (Tomato)",
+  "scientificName": "Solanum lycopersicum",
+  "badge": "Commercial Veg",
+  "badgeType": "cash",
+  "varietyTag": "Pusa Ruby / Abhinav / Himsona",
+  "tagline": "High-turnover profitable horticulture vegetable",
+  "idealSoil": "Well-drained Loam with high organic matter",
+  "idealSoilHi": "जैविक खाद युक्त दोमट मिट्टी",
+  "duration": "110–135 Days",
+  "waterNeed": "Medium (Drip Irrigation ideal)",
+  "waterLevel": "medium",
+  "metricTitle": "Harvest Window",
+  "metricValue": "Multiple Pickings",
+  "hubs": "Andhra Pradesh, Madhya Pradesh, Karnataka, Gujarat, Odisha, Maharashtra",
+  "descriptionEn": "Major commercial vegetable grown across multiple seasons with high fresh consumption and processing demand.",
+  "descriptionHi": "उच्च मुनाफा देने वाली सब्जी फसल। ड्रिप सिंचाई और सहारा (Staking) देने से फल साफ व उच्च गुणवत्ता वाले मिलते हैं।",
+  "avgYield": "120 - 180 Quintal / Acre (approx.)",
+  "marketPrice": "₹1,200 - ₹2,200 / Qtl (approx.)",
+  "imageUrl": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=600&q=80",
+  "imageAlt": "Ripe red juicy tomatoes hanging from green tomato vines",
+  "category": ["cash", "rabi", "summer"],
+  "popularityScore": 93,
+  "profitScore": 92,
+  "durationDays": 120,
+  "seedRate": "150–200 g / acre (hybrid nursery)",
+  "sowingDepth": "Transplant 25–30 day old seedlings",
+  "spacing": "75 cm x 45 cm (or 90 cm x 60 cm for indeterminate)",
+  "harvestingIndicator": "Fruits develop pink to breaker stage for distant transit, or firm red for local markets.",
+  "introTipEn": "Staking with bamboo trellises keeps foliage off moist soil; apply Calcium Nitrate during fruit setting to prevent blossom end rot.",
+  "introTipHi": "बांस के सहारे पौधों को बांधें (Staking) और फल बनते समय कैल्शियम नाइट्रेट दें ताकि फल नीचे से सड़ें नहीं।",
+  "efficiencyGain": "35% higher marketable grade fruit with trellis & drip",
+  "micronutrientNote": "Spray Calcium Nitrate (2 g/L) and Boron (1 g/L) at peak flowering to avoid fruit cracking and blossom end rot.",
+  "stagnationAlert": "Waterlogging causes rapid bacterial wilt and root asphyxiation; plant on raised beds.",
+  "seasons": ["rabi", "zaid"],
+  "soils": ["loamy"],
+  "fertilizerStages": [
+    {
+      "stageOrder": 1,
+      "stageEn": "Basal Dose (रोपाई के समय)",
+      "stageHi": "रोपाई के समय",
+      "timingEn": "At transplanting",
+      "timingHi": "रोपाई के समय",
+      "fertilizerEn": "DAP + Muriate of Potash + Farmyard Manure",
+      "fertilizerHi": "डीएपी + पोटाश + गोबर की खाद",
+      "quantityPerAcre": "DAP 45 kg + MOP 35 kg + FYM 8 tonnes / acre",
+      "applicationMethod": "Incorporate thoroughly into raised bed soil before planting"
+    },
+    {
+      "stageOrder": 2,
+      "stageEn": "Vegetative Boost (25 DAT)",
+      "stageHi": "वानस्पतिक बढ़वार (25 दिन)",
+      "timingEn": "25 DAT",
+      "timingHi": "25 दिन",
+      "fertilizerEn": "Neem-Coated Urea",
+      "fertilizerHi": "नीम लेपित यूरिया",
+      "quantityPerAcre": "Urea 30 kg / acre",
+      "applicationMethod": "Side-dress along drip lines followed by earthing up"
+    },
+    {
+      "stageOrder": 3,
+      "stageEn": "Fruit Setting & Bulking (45–60 DAT)",
+      "stageHi": "फल बनते समय (45–60 दिन)",
+      "timingEn": "45–60 DAT",
+      "timingHi": "45–60 दिन",
+      "fertilizerEn": "13:0:45 + Calcium Nitrate Foliar Spray",
+      "fertilizerHi": "पोटेशियम नाइट्रेट (13:0:45) + कैल्शियम नाइट्रेट",
+      "quantityPerAcre": "1 kg 13:0:45 + 500 g Calcium Nitrate / acre",
+      "applicationMethod": "Bi-weekly foliar spray during active harvesting"
+    }
+  ],
+  "irrigation": {
+    "frequencyEn": "Every 4–6 Days (Drip fertigation every 2 days)",
+    "frequencyHi": "हर 4–6 दिन (ड्रिप द्वारा हर 2 दिन)",
+    "criticalStagesEn": "Transplanting recovery, Flowering, and Fruit Development",
+    "criticalStagesHi": "पौध जमाव, फूल आना और फल विकास",
+    "runtimePerZone": "1.0–1.5 hours per rotation",
+    "waterConserved": "~45% via Drip fertigation",
+    "tipsEn": "Maintain steady uniform soil moisture to avoid fruit splitting and cracking.",
+    "tipsHi": "फल फटने से बचाने के लिए खेत में एक समान नमी बनाए रखें।"
+  },
+  "pestsDiseases": [
+    {
+      "nameEn": "Tomato Fruit Borer (Helicoverpa)",
+      "nameHi": "फल छेदक कीट",
+      "symptomsEn": "Larvae bore circular entry holes into green and ripe fruits, causing internal decay.",
+      "symptomsHi": "फलों में गोल छेद करके अंदर का गूदा खाना जिससे फल सड़ जाते हैं।",
+      "controlEn": "Spray Chlorantraniliprole 18.5% SC (60 ml/acre) or Flubendiamide (50 ml/acre).",
+      "controlHi": "क्लोरेंट्रानिलिप्रोल (60 मिली/एकड़) या फ्लूबेंडियामाइड का छिड़काव करें।",
+      "severity": "High Alert",
+      "type": "pest"
+    },
+    {
+      "nameEn": "Tomato Leaf Curl Virus (TLCV)",
+      "nameHi": "पर्ण कुंचन वायरस (लीफ कर्ल)",
+      "symptomsEn": "Upward curling, puckering, and severe stunting of plants with reduced fruit set.",
+      "symptomsHi": "पत्तियों का ऊपर की ओर मुड़ना और पौधों का बौना रह जाना।",
+      "controlEn": "Control whitefly vector with Diafenthiuron 50 WP (250 g/acre) or Cyantraniliprole (1.8 ml/L).",
+      "controlHi": "सफेद मक्खी पर नियंत्रण रखें; डायफेंथियूरॉन का छिड़काव करें।",
+      "severity": "High Alert",
+      "type": "disease"
+    },
+    {
+      "nameEn": "Early Blight",
+      "nameHi": "अगेती झुलसा",
+      "symptomsEn": "Target-board concentric brown rings on leaves and stem cankers.",
+      "symptomsHi": "पत्तियों पर छल्लेदार भूरे धब्बे और तने पर घाव।",
+      "controlEn": "Spray Mancozeb 75 WP (2.5 g/L) or Azoxystrobin + Difenoconazole (1 ml/L).",
+      "controlHi": "मैंकोजेब या एजोक्सीस्ट्रोबिन का छिड़काव करें।",
+      "severity": "Medium Risk",
+      "type": "disease"
+    }
+  ],
+  "harvestSteps": [
+    {
+      "stepOrder": 1,
+      "letter": "A",
+      "titleEn": "Picking Stage Identification",
+      "titleHi": "तुड़ाई अवस्था पहचान",
+      "textEn": "Pick at breaker/turning stage (pink blossom end) for distant transit, or firm red for local consumption.",
+      "textHi": "दूर के बाजार के लिए गुलाबी-अधपके फल और स्थानीय बाजार के लिए लाल पके फल तोड़ें।"
+    },
+    {
+      "stepOrder": 2,
+      "letter": "B",
+      "titleEn": "Morning Picking with Calyx",
+      "titleHi": "डंठल सहित तुड़ाई",
+      "textEn": "Harvest by twisting fruits gently with calyx intact during cool morning hours.",
+      "textHi": "डंठल सहित हल्के हाथ से घुमाकर सुबह के समय तोड़ें।"
+    },
+    {
+      "stepOrder": 3,
+      "letter": "C",
+      "titleEn": "Grading & Crating",
+      "titleHi": "ग्रेडिंग व क्रेटिंग",
+      "textEn": "Sort by size and color into plastic crates (avoid bamboo basket pressure bruising).",
+      "textHi": "आकार और रंग के आधार पर प्लास्टिक क्रेट में रखें।"
+    },
+    {
+      "stepOrder": 4,
+      "letter": "D",
+      "titleEn": "Target Yield & Multiple Pickings",
+      "titleHi": "आवधिक तुड़ाई व उपज",
+      "textEn": "Perform pickings every 3–4 days across a 6–8 week window. Expected yield: 120–180 Qtl/acre.",
+      "textHi": "हर 3-4 दिन में तुड़ाई करें। संभावित उपज: 120–180 क्विंटल/एकड़।"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "sugarcane",
+  "nameEn": "Sugarcane",
+  "nameHi": "गन्ना (Sugarcane)",
+  "scientificName": "Saccharum officinarum",
+  "badge": "Commercial Heavyweight",
+  "badgeType": "cash",
+  "varietyTag": "Co-0238 / Co-86032 / CoLk-94184",
+  "tagline": "High-biomass annual cash crop driving rural sugar economies",
+  "idealSoil": "Deep Rich Loam & Alluvial",
+  "idealSoilHi": "गहरी उपजाऊ दोमट मिट्टी",
+  "duration": "300–360 Days",
+  "waterNeed": "High (Frequent Irrigations)",
+  "waterLevel": "high",
+  "metricTitle": "Sugar Recovery",
+  "metricValue": "10–12% Sugar",
+  "hubs": "Uttar Pradesh, Maharashtra, Karnataka, Tamil Nadu, Bihar, Gujarat",
+  "descriptionEn": "Prime perennial cash crop supporting sugar, jaggery, and ethanol agro-industries across India.",
+  "descriptionHi": "प्रमुख वार्षिक नकदी फसल। भारी बायोमास उत्पादन के लिए नियमित सिंचाई और खाद की आवश्यकता होती है।",
+  "avgYield": "300 - 450 Quintal / Acre (approx.)",
+  "marketPrice": "₹340 - ₹380 / Qtl (FRP approx.)",
+  "imageUrl": "https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=600&q=80",
+  "imageAlt": "Tall lush green sugarcane crop ready for harvest",
+  "category": ["cash"],
+  "popularityScore": 94,
+  "profitScore": 92,
+  "durationDays": 330,
+  "seedRate": "25,000–30,000 two-budded setts / acre",
+  "sowingDepth": "8–10 cm in deep furrows",
+  "spacing": "90 cm to 120 cm row-to-row",
+  "harvestingIndicator": "Bottom leaves dry and fall off; stalks emit metallic sound when tapped; Brix value > 18%.",
+  "introTipEn": "Ensure balanced NPK nutrition and regular furrow irrigation to support high annual biomass production.",
+  "introTipHi": "भारी बायोमास उत्पादन के लिए संतुलित एनपीके और नियमित सिंचाई का प्रबंधन रखें।",
+  "efficiencyGain": "25% water saving with trash mulching & drip",
+  "micronutrientNote": "Apply Ferrous Sulphate 10 kg/acre if interveinal chlorosis appears on young cane shoots.",
+  "stagnationAlert": "Ensure proper drainage furrows to discharge monsoon storm runoff.",
+  "seasons": ["kharif", "rabi"],
+  "soils": ["loamy", "alluvial"],
+  "fertilizerStages": [
+    {
+      "stageOrder": 1,
+      "stageEn": "Basal Dose (रोपाई के समय)",
+      "stageHi": "बुवाई के समय",
+      "timingEn": "At planting",
+      "timingHi": "बुवाई के समय",
+      "fertilizerEn": "DAP + Muriate of Potash + Urea",
+      "fertilizerHi": "डीएपी + पोटाश + यूरिया",
+      "quantityPerAcre": "DAP 60 kg + MOP 30 kg + Urea 25 kg / acre",
+      "applicationMethod": "Apply in furrows below cane setts"
+    },
+    {
+      "stageOrder": 2,
+      "stageEn": "First Top Dressing (45 DAS / Tillering)",
+      "stageHi": "पहली टॉप-ड्रेसिंग (कल्ले फूटते समय)",
+      "timingEn": "45 DAS",
+      "timingHi": "45 दिन",
+      "fertilizerEn": "Neem-Coated Urea",
+      "fertilizerHi": "नीम लेपित यूरिया",
+      "quantityPerAcre": "Urea 45 kg / acre",
+      "applicationMethod": "Side-dress along cane rows with irrigation"
+    },
+    {
+      "stageOrder": 3,
+      "stageEn": "Second Top Dressing (90 DAS / Earthing up)",
+      "stageHi": "दूसरी टॉप-ड्रेसिंग (मिट्टी चढ़ाने के समय)",
+      "timingEn": "90 DAS",
+      "timingHi": "90 दिन",
+      "fertilizerEn": "Neem-Coated Urea",
+      "fertilizerHi": "नीम लेपित यूरिया",
+      "quantityPerAcre": "Urea 45 kg / acre",
+      "applicationMethod": "Band placement followed by mechanical earthing up"
+    }
+  ],
+  "irrigation": {
+    "frequencyEn": "Every 10–12 Days in summer, 15–20 Days in winter",
+    "frequencyHi": "गर्मी में हर 10–12 दिन, सर्दी में हर 15–20 दिन",
+    "criticalStagesEn": "Formative stage (60–120 days) and Grand growth phase",
+    "criticalStagesHi": "कल्ले बनते समय (60–120 दिन) और मुख्य बढ़वार अवस्था",
+    "runtimePerZone": "3.0 hours per rotation",
+    "waterConserved": "~30% with trash mulching",
+    "tipsEn": "Avoid heavy irrigation 15 days prior to harvest to maximize sucrose accumulation.",
+    "tipsHi": "सुक्रोज बढ़ाने के लिए कटाई से 15 दिन पहले सिंचाई बंद कर दें।"
+  },
+  "pestsDiseases": [
+    {
+      "nameEn": "Early Shoot Borer",
+      "nameHi": "प्रारंभिक तना छेदक",
+      "symptomsEn": "Dead hearts in young shoots that emit foul odor when pulled.",
+      "symptomsHi": "छोटे पौधों में तना सूखना और खींचने पर दुर्गंध आना।",
+      "controlEn": "Apply Cartap Hydrochloride 4G (10 kg/acre) or Chlorantraniliprole 18.5% SC (150 ml/acre) along furrows.",
+      "controlHi": "कार्टाप 4G (10 किग्रा/एकड़) या क्लोरेंट्रानिलिप्रोल का छिड़काव करें।",
+      "severity": "High Alert",
+      "type": "pest"
+    },
+    {
+      "nameEn": "Top Borer",
+      "nameHi": "शीर्ष छेदक",
+      "symptomsEn": "Shot holes on leaves and dead heart in terminal shoots.",
+      "symptomsHi": "शीर्ष पत्तियों में छेद और ऊपरी सिरे का सूखना।",
+      "controlEn": "Release Trichogramma chilonis egg parasitoids or spray Chlorantraniliprole.",
+      "controlHi": "ट्राइकोग्रामा परजीवी छोड़ें या कीटनाशक का प्रयोग करें।",
+      "severity": "Medium Risk",
+      "type": "pest"
+    },
+    {
+      "nameEn": "Red Rot",
+      "nameHi": "लाल सड़न रोग",
+      "symptomsEn": "Third and fourth leaves turn yellow and dry; internal pith shows red discolored lesions with white transverse bands.",
+      "symptomsHi": "अंदर का गूदा लाल पड़ना और सफेद धारियां बनना।",
+      "controlEn": "Use disease-free seed setts, sett treatment with Carbendazim (0.1%), and crop rotation.",
+      "controlHi": "कार्बेंडाजिम से बीजोपचार और स्वस्थ टुकड़ों की बुवाई करें।",
+      "severity": "High Alert",
+      "type": "disease"
+    }
+  ],
+  "harvestSteps": [
+    {
+      "stepOrder": 1,
+      "letter": "A",
+      "titleEn": "Maturity Testing",
+      "titleHi": "परिपक्वता जांच",
+      "textEn": "Bottom leaves dry and fall off; stalks emit metallic sound when tapped; Brix value > 18%.",
+      "textHi": "निचली पत्तियां सूख जाएं, तने से खनकदार आवाज आए और ब्रिक्स 18% से अधिक हो।"
+    },
+    {
+      "stepOrder": 2,
+      "letter": "B",
+      "titleEn": "Ground-Level Cutting",
+      "titleHi": "जमीन की सतह से कटाई",
+      "textEn": "Cut stalks close to ground level with sharp cane knives to recover maximum bottom sucrose.",
+      "textHi": "जमीन की सतह से सटाकर काटें ताकि अधिक मीठा भाग न छूटे।"
+    },
+    {
+      "stepOrder": 3,
+      "letter": "C",
+      "titleEn": "Detrashing & Binding",
+      "titleHi": "सफाई एवं बंडल बनाना",
+      "textEn": "Remove green tops, dry trash, and rootlets; bundle canes into 15–20 kg bundles.",
+      "textHi": "पत्तियां और अगोला अलग करके बंडल बनाएं।"
+    },
+    {
+      "stepOrder": 4,
+      "letter": "D",
+      "titleEn": "Mill Dispatch",
+      "titleHi": "मिल आपूर्ति",
+      "textEn": "Transport to sugar mill within 24 hours of cutting to prevent inversion of sucrose.",
+      "textHi": "कटाई के 24 घंटे के भीतर चीनी मिल भेजें। अपेक्षित उपज: 300–450 क्विंटल/एकड़।"
+    }
+  ]
+}

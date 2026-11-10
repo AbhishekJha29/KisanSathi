@@ -1,0 +1,150 @@
+{
+  "id": "cotton",
+  "nameEn": "Cotton",
+  "nameHi": "कपास (Cotton)",
+  "scientificName": "Gossypium hirsutum",
+  "badge": "White Gold",
+  "badgeType": "kharif",
+  "varietyTag": "Bt Cotton Hybrids",
+  "tagline": "Premier commercial cash fiber crop of India",
+  "idealSoil": "Deep Black & Medium Loam",
+  "idealSoilHi": "काली एवं दोमट मिट्टी",
+  "duration": "150–180 Days",
+  "waterNeed": "Medium (Drip / Canal)",
+  "waterLevel": "medium",
+  "metricTitle": "Export Cash Crop",
+  "metricValue": "High APMC Liquidity",
+  "hubs": "Maharashtra, Gujarat, Telangana, Andhra Pradesh, Punjab, Haryana",
+  "descriptionEn": "India is one of the largest producers of cotton globally. Key fiber crop feeding national and export textile mills.",
+  "descriptionHi": "भारत की मुख्य व्यावसायिक नकदी फसल। संतुलित एनपीके और कीट नियंत्रण से बंपर उत्पादन मिलता है।",
+  "avgYield": "10 - 15 Quintal / Acre (approx.)",
+  "marketPrice": "₹6,800 - ₹7,600 / Qtl (approx.)",
+  "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDguytE97xVohxcpZjUYGMj2v0RRU1_0ad1ono-YiZjShsaSGm9thf2iTyEhEcSOrQHlfBedUpHzO-xArh-EvT4tRj_gOxNtYsIIoETrOV5dEkl93FMYnywOZHU-Mg6x6ITvpwXHU76jvZrwqw8iTJh5BdlGnhE3_S-RF-ktU07edu1wKp6CAR5YfsC_M3PSJwNF1i7MDm3vB_3bGUZQx7IU4ECd_PyMtJZG8juouCRMxVXE-OlSgAk",
+  "imageAlt": "Cotton field with white fluffy cotton bolls bursting open in autumn sunlight",
+  "category": ["kharif", "cash"],
+  "popularityScore": 96,
+  "profitScore": 92,
+  "durationDays": 165,
+  "seedRate": "900–1200 grams / acre (2 packets Bt-II)",
+  "sowingDepth": "3–5 cm in moist seedbed",
+  "spacing": "90 cm x 60 cm (or 120 cm x 45 cm)",
+  "harvestingIndicator": "Harvest when 60% of bolls have cracked open; pick clean in morning after dew evaporates.",
+  "introTipEn": "Vegetative squaring and early boll development need balanced nutrition. Install pheromone traps at 45 DAS to monitor Pink Bollworm flight early.",
+  "introTipHi": "शाखाएं और टिंडे बनते समय संतुलित खाद दें। 45 दिन बाद फेरोमोन ट्रैप लगाकर गुलाबी सुंडी की निगरानी शुरू करें।",
+  "efficiencyGain": "28% higher boll weight with drip fertigation",
+  "micronutrientNote": "Magnesium and Boron spray at 65 & 80 DAS prevents leaf reddening (Lal-Patti) and boll dropping.",
+  "stagnationAlert": "Cotton cannot tolerate standing water. Drain excess field runoff immediately after heavy downpours.",
+  "seasons": ["kharif"],
+  "soils": ["black", "loamy"],
+  "fertilizerStages": [
+    {
+      "stageOrder": 1,
+      "stageEn": "Basal Dose (बुवाई के समय)",
+      "stageHi": "बुवाई के समय",
+      "timingEn": "At sowing",
+      "timingHi": "बुवाई के समय",
+      "fertilizerEn": "DAP + Muriate of Potash + Zinc Sulphate",
+      "fertilizerHi": "डीएपी + पोटाश + जिंक सल्फेट",
+      "quantityPerAcre": "50 kg DAP + 25 kg MOP + 10 kg ZnSO4",
+      "applicationMethod": "Drill 7–10 cm below seed furrow"
+    },
+    {
+      "stageOrder": 2,
+      "stageEn": "First Top Dressing (30–35 DAS / Squaring)",
+      "stageHi": "पहली टॉप-ड्रेसिंग (फूल-कलियां)",
+      "timingEn": "30–35 DAS",
+      "timingHi": "30–35 दिन",
+      "fertilizerEn": "Neem-Coated Urea + Magnesium Sulphate",
+      "fertilizerHi": "नीम लेपित यूरिया + मैग्नीशियम सल्फेट",
+      "quantityPerAcre": "35 kg Urea + 10 kg MgSO4",
+      "applicationMethod": "Side-dress 10 cm away from plant row followed by earthing up"
+    },
+    {
+      "stageOrder": 3,
+      "stageEn": "Second Top Dressing (60–65 DAS / Boll Setting)",
+      "stageHi": "दूसरी टॉप-ड्रेसिंग (टिंडे बनते समय)",
+      "timingEn": "60–65 DAS",
+      "timingHi": "60–65 दिन",
+      "fertilizerEn": "Urea + Water-Soluble 00:52:34 foliar booster",
+      "fertilizerHi": "यूरिया + घुलनशील 00:52:34",
+      "quantityPerAcre": "35 kg Urea (Foliar spray 1.5 kg/acre 00:52:34)",
+      "applicationMethod": "Band placement near roots or split through drip fertigation"
+    }
+  ],
+  "irrigation": {
+    "frequencyEn": "Every 7–10 Days (Drip intervals: 2–3 days)",
+    "frequencyHi": "हर 7–10 दिन (ड्रिप द्वारा: 2–3 दिन)",
+    "criticalStagesEn": "Square Initiation (35–45 DAS), Peak Flowering & Boll Formation (60–90 DAS), Boll Bursting (120+ DAS)",
+    "criticalStagesHi": "कलियां बनना (35–45 दिन), फूल व टिंडे बनना (60–90 दिन), टिंडे खिलना (120+ दिन)",
+    "runtimePerZone": "1.5–2.0 hours per rotation",
+    "waterConserved": "~42% via Drip fertigation",
+    "tipsEn": "Cotton cannot tolerate standing water. Drain excess field runoff immediately after heavy downpours.",
+    "tipsHi": "कपास में पानी रुकने न दें। भारी बारिश के बाद जल निकासी तुरंत करें।"
+  },
+  "pestsDiseases": [
+    {
+      "nameEn": "Pink Bollworm",
+      "nameHi": "गुलाबी सुंडी",
+      "symptomsEn": "Rosetted flowers, entry holes plugged with frass, eaten seeds inside bolls.",
+      "symptomsHi": "गुलाब जैसे मुड़े हुए फूल और टिंडों के अंदर दानों को खाना।",
+      "controlEn": "Install 5 Pheromone Traps/acre. Spray Emamectin Benzoate 5% SG (88 g/acre) at ETL threshold.",
+      "controlHi": "फेरोमोन ट्रैप (5 प्रति एकड़) लगाएं और इमामेक्टिन बेंजोएट 5% SG (88 ग्राम/एकड़) का छिड़काव करें।",
+      "severity": "High Alert",
+      "type": "pest"
+    },
+    {
+      "nameEn": "Whitefly & Sucking Pests",
+      "nameHi": "सफेद मक्खी व तेला",
+      "symptomsEn": "Curling leaves, honeydew excretion leading to black sooty mold.",
+      "symptomsHi": "पत्तियों का मुड़ना और काले फफूंद (सूटी मोल्ड) का जमाव।",
+      "controlEn": "Spray Diafenthiuron 50% WP (250 g/acre) or Neem oil 1500 ppm (5 ml/L).",
+      "controlHi": "डायफेंथियूरॉन 50% WP (250 ग्राम/एकड़) या नीम का तेल (5 मिली/लीटर) छिड़कें।",
+      "severity": "Medium Risk",
+      "type": "pest"
+    },
+    {
+      "nameEn": "Alternaria Leaf Spot",
+      "nameHi": "पत्ती धब्बा रोग",
+      "symptomsEn": "Concentric brown target-like rings on older leaves.",
+      "symptomsHi": "पुरानी पत्तियों पर गोल भूरे धब्बे।",
+      "controlEn": "Foliar spray with Copper Oxychloride 50 WP (2.5 g/L) or Mancozeb 75 WP (2 g/L).",
+      "controlHi": "कॉपर ऑक्सीक्लोराइड 50 WP (2.5 ग्राम/लीटर) या मैंकोजेब (2 ग्राम/लीटर) का छिड़काव करें।",
+      "severity": "Preventive",
+      "type": "disease"
+    }
+  ],
+  "harvestSteps": [
+    {
+      "stepOrder": 1,
+      "letter": "A",
+      "titleEn": "Picking Stage",
+      "titleHi": "चुनाई अवस्था",
+      "textEn": "Pick cotton when bolls crack and dry fully in bright sun after 10:00 AM.",
+      "textHi": "ओस सूखने के बाद सुबह 10 बजे के बाद खिले हुए टिंडों की चुनाई करें।"
+    },
+    {
+      "stepOrder": 2,
+      "letter": "B",
+      "titleEn": "Trash Reduction",
+      "titleHi": "सफाई",
+      "textEn": "Keep harvested lint free from dry bracts, leaf trash, and stained bolls.",
+      "textHi": "सूखी पत्तियों और कचरे को कपास से अलग रखें।"
+    },
+    {
+      "stepOrder": 3,
+      "letter": "C",
+      "titleEn": "Multiple Pickings",
+      "titleHi": "आवधिक चुनाई",
+      "textEn": "Carry out 3–4 pickings at 15–20 day intervals to maximize fiber grading.",
+      "textHi": "15-20 दिनों के अंतराल पर 3-4 चुनाई करें।"
+    },
+    {
+      "stepOrder": 4,
+      "letter": "D",
+      "titleEn": "Storage & Target Yield",
+      "titleHi": "भंडारण व उपज",
+      "textEn": "Store dry in clean jute bags. Expected yield: 10–15 Qtl/acre.",
+      "textHi": "साफ जूट की बोरियों में सूखा रखें। संभावित उपज: 10–15 क्विंटल/एकड़।"
+    }
+  ]
+}

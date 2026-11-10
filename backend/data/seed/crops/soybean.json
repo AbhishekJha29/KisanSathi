@@ -1,0 +1,150 @@
+{
+  "id": "soybean",
+  "nameEn": "Soybean",
+  "nameHi": "सोयाबीन (Soybean)",
+  "scientificName": "Glycine max",
+  "badge": "Protein & Oil Power",
+  "badgeType": "kharif",
+  "varietyTag": "JS-335 / JS-9560 / NRC-37",
+  "tagline": "Leading Kharif oilseed enriching soil fertility",
+  "idealSoil": "Well-drained Black & Loamy",
+  "idealSoilHi": "काली एवं उपजाऊ दोमट मिट्टी",
+  "duration": "90–105 Days",
+  "waterNeed": "Medium (Rainfed / Irrigated)",
+  "waterLevel": "medium",
+  "metricTitle": "Protein & Oil",
+  "metricValue": "40% Protein, 20% Oil",
+  "hubs": "Madhya Pradesh, Maharashtra, Rajasthan, Karnataka",
+  "descriptionEn": "Miracle bean providing both high quality protein and vegetable oil, fixing substantial atmospheric nitrogen.",
+  "descriptionHi": "उच्च प्रोटीन व खाद्य तेल युक्त खरीफ फसल। जलभराव से बचाव और फली भरते समय नमी जरूरी है।",
+  "avgYield": "8 - 12 Quintal / Acre (approx.)",
+  "marketPrice": "₹4,400 - ₹5,000 / Qtl (approx.)",
+  "imageUrl": "https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=600&q=80",
+  "imageAlt": "Soybean plants with green pods ripening under sunshine",
+  "category": ["kharif", "cash"],
+  "popularityScore": 95,
+  "profitScore": 88,
+  "durationDays": 98,
+  "seedRate": "28–30 kg / acre (Rhizobium inoculated)",
+  "sowingDepth": "3–4 cm",
+  "spacing": "45 cm x 7.5 cm",
+  "harvestingIndicator": "Leaves turn yellow and drop; pods turn brownish grey and rattle when shaken.",
+  "introTipEn": "Avoid waterlogging and ensure soil moisture during flowering and pod development for optimal pod filling.",
+  "introTipHi": "जलभराव से बचाव रखें तथा फूल व फली बनते समय पर्याप्त नमी सुनिश्चित करें।",
+  "efficiencyGain": "20% higher yield with Rhizobium seed inoculation",
+  "micronutrientNote": "Apply Sulphur 10 kg/acre and Boron 0.2% spray at early flowering to enhance pod set.",
+  "stagnationAlert": "Soybean roots rot easily in standing water; ensure drainage within 12 hours.",
+  "seasons": ["kharif"],
+  "soils": ["black", "loamy"],
+  "fertilizerStages": [
+    {
+      "stageOrder": 1,
+      "stageEn": "Basal Dose (बुवाई के समय)",
+      "stageHi": "बुवाई के समय",
+      "timingEn": "At sowing",
+      "timingHi": "बुवाई के समय",
+      "fertilizerEn": "DAP + Muriate of Potash + Sulphur",
+      "fertilizerHi": "डीएपी + पोटाश + सल्फर",
+      "quantityPerAcre": "DAP 30 kg + MOP 15 kg + Sulphur 10 kg / acre",
+      "applicationMethod": "Drill below seed during sowing"
+    },
+    {
+      "stageOrder": 2,
+      "stageEn": "Early Flowering Booster (30–35 DAS)",
+      "stageHi": "फूल आते समय",
+      "timingEn": "30–35 DAS",
+      "timingHi": "30–35 दिन",
+      "fertilizerEn": "Boron 0.2% Foliar Spray",
+      "fertilizerHi": "बोरॉन 0.2% पर्णीय छिड़काव",
+      "quantityPerAcre": "Boron 200 g in 100 L water",
+      "applicationMethod": "Foliar mist spray during clear morning hours"
+    },
+    {
+      "stageOrder": 3,
+      "stageEn": "Pod Filling Booster (50–55 DAS)",
+      "stageHi": "फली भरते समय",
+      "timingEn": "50–55 DAS",
+      "timingHi": "50–55 दिन",
+      "fertilizerEn": "Water-Soluble 13:0:45 foliar spray",
+      "fertilizerHi": "पोटेशियम नाइट्रेट (13:0:45)",
+      "quantityPerAcre": "1 kg / acre foliar spray",
+      "applicationMethod": "Foliar spray to support seed development"
+    }
+  ],
+  "irrigation": {
+    "frequencyEn": "Every 10–12 Days if dry spell occurs",
+    "frequencyHi": "सूखा पड़ने पर हर 10–12 दिन",
+    "criticalStagesEn": "Flowering (35–45 DAS) and Pod Filling (55–70 DAS)",
+    "criticalStagesHi": "फूल आना (35–45 दिन) और फली भराव (55–70 दिन)",
+    "runtimePerZone": "2.0 hours per rotation",
+    "waterConserved": "~25% with broadbed furrow (BBF)",
+    "tipsEn": "Provide life-saving irrigation at pod development stage during prolonged monsoon breaks.",
+    "tipsHi": "मानसून में लंबा अंतराल होने पर फली बनते समय सिंचाई जरूर करें।"
+  },
+  "pestsDiseases": [
+    {
+      "nameEn": "Girdle Beetle",
+      "nameHi": "गर्डल बीटल",
+      "symptomsEn": "Ring-like girdling cuts around petioles and stems causing drying above cut.",
+      "symptomsHi": "तने और शाखाओं पर छल्ले जैसा कटाव जिससे ऊपरी भाग सूखता है।",
+      "controlEn": "Spray Chlorantraniliprole 18.5% SC (60 ml/acre) or Profenophos 50% EC (400 ml/acre).",
+      "controlHi": "क्लोरेंट्रानिलिप्रोल (60 मिली/एकड़) या प्रोफेनोफॉस का छिड़काव करें।",
+      "severity": "High Alert",
+      "type": "pest"
+    },
+    {
+      "nameEn": "Stem Fly",
+      "nameHi": "तना मक्खी",
+      "symptomsEn": "Seedling leaves wilt and internal stem tunnel turns reddish brown.",
+      "symptomsHi": "छोटे पौधे मुरझाना और तने के अंदर लाल सुरंग बनना।",
+      "controlEn": "Seed treatment with Thiamethoxam 30% FS (10 ml/kg seed).",
+      "controlHi": "थियामेथॉक्सम (10 मिली/किग्रा बीज) से बीजोपचार करें।",
+      "severity": "Medium Risk",
+      "type": "pest"
+    },
+    {
+      "nameEn": "Yellow Mosaic Virus",
+      "nameHi": "पीला मोज़ेक वायरस",
+      "symptomsEn": "Bright yellow patches alternating with green on leaf lamina.",
+      "symptomsHi": "पत्तियों पर पीले और हरे रंग के चितकबरे धब्बे।",
+      "controlEn": "Control whitefly vector with Acetamiprid 20% SP (100 g/acre); rogue out infected plants.",
+      "controlHi": "सफेद मक्खी की रोकथाम करें और रोगी पौधों को उखाड़कर नष्ट करें।",
+      "severity": "High Alert",
+      "type": "disease"
+    }
+  ],
+  "harvestSteps": [
+    {
+      "stepOrder": 1,
+      "letter": "A",
+      "titleEn": "Maturity Check",
+      "titleHi": "पकाव की जांच",
+      "textEn": "Leaves turn yellow and drop; pods turn brownish grey and rattle when shaken.",
+      "textHi": "पत्तियां पीली होकर गिर जाएं और फली हिलाने पर दाने खड़खड़ाएं।"
+    },
+    {
+      "stepOrder": 2,
+      "letter": "B",
+      "titleEn": "Timely Cutting",
+      "titleHi": "समय पर कटाई",
+      "textEn": "Harvest promptly when pods dry to prevent shattering losses in sunny afternoon.",
+      "textHi": "फली चटकने से बचाने के लिए सुबह के समय समय पर कटाई करें।"
+    },
+    {
+      "stepOrder": 3,
+      "letter": "C",
+      "titleEn": "Threshing & Conditioning",
+      "titleHi": "गहाई",
+      "textEn": "Thresh with combine or thresher running at lower cylinder speed (350–400 rpm) to avoid seed crack.",
+      "textHi": "कम गति पर थ्रेशर चलाएं ताकि बीज का छिलका न फटे।"
+    },
+    {
+      "stepOrder": 4,
+      "letter": "D",
+      "titleEn": "Storage",
+      "titleHi": "भंडारण",
+      "textEn": "Dry to 9–10% moisture before storing. Expected yield: 8–12 Qtl/acre.",
+      "textHi": "9-10% नमी तक सुखाकर रखें। संभावित उपज: 8–12 क्विंटल/एकड़।"
+    }
+  ]
+}

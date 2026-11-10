@@ -1,0 +1,150 @@
+{
+  "id": "castor",
+  "nameEn": "Castor",
+  "nameHi": "अरंडी (Castor)",
+  "scientificName": "Ricinus communis",
+  "badge": "Industrial Cash Crop",
+  "badgeType": "cash",
+  "varietyTag": "GCH-7 / DCH-519 / GCH-9",
+  "tagline": "Leading producer of industrial-grade castor oil",
+  "idealSoil": "Sandy Loam to Clay",
+  "idealSoilHi": "दोमट एवं भारी मिट्टी",
+  "duration": "160–200 Days",
+  "waterNeed": "Low to Medium",
+  "waterLevel": "low",
+  "metricTitle": "Industrial Oil",
+  "metricValue": "High Global Demand",
+  "hubs": "Gujarat, Rajasthan, Andhra Pradesh, Telangana",
+  "descriptionEn": "Major non-edible commercial oilseed crop providing essential lubricants for aviation, chemical, and pharmaceutical sectors.",
+  "descriptionHi": "औद्योगिक महत्व की नकदी फसल। मुख्य बाली व शाखाओं पर फलियों का गुच्छा अच्छा उत्पादन देता है।",
+  "avgYield": "14 - 20 Quintal / Acre (approx.)",
+  "marketPrice": "₹5,800 - ₹6,500 / Qtl (approx.)",
+  "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBru7PYYrHycP1i-4dV-lQB_XR6A84o16QY36yIjdmcY07vGIiw6YIHrcjN0rVSWYqA_3FVqwTlwOGZBw-PxZA2n0PXx-IK9tRsNANMmCvt6lBf-7g00H5TdSxPe1-nVbVp45xfkIGFkM-FswDhHUcX4i1OqCHWv2iEtvp-FRJuwiw9oXIT8q763t_1GJQfdxBIoU7zikMXbgROK6y8kql104p8kInBlZqF-ZKd7EnCNkg0aISzTVfI",
+  "imageAlt": "Broad green leaves and developing spiky castor bean pods growing vigorously in irrigated fields",
+  "category": ["kharif", "rabi", "cash"],
+  "popularityScore": 91,
+  "profitScore": 93,
+  "durationDays": 180,
+  "seedRate": "2–2.5 kg / acre",
+  "sowingDepth": "5–7 cm in moist soil",
+  "spacing": "120 cm x 60 cm",
+  "harvestingIndicator": "Capsules in main spikes turn brownish-yellow and dry.",
+  "introTipEn": "Wide spacing (120 cm x 60 cm) allows robust branching and spike development; top-dress Urea at primary and secondary spike initiations.",
+  "introTipHi": "120x60 सेमी की चौड़ी दूरी पर बुवाई करें और मुख्य व सहायक बालियां निकलते समय यूरिया दें।",
+  "efficiencyGain": "25% higher capsule yield with split nitrogen and nipping",
+  "micronutrientNote": "Apply Sulphur 10 kg/acre in basal dose to increase oil content in castor seeds.",
+  "stagnationAlert": "Avoid waterlogging around taproot; castor requires well-aerated soil.",
+  "seasons": ["kharif", "rabi"],
+  "soils": ["sandy", "loamy", "clay"],
+  "fertilizerStages": [
+    {
+      "stageOrder": 1,
+      "stageEn": "Basal Dose (बुवाई के समय)",
+      "stageHi": "बुवाई के समय",
+      "timingEn": "At sowing",
+      "timingHi": "बुवाई के समय",
+      "fertilizerEn": "DAP + Muriate of Potash + Sulphur",
+      "fertilizerHi": "डीएपी + पोटाश + सल्फर",
+      "quantityPerAcre": "DAP 35 kg + MOP 15 kg + Sulphur 10 kg / acre",
+      "applicationMethod": "Drill into seedbed along marked rows"
+    },
+    {
+      "stageOrder": 2,
+      "stageEn": "First Top Dressing (45 DAS)",
+      "stageHi": "पहली टॉप-ड्रेसिंग (45 दिन)",
+      "timingEn": "45 DAS",
+      "timingHi": "45 दिन",
+      "fertilizerEn": "Neem-Coated Urea",
+      "fertilizerHi": "नीम लेपित यूरिया",
+      "quantityPerAcre": "Urea 30 kg / acre",
+      "applicationMethod": "Side-dress around plant base with earthing up"
+    },
+    {
+      "stageOrder": 3,
+      "stageEn": "Second Top Dressing (Primary Spike - 80 DAS)",
+      "stageHi": "मुख्य बाली आते समय (80 दिन)",
+      "timingEn": "80 DAS",
+      "timingHi": "80 दिन",
+      "fertilizerEn": "Neem-Coated Urea",
+      "fertilizerHi": "नीम लेपित यूरिया",
+      "quantityPerAcre": "Urea 25 kg / acre",
+      "applicationMethod": "Band placement with irrigation"
+    }
+  ],
+  "irrigation": {
+    "frequencyEn": "Every 12–15 Days under irrigation; tolerant to drought once established",
+    "frequencyHi": "सिंचाई में हर 12–15 दिन; जड़ें स्थापित होने पर सूखा सहनशील",
+    "criticalStagesEn": "Primary spike development (60–75 DAS) and Secondary spike filling",
+    "criticalStagesHi": "मुख्य बाली विकास (60–75 दिन) और सहायक बालियों में दाना भरना",
+    "runtimePerZone": "2.0 hours per rotation",
+    "waterConserved": "~35% with drip irrigation",
+    "tipsEn": "Irrigate periodically during winter to maintain continuous spike emergence.",
+    "tipsHi": "सर्दियों में समय पर पानी दें ताकि नई बालियां निकलती रहें।"
+  },
+  "pestsDiseases": [
+    {
+      "nameEn": "Castor Semilooper",
+      "nameHi": "अर्धकुंडलक सुंडी",
+      "symptomsEn": "Defoliation leaving only leaf veins; larvae walk with looping motion.",
+      "symptomsHi": "पत्तियों को खाकर कंकाल बना देना; सुंडी लूप बनाकर चलती है।",
+      "controlEn": "Hand-pick large larvae; spray Profenophos 50% EC (2 ml/L) or Bacillus thuringiensis (1.5 kg/ha).",
+      "controlHi": "हाथ से सुंडी इकट्ठा करें या प्रोफेनोफॉस (2 मिली/लीटर) का छिड़काव करें।",
+      "severity": "High Alert",
+      "type": "pest"
+    },
+    {
+      "nameEn": "Capsule Borer (Dichocrocis)",
+      "nameHi": "कैप्सूल छेदक",
+      "symptomsEn": "Caterpillars bore into tender capsules; silken webbing with dark frass covers spikes.",
+      "symptomsHi": "फलों में छेद और बालियों पर जाला व काला मल दिखाई देना।",
+      "controlEn": "Spray Chlorantraniliprole 18.5% SC (60 ml/acre) at capsule formation.",
+      "controlHi": "क्लोरेंट्रानिलिप्रोल (60 मिली/एकड़) का छिड़काव करें।",
+      "severity": "Medium Risk",
+      "type": "pest"
+    },
+    {
+      "nameEn": "Castor Wilt (Fusarium)",
+      "nameHi": "अरंडी उकठा रोग",
+      "symptomsEn": "Yellowing and sudden wilting of leaves from lower to upper branches; vascular browning.",
+      "symptomsHi": "पत्तियों का नीचे से ऊपर पीला होकर सूखना और तना काला पड़ना।",
+      "controlEn": "Seed treatment with Trichoderma viride (10 g/kg) and grow resistant hybrids like GCH-7.",
+      "controlHi": "प्रतिरोधी किस्में (GCH-7) लगाएं और ट्राइकोडर्मा से बीजोपचार करें।",
+      "severity": "High Alert",
+      "type": "disease"
+    }
+  ],
+  "harvestSteps": [
+    {
+      "stepOrder": 1,
+      "letter": "A",
+      "titleEn": "Spike Yellowing Check",
+      "titleHi": "बाली की जांच",
+      "textEn": "Harvest when capsules in main spikes turn brownish-yellow and dry.",
+      "textHi": "जब बालियों के फल सूखकर भूरे-पीले हो जाएं तब कटाई करें।"
+    },
+    {
+      "stepOrder": 2,
+      "letter": "B",
+      "titleEn": "Selective Hand Cutting",
+      "titleHi": "क्रमिक कटाई",
+      "textEn": "Cut mature spikes selectively with secateurs across 3–4 pickings.",
+      "textHi": "पकी हुई बालियों को 3-4 बार में काटकर अलग करें।"
+    },
+    {
+      "stepOrder": 3,
+      "letter": "C",
+      "titleEn": "Sun Curing",
+      "titleHi": "धूप में सुखाना",
+      "textEn": "Spread harvested spikes in sun on clean yard for 5–7 days.",
+      "textHi": "खलिहान में 5-7 दिन धूप में फैलाएं।"
+    },
+    {
+      "stepOrder": 4,
+      "letter": "D",
+      "titleEn": "Threshing & Yield",
+      "titleHi": "थ्रेशिंग व उपज",
+      "textEn": "Thresh with castor thresher or light tractor treading. Expected yield: 14–20 Qtl/acre.",
+      "textHi": "थ्रेशर से बीज निकालें। संभावित उपज: 14–20 क्विंटल/एकड़।"
+    }
+  ]
+}
