@@ -15,9 +15,11 @@ _BACKEND_DIR: Path = Path(__file__).resolve().parent
 _PROJECT_ROOT: Path = _BACKEND_DIR.parent
 
 # Load environment variables at import time
-# Root .env is loaded first, then backend/.env (if present)
-load_dotenv(_PROJECT_ROOT / ".env")
-load_dotenv(_BACKEND_DIR / ".env")
+# Root .env is loaded first, then backend/.env (if present).
+# In Vercel environments, platform environment variables take precedence and local .env is not loaded.
+if not os.getenv("VERCEL"):
+    load_dotenv(_PROJECT_ROOT / ".env")
+    load_dotenv(_BACKEND_DIR / ".env")
 
 
 def _parse_bool(value: Optional[str], default: bool = False) -> bool:
@@ -58,12 +60,15 @@ class Config:
     # Advisory generation rate limit per minute per IP (default: 60)
     ADVISORY_RATE_LIMIT_PER_MINUTE: int = int(os.getenv("ADVISORY_RATE_LIMIT_PER_MINUTE", "60"))
 
-    # Path to SQLite database file (default: backend/data/kisansathi.db computed relative to this file)
+    # Path to SQLite database file (default: backend/data/kisansathi.db computed relative to this file,
+    # or /tmp/kisansathi.db when running in serverless environments like Vercel).
     _default_db: Path = (_BACKEND_DIR / "data" / "kisansathi.db").resolve()
     _env_db: Optional[str] = os.getenv("DATABASE_PATH")
     if _env_db:
         _db_path = Path(_env_db)
         DATABASE_PATH: str = str((_PROJECT_ROOT / _db_path).resolve() if not _db_path.is_absolute() else _db_path)
+    elif os.getenv("VERCEL"):
+        DATABASE_PATH: str = "/tmp/kisansathi.db"
     else:
         DATABASE_PATH: str = str(_default_db)
 

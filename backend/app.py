@@ -34,6 +34,9 @@ from werkzeug.routing import PathConverter
 from backend.config import Config
 from backend.database import get_connection, init_db
 from backend.api import api_bp
+from backend.seed import seed_all
+
+logger: logging.Logger = logging.getLogger(__name__)
 
 
 class NonApiPathConverter(PathConverter):
@@ -80,7 +83,7 @@ def create_app(config_overrides: Optional[Dict[str, Any]] = None) -> Flask:
     # Enforce request payload size limit (default: 64 KB)
     app.config["MAX_CONTENT_LENGTH"] = app.config.get("MAX_CONTENT_LENGTH", Config.MAX_CONTENT_LENGTH)
 
-    # 2. Database initialization and crop count health check
+    # 2. Database initialization and crop count health check / auto-seed
     db_path: str = app.config.get("DATABASE_PATH", Config.DATABASE_PATH)
     try:
         init_db(db_path)
@@ -89,14 +92,20 @@ def create_app(config_overrides: Optional[Dict[str, Any]] = None) -> Flask:
             cursor = conn.execute("SELECT COUNT(*) AS cnt FROM crops;")
             row = cursor.fetchone()
             crop_count: int = row["cnt"] if row else 0
-            if crop_count == 0:
-                app.logger.warning("No crop data found. Run: python -m backend.seed")
-            else:
-                app.logger.info("Database initialized successfully with %d crops.", crop_count)
         finally:
             conn.close()
+
+        if crop_count == 0:
+            logger.info("Crops table is empty. Auto-seeding database at %s...", db_path)
+            try:
+                counts = seed_all(db_path=db_path)
+                logger.info("Database auto-seeded successfully with counts: %s", counts)
+            except Exception:
+                logger.exception("Database auto-seeding failed for %s", db_path)
+        else:
+            logger.info("Database initialized successfully with %d crops.", crop_count)
     except Exception as exc:
-        app.logger.warning("Database check encountered an error: %s", exc)
+        logger.warning("Database check encountered an error: %s", exc)
 
     # 3. CORS configuration (ONLY for /api/* and ONLY for ALLOWED_ORIGINS)
     raw_origins = app.config.get("ALLOWED_ORIGINS", Config.ALLOWED_ORIGINS)
