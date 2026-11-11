@@ -1,14 +1,12 @@
 {
   "id": "cumin",
   "nameEn": "Cumin",
-  "nameHi": "जीरा (Jeera)",
   "scientificName": "Cuminum cyminum",
   "badge": "Spice Cash King",
   "badgeType": "spice",
   "varietyTag": "GC-4 / RZ-19",
   "tagline": "High-value export spice crop with premium returns",
   "idealSoil": "Drained Sandy Loam",
-  "idealSoilHi": "रेतीली / दोमट मिट्टी",
   "duration": "100–115 Days",
   "waterNeed": "Low (Humidity Sensitive)",
   "waterLevel": "low",
@@ -16,12 +14,15 @@
   "metricValue": "High Value",
   "hubs": "Rajasthan, Gujarat, Western Madhya Pradesh",
   "descriptionEn": "High export cash spice crop commanding strong global demand. Protective sprays required during overcast humid weather.",
-  "descriptionHi": "कीमती निर्यात योग्य मसाला फसल। बादल छाने पर झुलसा (Blight) रोग से बचाव के लिए पूर्व छिड़काव जरूरी है।",
   "avgYield": "4 - 7 Quintal / Acre (approx.)",
   "marketPrice": "₹22,000 - ₹28,000 / Qtl (approx.)",
   "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBIRjKtzz7dlHUGoGdF5fzUpIkB8Mn89ACj1fwewXZywXO3WtysoyToqxIXEq1e619wHupCrkjdqrDPM3HUQh8CvfDkrKGOfkJg7nEeWCBjEuYfrdLk55WTNIu2SaKIKKddkAZi68OFTpZYBufPCF7cZi1CfFGqAsoEAeNn3R00WJXbti7qvp_tSfOql-BrVvQYVPaahbPuwcTBEInBACWgR8vr4mbn1VuHJ7GCGjFGdRDdTf2tTAf-",
   "imageAlt": "Fragrant green cumin plants flowering with tiny white umbels in arid semi-desert climate",
-  "category": ["rabi", "spice", "cash"],
+  "category": [
+    "rabi",
+    "spice",
+    "cash"
+  ],
   "popularityScore": 92,
   "profitScore": 97,
   "durationDays": 108,
@@ -30,85 +31,68 @@
   "spacing": "30 cm row spacing",
   "harvestingIndicator": "Umbels turn greyish-brown; harvest early morning to prevent shattering.",
   "introTipEn": "Shallow sowing (1–1.5 cm) is critical for germination; spray Mancozeb proactively whenever overcast cloudy skies develop to prevent devastating blight.",
-  "introTipHi": "1-1.5 सेमी उथली बुवाई करें; बादल छाने पर झुलसा रोग से बचाव के लिए मैंकोजेब का पूर्व छिड़काव अवश्य करें।",
   "efficiencyGain": "30% protection against blight with timely preventative sprays",
   "micronutrientNote": "Apply Sulphur 10 kg/acre and multi-micronutrient spray at flowering to enhance essential oil aroma.",
   "stagnationAlert": "Cumin roots rot in wet soils; irrigate with very light flow in micro-sprinklers.",
-  "seasons": ["rabi"],
-  "soils": ["sandy", "loamy"],
+  "seasons": [
+    "rabi"
+  ],
+  "soils": [
+    "sandy",
+    "loamy"
+  ],
   "fertilizerStages": [
     {
       "stageOrder": 1,
-      "stageEn": "Basal Dose (बुवाई के समय)",
-      "stageHi": "बुवाई के समय",
+      "stageEn": "Basal Dose",
       "timingEn": "At sowing",
-      "timingHi": "बुवाई के समय",
       "fertilizerEn": "DAP + Well-rotted Farmyard Manure",
-      "fertilizerHi": "डीएपी + सड़ी गोबर की खाद",
       "quantityPerAcre": "DAP 20 kg + FYM 4 tonnes / acre",
       "applicationMethod": "Mix well in soil during final land preparation"
     },
     {
       "stageOrder": 2,
       "stageEn": "First Top Dressing (30 DAS)",
-      "stageHi": "पहली टॉप-ड्रेसिंग (30 दिन)",
       "timingEn": "30 DAS",
-      "timingHi": "30 दिन",
       "fertilizerEn": "Neem-Coated Urea",
-      "fertilizerHi": "नीम लेपित यूरिया",
       "quantityPerAcre": "Urea 15 kg / acre",
       "applicationMethod": "Broadcast post weeding with light irrigation"
     },
     {
       "stageOrder": 3,
       "stageEn": "Grain Filling Foliar (60–65 DAS)",
-      "stageHi": "दाना भराव अवस्था (60–65 दिन)",
       "timingEn": "60–65 DAS",
-      "timingHi": "60–65 दिन",
       "fertilizerEn": "Water-Soluble 00:52:34 Foliar Spray",
-      "fertilizerHi": "घुलनशील 00:52:34 पर्णीय छिड़काव",
       "quantityPerAcre": "1 kg / acre in 100 L water",
       "applicationMethod": "Foliar mist spray at early seed development"
     }
   ],
   "irrigation": {
     "frequencyEn": "Very light irrigations; only 3–4 during crop cycle",
-    "frequencyHi": "बहुत हल्की सिंचाई; कुल 3–4 बार",
     "criticalStagesEn": "Germination (first light watering), Branching (30 DAS), and Seed Filling (65 DAS)",
-    "criticalStagesHi": "जमाव, शाखाएं फूटना (30 दिन), और दाना भरना (65 दिन)",
     "runtimePerZone": "1.0 hour per rotation",
     "waterConserved": "~50% less water than traditional cereals",
-    "tipsEn": "Never irrigate during cloudy, humid, or stormy weather as it triggers blight outbreak.",
-    "tipsHi": "बादल छाए रहने पर पानी बिल्कुल न दें, इससे झुलसा रोग फैलता है।"
+    "tipsEn": "Never irrigate during cloudy, humid, or stormy weather as it triggers blight outbreak."
   },
   "pestsDiseases": [
     {
       "nameEn": "Cumin Blight (Alternaria burnsii)",
-      "nameHi": "जीरा झुलसा रोग",
       "symptomsEn": "Minute dark brown spots on leaves and stems; plants turn blackish and droop rapidly in cloudy weather.",
-      "symptomsHi": "पत्तियों और तने पर भूरे धब्बे, पौधा काला पड़कर मुरझा जाता है।",
       "controlEn": "Preventative spray with Mancozeb 75 WP (2.5 g/L); on symptom onset spray Propiconazole 25 EC (1 ml/L).",
-      "controlHi": "सुरक्षात्मक रूप से मैंकोजेब या प्रोपिकोनाजोल (1 मिली/लीटर) का छिड़काव करें।",
       "severity": "High Alert",
       "type": "disease"
     },
     {
       "nameEn": "Powdery Mildew (Erysiphe)",
-      "nameHi": "छाछिया रोग (सफेद चूर्णी)",
       "symptomsEn": "White powdery patches cover stems and umbels, shriveling seeds.",
-      "symptomsHi": "तने और छत्तों पर सफेद चूर्ण की परत जिससे दाने सिकुड़ते हैं।",
       "controlEn": "Dust wettable Sulphur 80 WP (2.5 g/L) or Dinocap (1 ml/L).",
-      "controlHi": "घुलनशील गंधक (2.5 ग्राम/लीटर) का छिड़काव करें।",
       "severity": "Medium Risk",
       "type": "disease"
     },
     {
       "nameEn": "Cumin Aphids (Mahu)",
-      "nameHi": "जीरा माहू",
       "symptomsEn": "Tiny yellow-green aphids suck sap from umbels and flowers during cool mornings.",
-      "symptomsHi": "छत्तों और फूलों से रस चूसकर नुकसान पहुंचाना।",
       "controlEn": "Spray Thiamethoxam 25% WG (0.4 g/L) or Dimethoate 30 EC (1.5 ml/L).",
-      "controlHi": "थियामेथॉक्सम (0.4 ग्राम/लीटर) का छिड़काव करें।",
       "severity": "Preventive",
       "type": "pest"
     }
@@ -118,33 +102,25 @@
       "stepOrder": 1,
       "letter": "A",
       "titleEn": "Umbels Maturity Check",
-      "titleHi": "छत्तों की परिपक्वता",
-      "textEn": "Umbels turn greyish-brown and seeds harden to touch.",
-      "textHi": "छत्ते भूरे-धूसर रंग के हो जाएं और दाने छूने पर सख्त लगें।"
+      "textEn": "Umbels turn greyish-brown and seeds harden to touch."
     },
     {
       "stepOrder": 2,
       "letter": "B",
       "titleEn": "Early Morning Uprooting",
-      "titleHi": "सुबह कटाई",
-      "textEn": "Harvest early morning while dew is present to minimize seed shattering.",
-      "textHi": "ओस के समय सुबह कटाई करें ताकि बीज झड़ें नहीं।"
+      "textEn": "Harvest early morning while dew is present to minimize seed shattering."
     },
     {
       "stepOrder": 3,
       "letter": "C",
       "titleEn": "Tarpaulin Sun Drying",
-      "titleHi": "तिरपाल पर सुखाना",
-      "textEn": "Dry plants on clean plastic tarpaulins in sun for 3–4 days.",
-      "textHi": "साफ तिरपाल पर धूप में 3-4 दिन सुखाएं।"
+      "textEn": "Dry plants on clean plastic tarpaulins in sun for 3–4 days."
     },
     {
       "stepOrder": 4,
       "letter": "D",
       "titleEn": "Light Threshing & Yield",
-      "titleHi": "गहाई एवं उपज",
-      "textEn": "Beat gently with light sticks; clean with fine sieves. Expected yield: 4–7 Qtl/acre.",
-      "textHi": "हल्की लकड़ी से पीटकर साफ करें। संभावित उपज: 4–7 क्विंटल/एकड़।"
+      "textEn": "Beat gently with light sticks; clean with fine sieves. Expected yield: 4–7 Qtl/acre."
     }
   ]
 }

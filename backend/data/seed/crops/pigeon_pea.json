@@ -1,14 +1,12 @@
 {
   "id": "pigeon_pea",
   "nameEn": "Pigeon Pea (Arhar / Tur)",
-  "nameHi": "अरहर / तूर (Pigeon Pea)",
   "scientificName": "Cajanus cajan",
   "badge": "Golden Dal",
   "badgeType": "kharif",
   "varietyTag": "UPAS-120 / Asha (ICPL-87119) / BDN-711",
   "tagline": "Premier protein-rich Kharif legume dal",
   "idealSoil": "Deep Well-drained Loamy Soil",
-  "idealSoilHi": "गहरी अच्छी जल निकास वाली दोमट",
   "duration": "150–200 Days",
   "waterNeed": "Low to Medium (Drought Resilient)",
   "waterLevel": "low",
@@ -16,12 +14,13 @@
   "metricValue": "High Dietary Dal",
   "hubs": "Maharashtra, Uttar Pradesh, Karnataka, Madhya Pradesh, Gujarat",
   "descriptionEn": "Deep-rooted legume providing vital protein for millions. Highly drought tolerant with deep root penetration.",
-  "descriptionHi": "प्रमुख दलहन फसल। जलभराव के प्रति संवेदनशील है, अतः खेत में जल निकास का उचित प्रबंध रखें।",
   "avgYield": "6 - 10 Quintal / Acre (approx.)",
   "marketPrice": "₹7,500 - ₹8,800 / Qtl (approx.)",
   "imageUrl": "https://images.unsplash.com/photo-1543362906-acfc16c67564?auto=format&fit=crop&w=600&q=80",
   "imageAlt": "Green pigeon pea plants flowering with developing legume pods",
-  "category": ["kharif"],
+  "category": [
+    "kharif"
+  ],
   "popularityScore": 90,
   "profitScore": 91,
   "durationDays": 170,
@@ -30,85 +29,67 @@
   "spacing": "90 cm x 30 cm (or intercropped)",
   "harvestingIndicator": "75–80% pods turn brown and dry on the plants.",
   "introTipEn": "Ensure good surface drainage during seedling stage; apply 2% DAP foliar spray at flower initiation to improve pod setting.",
-  "introTipHi": "शुरुआती अवस्था में खेत में पानी न भरने दें; फूल आते समय 2% डीएपी का छिड़काव फलियों की संख्या बढ़ाता है।",
   "efficiencyGain": "20% higher pod setting with foliar nutrient spray",
   "micronutrientNote": "Apply Sulphur 10 kg/acre and Zinc Sulphate 5 kg/acre in basal dose.",
   "stagnationAlert": "Arhar is extremely sensitive to water stagnation; ridging is recommended.",
-  "seasons": ["kharif"],
-  "soils": ["loamy"],
+  "seasons": [
+    "kharif"
+  ],
+  "soils": [
+    "loamy"
+  ],
   "fertilizerStages": [
     {
       "stageOrder": 1,
-      "stageEn": "Basal Dose (बुवाई के समय)",
-      "stageHi": "बुवाई के समय",
+      "stageEn": "Basal Dose",
       "timingEn": "At sowing",
-      "timingHi": "बुवाई के समय",
       "fertilizerEn": "DAP + Muriate of Potash + Sulphur",
-      "fertilizerHi": "डीएपी + पोटाश + सल्फर",
       "quantityPerAcre": "DAP 35 kg + MOP 15 kg + Sulphur 10 kg / acre",
       "applicationMethod": "Drill in furrows before seeding"
     },
     {
       "stageOrder": 2,
       "stageEn": "Vegetative Micronutrient Check (35–40 DAS)",
-      "stageHi": "वानस्पतिक अवस्था",
       "timingEn": "35–40 DAS",
-      "timingHi": "35–40 दिन",
       "fertilizerEn": "Zinc Sulphate",
-      "fertilizerHi": "जिंक सल्फेट",
       "quantityPerAcre": "5 kg / acre (if deficient)",
       "applicationMethod": "Soil application along rows"
     },
     {
       "stageOrder": 3,
       "stageEn": "Flower Initiation Spray (75–80 DAS)",
-      "stageHi": "फूल आते समय",
       "timingEn": "75–80 DAS",
-      "timingHi": "75–80 दिन",
       "fertilizerEn": "2% DAP Foliar Spray",
-      "fertilizerHi": "2% डीएपी पर्णीय छिड़काव",
       "quantityPerAcre": "2 kg DAP dissolved in 100 L water",
       "applicationMethod": "Foliar mist spray during clear morning"
     }
   ],
   "irrigation": {
     "frequencyEn": "Every 15–20 Days if rain fails",
-    "frequencyHi": "वर्षा न होने पर हर 15–20 दिन",
     "criticalStagesEn": "Branching (30 DAS), Flowering (70–80 DAS), and Pod Development (100–110 DAS)",
-    "criticalStagesHi": "शाखाएं बनते समय (30 दिन), फूल आते समय (70–80 दिन), फली विकास (100–110 दिन)",
     "runtimePerZone": "2.0 hours per rotation",
     "waterConserved": "~35% via drip or broad-bed furrow",
-    "tipsEn": "Provide life-saving irrigation at flower and pod filling stage.",
-    "tipsHi": "फूल और फली भरते समय पानी की कमी न होने दें।"
+    "tipsEn": "Provide life-saving irrigation at flower and pod filling stage."
   },
   "pestsDiseases": [
     {
       "nameEn": "Gram Pod Borer",
-      "nameHi": "फली छेदक",
       "symptomsEn": "Larvae bore into pods and feed on developing seeds with body half outside.",
-      "symptomsHi": "सुंडी फलियों में छेद करके अंदर के दानों को खाती है।",
       "controlEn": "Spray Chlorantraniliprole 18.5% SC (60 ml/acre) or Flubendiamide 39.35% SC (40 ml/acre).",
-      "controlHi": "क्लोरेंट्रानिलिप्रोल (60 मिली/एकड़) या फ्लूबेंडियामाइड का छिड़काव करें।",
       "severity": "High Alert",
       "type": "pest"
     },
     {
       "nameEn": "Pod Fly",
-      "nameHi": "फली मक्खी",
       "symptomsEn": "Maggots feed inside pods without external holes; seeds turn shriveled and unmarketable.",
-      "symptomsHi": "फलियों के अंदर कीड़े दानों को खाते हैं जिससे दाने सिकुड़ जाते हैं।",
       "controlEn": "Spray Dimethoate 30% EC (1.5 ml/L) at pod setting.",
-      "controlHi": "डायमेथोएट (1.5 मिली/लीटर) का छिड़काव करें।",
       "severity": "Medium Risk",
       "type": "pest"
     },
     {
       "nameEn": "Fusarium Wilt",
-      "nameHi": "उकठा रोग",
       "symptomsEn": "Black streak on xylem vessels under bark; leaves turn yellow and drop prematurely.",
-      "symptomsHi": "तने की छाल के नीचे काली धारियां और पत्तियों का पीला पड़ना।",
       "controlEn": "Seed treatment with Trichoderma viride (10 g/kg seed) and crop rotation with sorghum.",
-      "controlHi": "ट्राइकोडर्मा से बीजोपचार करें और ज्वार के साथ फसल चक्र अपनाएं।",
       "severity": "High Alert",
       "type": "disease"
     }
@@ -118,33 +99,25 @@
       "stepOrder": 1,
       "letter": "A",
       "titleEn": "Pod Brown Check",
-      "titleHi": "पकाव जांच",
-      "textEn": "75–80% pods turn brown and dry on the plants.",
-      "textHi": "75–80% फलियां सूखकर भूरी हो जाएं।"
+      "textEn": "75–80% pods turn brown and dry on the plants."
     },
     {
       "stepOrder": 2,
       "letter": "B",
       "titleEn": "Cutting & Stacking",
-      "titleHi": "कटाई",
-      "textEn": "Cut plants with sickle 10 cm above ground and stack upright for 7–10 days.",
-      "textHi": "जमीन से 10 सेमी ऊपर काटकर बंडल बनाकर खलिहान में खड़ा रखें।"
+      "textEn": "Cut plants with sickle 10 cm above ground and stack upright for 7–10 days."
     },
     {
       "stepOrder": 3,
       "letter": "C",
       "titleEn": "Threshing & Beating",
-      "titleHi": "गहाई",
-      "textEn": "Thresh by beating with sticks or using mechanical multi-crop pulse thresher.",
-      "textHi": "थ्रेशर या डंडे से पीटकर दाने अलग करें।"
+      "textEn": "Thresh by beating with sticks or using mechanical multi-crop pulse thresher."
     },
     {
       "stepOrder": 4,
       "letter": "D",
       "titleEn": "Cleaning & Yield",
-      "titleHi": "भंडारण",
-      "textEn": "Winnow and sun-dry seeds to 10% moisture. Expected yield: 6–10 Qtl/acre.",
-      "textHi": "10% नमी पर साफ करके सुरक्षित रखें। संभावित उपज: 6–10 क्विंटल/एकड़।"
+      "textEn": "Winnow and sun-dry seeds to 10% moisture. Expected yield: 6–10 Qtl/acre."
     }
   ]
 }

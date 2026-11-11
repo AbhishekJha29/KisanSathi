@@ -1,14 +1,12 @@
 {
   "id": "fennel",
   "nameEn": "Fennel",
-  "nameHi": "सौंफ (Saunf)",
   "scientificName": "Foeniculum vulgare",
   "badge": "Aromatic Spice",
   "badgeType": "spice",
   "varietyTag": "GF-11 / RF-101 / Abu Green",
   "tagline": "Export quality green seeds with high essential oils",
   "idealSoil": "Well-drained Rich Loam",
-  "idealSoilHi": "उपजाऊ दोमट मिट्टी",
   "duration": "140–160 Days",
   "waterNeed": "Medium",
   "waterLevel": "medium",
@@ -16,12 +14,14 @@
   "metricValue": "High Anethole",
   "hubs": "Rajasthan, Gujarat, Uttar Pradesh",
   "descriptionEn": "Prized aromatic spice crop commanding steady export premiums in domestic and international markets.",
-  "descriptionHi": "उच्च गुणवत्ता वाली सुगंधित मसाला फसल। दानों की चमक और सुवास से अच्छा बाजार भाव मिलता है।",
   "avgYield": "8 - 12 Quintal / Acre (approx.)",
   "marketPrice": "₹14,000 - ₹18,000 / Qtl (approx.)",
   "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuCADjEiRDR3_qV9jZkOiPxe4tytVTjmWnDGalxFFOVadYsq9gJOgNRGX1ako6b1P-kttXjIISYmxkyKc24ZcvhOQczjGKQ5pUybAJWhHnwEVNZx1WjJM_QMA1vdSZcujuOJnziFag7QCOSRSPa0wNOJz3UslTdUVAQDA__-sBuYK3JCUKMjTIpgkwM3UdzARVe-jqj2_L0G87frwTKcstbAOoUsptiNLehpXPpYoFH4U5B_u8fUlZdB",
   "imageAlt": "Lush green feathery aromatic fennel saunf umbel flowers ready for seed maturation on an organic farm plot",
-  "category": ["rabi", "spice"],
+  "category": [
+    "rabi",
+    "spice"
+  ],
   "popularityScore": 87,
   "profitScore": 90,
   "durationDays": 150,
@@ -30,85 +30,67 @@
   "spacing": "60 cm x 45 cm",
   "harvestingIndicator": "Umbels turn light greenish-yellow; pick manually for high-grade bold saunf.",
   "introTipEn": "Transplanting 45-day nursery seedlings produces uniform bold green seeds; harvest half-ripe umbels for premium export chewing grade.",
-  "introTipHi": "45 दिन की पौध रोपने से दाने मोटे और हरे होते हैं; उत्तम चबाने योग्य सौंफ के लिए हल्के हरे छत्ते ही तोड़ें।",
   "efficiencyGain": "25% higher market price with selective picking & shade drying",
   "micronutrientNote": "Apply Sulphur 10 kg/acre basal and Zinc Sulphate spray at early flowering.",
   "stagnationAlert": "Fennel roots are susceptible to rotting in heavy waterlogged soils; maintain good drainage.",
-  "seasons": ["rabi"],
-  "soils": ["loamy"],
+  "seasons": [
+    "rabi"
+  ],
+  "soils": [
+    "loamy"
+  ],
   "fertilizerStages": [
     {
       "stageOrder": 1,
-      "stageEn": "Basal Dose (बुवाई के समय)",
-      "stageHi": "बुवाई के समय",
+      "stageEn": "Basal Dose",
       "timingEn": "At sowing",
-      "timingHi": "बुवाई के समय",
       "fertilizerEn": "DAP + Muriate of Potash",
-      "fertilizerHi": "डीएपी + पोटाश",
       "quantityPerAcre": "DAP 30 kg + MOP 20 kg / acre",
       "applicationMethod": "Drill into seedbed before planting"
     },
     {
       "stageOrder": 2,
       "stageEn": "First Top Dressing (35 DAS)",
-      "stageHi": "पहली टॉप-ड्रेसिंग (35 दिन)",
       "timingEn": "35 DAS",
-      "timingHi": "35 दिन",
       "fertilizerEn": "Neem-Coated Urea",
-      "fertilizerHi": "नीम लेपित यूरिया",
       "quantityPerAcre": "Urea 30 kg / acre",
       "applicationMethod": "Broadcast along rows followed by light hoeing"
     },
     {
       "stageOrder": 3,
       "stageEn": "Umbel Formation Stage (70–75 DAS)",
-      "stageHi": "छत्ता बनते समय",
       "timingEn": "70–75 DAS",
-      "timingHi": "70–75 दिन",
       "fertilizerEn": "Neem-Coated Urea",
-      "fertilizerHi": "नीम लेपित यूरिया",
       "quantityPerAcre": "Urea 25 kg / acre",
       "applicationMethod": "Side-dress with irrigation before flowering"
     }
   ],
   "irrigation": {
     "frequencyEn": "Every 10–12 Days in winter, 7–8 Days in spring",
-    "frequencyHi": "सर्दी में हर 10–12 दिन, बसंत में हर 7–8 दिन",
     "criticalStagesEn": "Branching (40 DAS), Flowering (75–85 DAS), and Seed Development (100–115 DAS)",
-    "criticalStagesHi": "शाखाएं फूटना (40 दिन), फूल आना (75–85 दिन), और दाना विकास (100–115 दिन)",
     "runtimePerZone": "1.5 hours per rotation",
     "waterConserved": "~30% with furrow irrigation",
-    "tipsEn": "Do not give heavy irrigation at grain maturation to preserve bright green seed color.",
-    "tipsHi": "सौंफ का हरा रंग बनाए रखने के लिए पकने के समय हल्की सिंचाई करें।"
+    "tipsEn": "Do not give heavy irrigation at grain maturation to preserve bright green seed color."
   },
   "pestsDiseases": [
     {
       "nameEn": "Powdery Mildew",
-      "nameHi": "छाछिया रोग (सफेद चूर्णी)",
       "symptomsEn": "White powdery growth covers leaves, stems, and flower umbels.",
-      "symptomsHi": "पत्तियों और छत्तों पर सफेद चूर्ण की परत।",
       "controlEn": "Dust wettable Sulphur 80 WP (2.5 g/L) or Dinocap (1 ml/L) upon first sign.",
-      "controlHi": "घुलनशील गंधक (2.5 ग्राम/लीटर) का छिड़काव करें।",
       "severity": "High Alert",
       "type": "disease"
     },
     {
       "nameEn": "Ramularia Blight",
-      "nameHi": "झुलसा रोग",
       "symptomsEn": "Small angular brown spots on leaves; stems turn blackish under high humidity.",
-      "symptomsHi": "पत्तियों पर भूरे कोणीय धब्बे और तने का काला पड़ना।",
       "controlEn": "Spray Mancozeb 75 WP (2.5 g/L) or Propiconazole 25 EC (1 ml/L).",
-      "controlHi": "मैंकोजेब या प्रोपिकोनाजोल का छिड़काव करें।",
       "severity": "Medium Risk",
       "type": "disease"
     },
     {
       "nameEn": "Thrips & Aphids",
-      "nameHi": "थ्रिप्स व माहू",
       "symptomsEn": "Insects feed on tender umbel juices, causing curling and seed deformation.",
-      "symptomsHi": "छत्तों से रस चूसना जिससे दाने टेढ़े-मेढ़े बनते हैं।",
       "controlEn": "Spray Imidacloprid 17.8 SL (0.5 ml/L) or Thiamethoxam (0.4 g/L).",
-      "controlHi": "इमिडाक्लोप्रिड या थियामेथॉक्सम का छिड़काव करें।",
       "severity": "Preventive",
       "type": "pest"
     }
@@ -118,33 +100,25 @@
       "stepOrder": 1,
       "letter": "A",
       "titleEn": "Selective Umbel Picking",
-      "titleHi": "छत्तों की तुड़ाई",
-      "textEn": "Pick umbels selectively when seeds are fully developed but still bright light green.",
-      "textHi": "पूरी तरह भरे हुए हल्के हरे छत्तों की ही तुड़ाई करें।"
+      "textEn": "Pick umbels selectively when seeds are fully developed but still bright light green."
     },
     {
       "stepOrder": 2,
       "letter": "B",
       "titleEn": "Staggered Pickings",
-      "titleHi": "आवधिक तुड़ाई",
-      "textEn": "Perform 3–4 pickings at 10–12 day intervals as umbels mature sequentially.",
-      "textHi": "10-12 दिन के अंतराल पर 3-4 बार तुड़ाई करें।"
+      "textEn": "Perform 3–4 pickings at 10–12 day intervals as umbels mature sequentially."
     },
     {
       "stepOrder": 3,
       "letter": "C",
       "titleEn": "Shade Curing for Green Color",
-      "titleHi": "छाया में सुखाना",
-      "textEn": "Dry picked umbels under shade on clean cloth to retain bright green export grade color.",
-      "textHi": "हरा रंग बनाए रखने के लिए धूप की जगह छाया में सुखाएं।"
+      "textEn": "Dry picked umbels under shade on clean cloth to retain bright green export grade color."
     },
     {
       "stepOrder": 4,
       "letter": "D",
       "titleEn": "Cleaning & Packaging",
-      "titleHi": "सफाई व पैकिंग",
-      "textEn": "Rub umbels gently by hand; winnow and pack in moisture-proof polythene-lined gunny bags. Expected yield: 8–12 Qtl/acre.",
-      "textHi": "हाथ से मसलकर साफ करें और नमी रहित बोरियों में रखें। संभावित उपज: 8–12 क्विंटल/एकड़।"
+      "textEn": "Rub umbels gently by hand; winnow and pack in moisture-proof polythene-lined gunny bags. Expected yield: 8–12 Qtl/acre."
     }
   ]
 }

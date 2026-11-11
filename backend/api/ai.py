@@ -72,6 +72,7 @@ import sqlite3
 from typing import Any, Dict, List, Optional, Tuple, Union
 
 from flask import current_app, jsonify, request, Response
+from werkzeug.exceptions import HTTPException
 
 from backend.api import api_bp
 from backend.services.advisory_engine import generate_advisory
@@ -170,6 +171,8 @@ def post_advisory_explain() -> Union[Response, Tuple[Response, int]]:
 
     try:
         payload: Optional[Any] = request.get_json(silent=True)
+    except HTTPException:
+        raise
     except Exception:
         return jsonify({"error": "Request body must be valid JSON"}), 400
 
@@ -271,6 +274,8 @@ def post_chat() -> Union[Response, Tuple[Response, int]]:
 
     try:
         payload: Optional[Any] = request.get_json(silent=True)
+    except HTTPException:
+        raise
     except Exception:
         return jsonify({"error": "Request body must be valid JSON"}), 400
 

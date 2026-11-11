@@ -4,8 +4,8 @@ Tests:
     1. Full Combinatorial Grid (18 crops x 3 seasons x 8 soils = 432 evaluations):
        - Verifies that POST /api/advisory succeeds (200 OK) for every possible
          crop x season x soil permutation.
-       - Confirms presence of all 17 keys expected by frontend ResultsPage.
-       - Guarantees non-empty English and Hindi top-level narrative strings.
+       - Confirms presence of all 16 keys expected by frontend ResultsPage.
+       - Guarantees non-empty English top-level narrative strings.
     2. Water Source, Land Unit, and Land Size Scaling Matrix (6 waterSources x 3 units x 3 sizes = 54 evaluations):
        - Evaluates 6 water sources across metric/imperial/traditional units ('acres', 'hectares', 'bigha')
        - Tests small (0.5), normal (5.0), and extreme valid large (5000.0) land sizes.
@@ -39,7 +39,6 @@ EXPECTED_RESULT_KEYS = {
     "generatedDate",
     "zoneName",
     "personalizedIntro",
-    "personalizedIntroHi",
     "efficiencyGain",
     "fertilizerPlan",
     "micronutrientNote",
@@ -122,7 +121,7 @@ def test_full_advisory_matrix_crops_x_seasons_x_soils(client: FlaskClient) -> No
 
                 # Verify narrative strings are non-empty
                 assert data["personalizedIntro"] and data["personalizedIntro"].strip()
-                assert data["personalizedIntroHi"] and data["personalizedIntroHi"].strip()
+                assert "personalizedIntroHi" not in data
                 assert data["zoneName"] and data["zoneName"].strip()
                 assert data["generatedDate"] and data["generatedDate"].strip()
                 assert data["irrigationFrequency"] and data["irrigationFrequency"].strip()
@@ -173,9 +172,20 @@ def test_scaling_matrix_water_x_unit_x_landsize(client: FlaskClient) -> None:
                 plan = data["fertilizerPlan"]
                 assert len(plan) >= 1
                 for stage in plan:
-                    assert "fertilizer" in stage
-                    assert "quantity" in stage
-                    assert stage["quantity"] and len(stage["quantity"]) > 0
+                    assert "stage" in stage
+                    assert "fertilizerName" in stage
+                    assert "qtyPerAcre" in stage
+                    assert "applicationMethod" in stage
+                    assert stage["qtyPerAcre"] and len(stage["qtyPerAcre"]) > 0
+
+                # Verify quantities scale linearly with land size using real field names
+                if unit == "acres":
+                    if size == 0.5:
+                        assert "25 kg DAP" in plan[0]["qtyPerAcre"]
+                    elif size == 5.0:
+                        assert "250 kg DAP" in plan[0]["qtyPerAcre"]
+                    elif size == 5000.0:
+                        assert "250000 kg DAP" in plan[0]["qtyPerAcre"]
 
                 # Verify runtime per zone and water conserved strings exist
                 assert "runtimePerZone" in data

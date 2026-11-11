@@ -1,14 +1,12 @@
 {
   "id": "rice",
   "nameEn": "Rice (Paddy)",
-  "nameHi": "धान / चावल (Paddy)",
   "scientificName": "Oryza sativa",
   "badge": "Kharif Staple",
   "badgeType": "kharif",
   "varietyTag": "Pusa Basmati / IR-64 / MTU-1010",
   "tagline": "The primary staple food grain crop across India",
   "idealSoil": "Clay & Clay Loam",
-  "idealSoilHi": "चिकनी एवं मटियार दोमट",
   "duration": "115–145 Days",
   "waterNeed": "High (Puddled / Canal)",
   "waterLevel": "high",
@@ -16,12 +14,14 @@
   "metricValue": "Top Food Grain",
   "hubs": "West Bengal, Uttar Pradesh, Punjab, Andhra Pradesh, Odisha, Bihar",
   "descriptionEn": "India's most extensively cultivated staple food crop. High water requirement with puddled standing water.",
-  "descriptionHi": "भारत की प्रमुख खाद्यान्न फसल। कल्ले फूटते समय और बाली निकलते समय पानी व जिंक की कमी न होने दें।",
   "avgYield": "22 - 30 Quintal / Acre (approx.)",
   "marketPrice": "₹2,300 - ₹3,100 / Qtl (approx.)",
   "imageUrl": "https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?auto=format&fit=crop&w=600&q=80",
   "imageAlt": "Lush green flooded paddy field with fresh rice seedlings",
-  "category": ["kharif", "cash"],
+  "category": [
+    "kharif",
+    "cash"
+  ],
   "popularityScore": 99,
   "profitScore": 87,
   "durationDays": 130,
@@ -30,85 +30,68 @@
   "spacing": "20 cm x 15 cm",
   "harvestingIndicator": "85% of grains in panicles turn golden yellow with grain moisture around 18-20%.",
   "introTipEn": "Maintain shallow standing water (2–3 cm) during tillering and panicle initiation. Avoid deep stagnant water which suppresses tillering.",
-  "introTipHi": "कल्ले फूटने और बाली निकलने के समय खेत में 2-3 सेमी उथला पानी बनाए रखें। ज्यादा गहरा पानी कल्ले निकलने से रोकता है।",
   "efficiencyGain": "25% water saving with alternate wetting and drying (AWD)",
   "micronutrientNote": "Zinc deficiency (Khaira disease) shows rusty brown spots on leaves. Spray 0.5% Zinc Sulphate + 0.25% Lime.",
   "stagnationAlert": "Drain excess water during torrential monsoon storms to prevent submergence of young tillers.",
-  "seasons": ["kharif"],
-  "soils": ["clay", "loamy"],
+  "seasons": [
+    "kharif"
+  ],
+  "soils": [
+    "clay",
+    "loamy"
+  ],
   "fertilizerStages": [
     {
       "stageOrder": 1,
-      "stageEn": "Basal Dose (रोपाई के समय)",
-      "stageHi": "अंतिम जुताई / रोपाई",
+      "stageEn": "Basal Dose",
       "timingEn": "At transplanting",
-      "timingHi": "रोपाई के समय",
       "fertilizerEn": "DAP + Muriate of Potash + Zinc Sulphate",
-      "fertilizerHi": "डीएपी + पोटाश + जिंक सल्फेट",
       "quantityPerAcre": "50 kg DAP + 25 kg MOP + 10 kg ZnSO4",
       "applicationMethod": "Incorporate into wet puddled soil during final puddling"
     },
     {
       "stageOrder": 2,
       "stageEn": "First Top Dressing (20–25 DAT / Tillering)",
-      "stageHi": "पहली टॉप-ड्रेसिंग (कल्ले निकलते समय)",
       "timingEn": "20–25 DAT",
-      "timingHi": "20–25 दिन",
       "fertilizerEn": "Neem-Coated Urea",
-      "fertilizerHi": "नीम लेपित यूरिया",
       "quantityPerAcre": "35 kg Urea",
       "applicationMethod": "Broadcast in shallow standing water"
     },
     {
       "stageOrder": 3,
       "stageEn": "Second Top Dressing (45–50 DAT / Panicle Initiation)",
-      "stageHi": "दूसरी टॉप-ड्रेसिंग (बाली आरंभ)",
       "timingEn": "45–50 DAT",
-      "timingHi": "45–50 दिन",
       "fertilizerEn": "Neem-Coated Urea + MOP",
-      "fertilizerHi": "नीम लेपित यूरिया + पोटाश",
       "quantityPerAcre": "30 kg Urea + 10 kg MOP",
       "applicationMethod": "Broadcast evenly across the flooded plot"
     }
   ],
   "irrigation": {
     "frequencyEn": "Maintain 2–5 cm water layer (Drain 10 days before harvest)",
-    "frequencyHi": "2–5 सेमी पानी बनाए रखें (कटाई से 10 दिन पहले निकाल दें)",
     "criticalStagesEn": "Transplanting to Tillering (1–30 DAT), Panicle Initiation & Flowering (45–70 DAT), Milk to Dough Stage (75–90 DAT)",
-    "criticalStagesHi": "रोपाई से कल्ले फूटना (1–30 दिन), बाली निकलना व फूल (45–70 दिन), दुग्धावस्था (75–90 दिन)",
     "runtimePerZone": "Continuous canal / tubewell rotation",
     "waterConserved": "~25% via AWD method",
-    "tipsEn": "Drain excess water during torrential monsoon storms to prevent submergence of young tillers.",
-    "tipsHi": "भारी बारिश के समय खेत से अतिरिक्त पानी निकाल दें।"
+    "tipsEn": "Drain excess water during torrential monsoon storms to prevent submergence of young tillers."
   },
   "pestsDiseases": [
     {
       "nameEn": "Yellow Stem Borer",
-      "nameHi": "पीला तना छेदक",
       "symptomsEn": "Dead heart at vegetative stage and white earheads (chaffy panicles) at maturity.",
-      "symptomsHi": "कल्ले सूखना (डेड हार्ट) और बालियों का सफेद पड़ना।",
       "controlEn": "Apply Cartap Hydrochloride 4G (10 kg/acre) or spray Chlorantraniliprole 18.5% SC (60 ml/acre).",
-      "controlHi": "कार्टाप हाइड्रोक्लोराइड 4G (10 किग्रा/एकड़) या क्लोरेंट्रानिलिप्रोल 18.5% SC (60 मिली/एकड़) डालें।",
       "severity": "High Alert",
       "type": "pest"
     },
     {
       "nameEn": "Brown Planthopper (BPH)",
-      "nameHi": "भूरा फुदका (BPH)",
       "symptomsEn": "Circular hopper burn patches of dried straw-colored plants.",
-      "symptomsHi": "खेत में पौधों का सूखकर भूरा पड़ना (हॉपर बर्न)।",
       "controlEn": "Drain standing water and spray Pymetrozine 50% WDG (120 g/acre) directing spray at plant bases.",
-      "controlHi": "पानी निकालें और पाइमेट्रोज़िन 50% WDG (120 ग्राम/एकड़) का पौधों की जड़ पर छिड़काव करें।",
       "severity": "Medium Risk",
       "type": "pest"
     },
     {
       "nameEn": "Bacterial Leaf Blight",
-      "nameHi": "जीवाणु झुलसा रोग",
       "symptomsEn": "Wavy translucent lesions starting from leaf tips turning grayish-white.",
-      "symptomsHi": "पत्तियों के किनारों से शुरू होकर सूखने वाले धब्बे।",
       "controlEn": "Spray Copper Oxychloride 50 WP (500 g) + Streptocycline (18 g) in 200 L water/acre.",
-      "controlHi": "कॉपर ऑक्सीक्लोराइड (500 ग्राम) + स्ट्रेप्टोसाइक्लिन (18 ग्राम) का 200 लीटर पानी में छिड़काव करें।",
       "severity": "Preventive",
       "type": "disease"
     }
@@ -118,33 +101,25 @@
       "stepOrder": 1,
       "letter": "A",
       "titleEn": "Ripening Check",
-      "titleHi": "पकाव की जांच",
-      "textEn": "Harvest when 85% of grains turn golden and lower panicle grains are firm.",
-      "textHi": "85% दाने सुनहरे हो जाएं तब कटाई करें।"
+      "textEn": "Harvest when 85% of grains turn golden and lower panicle grains are firm."
     },
     {
       "stepOrder": 2,
       "letter": "B",
       "titleEn": "Water Drainage",
-      "titleHi": "पानी निकासी",
-      "textEn": "Completely drain field water 7–10 days before combine or manual harvest.",
-      "textHi": "कटाई से 7-10 दिन पहले खेत का पानी पूरी तरह निकाल दें।"
+      "textEn": "Completely drain field water 7–10 days before combine or manual harvest."
     },
     {
       "stepOrder": 3,
       "letter": "C",
       "titleEn": "Threshing & Winnowing",
-      "titleHi": "गहाई एवं ओसाई",
-      "textEn": "Thresh harvested bundles immediately to avoid grain discoloration.",
-      "textHi": "कटाई के तुरंत बाद थ्रेशिंग करें ताकि दाने खराब न हों।"
+      "textEn": "Thresh harvested bundles immediately to avoid grain discoloration."
     },
     {
       "stepOrder": 4,
       "letter": "D",
       "titleEn": "Drying for Storage",
-      "titleHi": "सुखाना एवं भंडारण",
-      "textEn": "Dry paddy on clean tarpaulin to 13–14% moisture. Expected yield: 22–30 Qtl/acre.",
-      "textHi": "दानों को 13-14% नमी तक सुखाकर भंडारित करें। संभावित उपज: 22–30 क्विंटल/एकड़।"
+      "textEn": "Dry paddy on clean tarpaulin to 13–14% moisture. Expected yield: 22–30 Qtl/acre."
     }
   ]
 }

@@ -131,3 +131,9 @@ def set(key: str, value: Any, ttl_seconds: Optional[int] = None) -> None:
 def clear() -> None:
     """Reset the default application cache."""
     default_cache.clear()
+
+
+def reset_for_tests() -> None:
+    """Reset the default application cache for testing."""
+    default_cache.clear()
+

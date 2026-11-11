@@ -103,3 +103,9 @@ def allow(key: str, limit: int, window_seconds: int = 60) -> bool:
 def reset() -> None:
     """Reset the default application rate limiter state."""
     default_limiter.reset()
+
+
+def reset_for_tests() -> None:
+    """Reset the default application rate limiter state for tests."""
+    default_limiter.reset()
+

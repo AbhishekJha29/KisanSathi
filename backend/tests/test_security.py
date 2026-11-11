@@ -184,7 +184,7 @@ def test_unknown_api_route_returns_404_json(client: FlaskClient) -> None:
 # ==============================================================================
 
 def test_static_route_path_traversal_blocked(client: FlaskClient) -> None:
-    """Verify that path traversal attempts against static routes are strictly blocked with 404."""
+    """Verify that path traversal attempts against static routes never leak file contents."""
     traversal_paths = [
         "/../backend/config.py",
         "/../../backend/app.py",
@@ -197,11 +197,75 @@ def test_static_route_path_traversal_blocked(client: FlaskClient) -> None:
     ]
     for path in traversal_paths:
         res = client.get(path)
-        assert res.status_code in (404, 405)
+        assert res.status_code in (200, 400, 404, 405)
         # Verify sensitive file content was NOT returned
         body = res.get_data(as_text=True)
         assert "class Config" not in body
+        assert "GEMINI_API_KEY" not in body
         assert "create_app" not in body
+        assert "[fonts]" not in body
+        assert "root:" not in body
+
+
+def test_static_route_with_real_dist_folder(tmp_path: Path, seeded_db_path: str) -> None:
+    """Verify static route serving, SPA routing, and traversal protection with a real dist folder."""
+    dist_dir = tmp_path / "test_dist"
+    dist_dir.mkdir(parents=True, exist_ok=True)
+    assets_dir = dist_dir / "assets"
+    assets_dir.mkdir(parents=True, exist_ok=True)
+
+    index_file = dist_dir / "index.html"
+    index_content = "<!DOCTYPE html><html><body><h1>KisanSathi SPA</h1></body></html>"
+    index_file.write_text(index_content, encoding="utf-8")
+
+    js_file = assets_dir / "app.js"
+    js_content = "console.log('KisanSathi bundle loaded');"
+    js_file.write_text(js_content, encoding="utf-8")
+
+    app = create_app(
+        config_overrides={
+            "DATABASE_PATH": seeded_db_path,
+            "TESTING": True,
+            "FRONTEND_DIST": str(dist_dir.resolve()),
+        }
+    )
+
+    with app.test_client() as dist_client:
+        # 1. GET / returns the index.html content
+        res_root = dist_client.get("/")
+        assert res_root.status_code == 200
+        assert "KisanSathi SPA" in res_root.get_data(as_text=True)
+
+        # 2. GET /assets/app.js returns the file
+        res_js = dist_client.get("/assets/app.js")
+        assert res_js.status_code == 200
+        assert "KisanSathi bundle loaded" in res_js.get_data(as_text=True)
+
+        # 3. GET /some/spa/route returns index.html
+        res_spa = dist_client.get("/some/spa/route")
+        assert res_spa.status_code == 200
+        assert "KisanSathi SPA" in res_spa.get_data(as_text=True)
+
+        # 4. Traversal paths never return config.py contents
+        traversal_paths = [
+            "/../backend/config.py",
+            "/../../backend/app.py",
+            "/%2e%2e/backend/config.py",
+            "/%2e%2e%2fbackend%2fconfig.py",
+            "/assets/../../backend/database.py",
+            "/..\\backend\\config.py",
+            "/C:/Windows/win.ini",
+            "//etc/passwd",
+        ]
+        for path in traversal_paths:
+            res_trav = dist_client.get(path)
+            assert res_trav.status_code in (200, 400, 404, 405)
+            body = res_trav.get_data(as_text=True)
+            assert "class Config" not in body
+            assert "GEMINI_API_KEY" not in body
+            assert "create_app" not in body
+            assert "[fonts]" not in body
+            assert "root:" not in body
 
 
 # ==============================================================================

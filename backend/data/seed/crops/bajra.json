@@ -1,14 +1,12 @@
 {
   "id": "bajra",
   "nameEn": "Bajra (Pearl Millet)",
-  "nameHi": "बाजरा (Pearl Millet)",
   "scientificName": "Pennisetum glaucum",
   "badge": "Climate Resilient",
   "badgeType": "kharif",
   "varietyTag": "HHB-67 / GHB-538 / Super Millet",
   "tagline": "Drought-hardy nutrient powerhouse",
   "idealSoil": "Sandy & Light Alluvial",
-  "idealSoilHi": "हल्की रेतीली व दोमट मिट्टी",
   "duration": "75–85 Days",
   "waterNeed": "Very Low (Drought Hardy)",
   "waterLevel": "very-low",
@@ -16,12 +14,14 @@
   "metricValue": "Dual Fodder Value",
   "hubs": "Rajasthan, Uttar Pradesh, Haryana, Gujarat, Maharashtra",
   "descriptionEn": "Traditional climate-smart superfood with excellent calcium & iron content plus high green fodder value.",
-  "descriptionHi": "कम पानी और सूखे में भी भरपूर पैदावार देने वाला पौष्टिक मोटा अनाज (श्री अन्न)।",
   "avgYield": "12 - 16 Quintal / Acre (approx.)",
   "marketPrice": "₹2,350 - ₹2,600 / Qtl (approx.)",
   "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAqHe2nVL-xIFwmgY6g9ZXyTnh1UZUPHA4aCeR7N3aRWxGiMcuvnBDv2Rwam4NQ_YRlDgqHHYas133zVqPQohFVQZKSfEA00mUwJYkHBNFlewEk1gQbq3p210Erc-Jj6APiKj7NuTM77iy_uAkzEWMNAKscP8iibgO5E1s80S9t-DWCo-mdAy2iaUX0Y_qfQjblRPe6vH50gvaZmHhnMlZwvBgWIjKbWk21VWOiyvgjscIGSGdAlCJF",
   "imageAlt": "Tall healthy pearl millet bajra crop stalks with heavy compact cylindrical grain heads standing proud under sun",
-  "category": ["kharif", "summer"],
+  "category": [
+    "kharif",
+    "summer"
+  ],
   "popularityScore": 86,
   "profitScore": 78,
   "durationDays": 80,
@@ -30,85 +30,69 @@
   "spacing": "45 cm x 15 cm",
   "harvestingIndicator": "Earheads turn golden brown and seeds harden to fingernail pressure.",
   "introTipEn": "Thin seedlings at 15–20 DAS to maintain 15 cm plant spacing; top-dress Urea right after a light monsoon shower for fast grain head development.",
-  "introTipHi": "15-20 दिन पर पौधों को छांटें (Thinning) और बारिश के तुरंत बाद यूरिया की टॉप-ड्रेसिंग करें।",
   "efficiencyGain": "18% higher earhead weight with timely thinning",
   "micronutrientNote": "Apply Zinc Sulphate 5 kg/acre if leaves show pale green striping.",
   "stagnationAlert": "Bajra thrives in well-drained soils; avoid stagnant water during early seedling phase.",
-  "seasons": ["kharif", "zaid"],
-  "soils": ["sandy", "alluvial"],
+  "seasons": [
+    "kharif",
+    "zaid"
+  ],
+  "soils": [
+    "sandy",
+    "alluvial"
+  ],
   "fertilizerStages": [
     {
       "stageOrder": 1,
-      "stageEn": "Basal Dose (बुवाई के समय)",
-      "stageHi": "बुवाई के समय",
+      "stageEn": "Basal Dose",
       "timingEn": "At sowing",
-      "timingHi": "बुवाई के समय",
       "fertilizerEn": "DAP + Urea",
-      "fertilizerHi": "डीएपी + यूरिया",
       "quantityPerAcre": "DAP 25 kg + Urea 15 kg / acre",
       "applicationMethod": "Drill into moist seedbed before seeding"
     },
     {
       "stageOrder": 2,
       "stageEn": "Top Dressing (30 DAS / Post-Thinning)",
-      "stageHi": "छंटाई के बाद (30 दिन)",
       "timingEn": "30 DAS",
-      "timingHi": "30 दिन",
       "fertilizerEn": "Neem-Coated Urea",
-      "fertilizerHi": "नीम लेपित यूरिया",
       "quantityPerAcre": "Urea 25 kg / acre",
       "applicationMethod": "Broadcast along rows after rain or irrigation"
     },
     {
       "stageOrder": 3,
       "stageEn": "Micronutrient Support (Booting Stage)",
-      "stageHi": "बाली निकलते समय",
       "timingEn": "45–50 DAS",
-      "timingHi": "45–50 दिन",
       "fertilizerEn": "Zinc Sulphate Foliar Spray (0.5%)",
-      "fertilizerHi": "जिंक सल्फेट छिड़काव",
       "quantityPerAcre": "500 g ZnSO4 + 250 g Lime in 100 L water",
       "applicationMethod": "Foliar spray to prevent grain barrenness"
     }
   ],
   "irrigation": {
     "frequencyEn": "Mostly rainfed; 1–2 life-saving irrigations during dry spells",
-    "frequencyHi": "मुख्यतः वर्षा आधारित; सूखे में 1–2 जीवनरक्षक सिंचाई",
     "criticalStagesEn": "Tillering (25–30 DAS) and Flowering / Grain Filling (45–60 DAS)",
-    "criticalStagesHi": "कल्ले निकलते समय (25–30 दिन) और फूल/दाना भराव (45–60 दिन)",
     "runtimePerZone": "1.5 hours per rotation",
     "waterConserved": "~60% less water than rice",
-    "tipsEn": "Ensure soil moisture during flowering to prevent chaffy earheads.",
-    "tipsHi": "बाली में दाना भरते समय सूखे से बचाएं।"
+    "tipsEn": "Ensure soil moisture during flowering to prevent chaffy earheads."
   },
   "pestsDiseases": [
     {
       "nameEn": "Downy Mildew (Green Ear)",
-      "nameHi": "हरित बाली रोग (जोगिया)",
       "symptomsEn": "Leaves turn chlorotic white; earheads transform into twisted green leafy structures.",
-      "symptomsHi": "पत्तियां सफेद होना और बालियों का हरी पत्तियों में बदल जाना।",
       "controlEn": "Seed treatment with Metalaxyl (Apron 35 SD at 6 g/kg); rogue out infected plants early.",
-      "controlHi": "मेटालेक्सिल से बीजोपचार करें और ग्रसित पौधों को उखाड़कर नष्ट करें।",
       "severity": "High Alert",
       "type": "disease"
     },
     {
       "nameEn": "Ergot (Claviceps)",
-      "nameHi": "अरगट रोग (गोंदिया)",
       "symptomsEn": "Pinkish honey-like droplets exude from spikelets, later turning into dark sclerotial bodies.",
-      "symptomsHi": "बालियों से मीठा चिपचिपा रस निकलना जो बाद में काले दानों में बदलता है।",
       "controlEn": "Soak seed in 20% salt solution; spray Mancozeb 75 WP (2 g/L) at boot stage.",
-      "controlHi": "नमक के घोल (20%) में बीज डुबोएं और मैंकोजेब का छिड़काव करें।",
       "severity": "Medium Risk",
       "type": "disease"
     },
     {
       "nameEn": "Stem Borer",
-      "nameHi": "तना छेदक",
       "symptomsEn": "Central shoot dies (dead heart) in young plants; bored holes on stems.",
-      "symptomsHi": "तने के अंदर सुराख और कल्ले का सूखना।",
       "controlEn": "Whorl application of Cartap Hydrochloride 4G at 4 kg/acre.",
-      "controlHi": "कार्टाप 4G का पोंगे में प्रयोग करें।",
       "severity": "Preventive",
       "type": "pest"
     }
@@ -118,33 +102,25 @@
       "stepOrder": 1,
       "letter": "A",
       "titleEn": "Earhead Maturity",
-      "titleHi": "बालियों की परिपक्वता",
-      "textEn": "Earheads turn golden brown and seeds harden to fingernail pressure.",
-      "textHi": "बालियां सुनहरी-भूरी हो जाएं और दाना नाखून से न दबे।"
+      "textEn": "Earheads turn golden brown and seeds harden to fingernail pressure."
     },
     {
       "stepOrder": 2,
       "letter": "B",
       "titleEn": "Earhead Cutting",
-      "titleHi": "बालियां काटना",
-      "textEn": "Cut mature earheads first with sickle, leaving stalks for cattle stover.",
-      "textHi": "बालियां अलग काटें और कड़बी को चारे के लिए बाद में काटें।"
+      "textEn": "Cut mature earheads first with sickle, leaving stalks for cattle stover."
     },
     {
       "stepOrder": 3,
       "letter": "C",
       "titleEn": "Drying on Threshing Floor",
-      "titleHi": "धूप में सुखाना",
-      "textEn": "Sun-dry earheads for 4–5 days on clean threshing floor.",
-      "textHi": "खलिहान में 4-5 दिन अच्छी तरह सुखाएं।"
+      "textEn": "Sun-dry earheads for 4–5 days on clean threshing floor."
     },
     {
       "stepOrder": 4,
       "letter": "D",
       "titleEn": "Threshing & Stover Storage",
-      "titleHi": "थ्रेशिंग व चारा भंडारण",
-      "textEn": "Thresh with tractor or mechanical thresher; stack nutritious stover (karbi) dry. Expected yield: 12–16 Qtl/acre.",
-      "textHi": "थ्रेशर से गहाई करें और पौष्टिक कड़बी को संभालकर रखें। संभावित उपज: 12–16 क्विंटल/एकड़।"
+      "textEn": "Thresh with tractor or mechanical thresher; stack nutritious stover (karbi) dry. Expected yield: 12–16 Qtl/acre."
     }
   ]
 }

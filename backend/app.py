@@ -29,10 +29,17 @@ if str(_PROJECT_ROOT) not in sys.path:
 
 from flask import Flask, abort, g, jsonify, request, send_from_directory, Response
 from flask_cors import CORS
+from werkzeug.routing import PathConverter
 
 from backend.config import Config
 from backend.database import get_connection, init_db
 from backend.api import api_bp
+
+
+class NonApiPathConverter(PathConverter):
+    """Path converter that matches any path NOT starting with 'api/' or equal to 'api'."""
+
+    regex = r"(?!api(?:\/|$)).*"
 
 
 def create_app(config_overrides: Optional[Dict[str, Any]] = None) -> Flask:
@@ -65,6 +72,7 @@ def create_app(config_overrides: Optional[Dict[str, Any]] = None) -> Flask:
     )
 
     app: Flask = Flask(__name__)
+    app.url_map.converters["non_api_path"] = NonApiPathConverter
     app.config.from_object(Config)
     if config_overrides:
         app.config.update(config_overrides)
@@ -102,8 +110,8 @@ def create_app(config_overrides: Optional[Dict[str, Any]] = None) -> Flask:
         """Record request start time and reject non-JSON POST requests on API routes."""
         g.start_time = time.perf_counter()
 
-        # Reject non-JSON POST/PUT/PATCH requests on /api routes with 415
-        if request.path.startswith("/api/") or request.path == "/api":
+        # Reject non-JSON POST/PUT/PATCH requests on /api routes with 415 only when a real route matched
+        if request.url_rule is not None and (request.path.startswith("/api/") or request.path == "/api"):
             if request.method in ("POST", "PUT", "PATCH"):
                 content_type = request.content_type or ""
                 if not content_type.lower().startswith("application/json"):
@@ -155,7 +163,15 @@ def create_app(config_overrides: Optional[Dict[str, Any]] = None) -> Flask:
     def handle_method_not_allowed(error: Any) -> Union[Response, Tuple[str, int]]:
         """Return structured JSON error for 405 Method Not Allowed on /api routes."""
         if request.path.startswith("/api/") or request.path == "/api":
-            return jsonify({"error": "Method not allowed"}), 405
+            resp = jsonify({"error": "Method not allowed"})
+            resp.status_code = 405
+            if hasattr(error, "valid_methods") and error.valid_methods:
+                resp.headers["Allow"] = ", ".join(sorted(error.valid_methods))
+            elif hasattr(error, "get_headers"):
+                for k, v in error.get_headers():
+                    if k.lower() == "allow":
+                        resp.headers["Allow"] = v
+            return resp
         return "Method not allowed", 405
 
     @app.errorhandler(413)
@@ -235,14 +251,9 @@ def create_app(config_overrides: Optional[Dict[str, Any]] = None) -> Flask:
 
     # 8. Single-Page Application (SPA) catch-all route
     @app.route("/", defaults={"path": ""})
-    @app.route("/<path:path>", methods=["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"])
+    @app.route("/<non_api_path:path>", methods=["GET", "HEAD"])
     def catch_all_routes(path: str) -> Union[Response, Tuple[str, int, dict]]:
         """Catch-all route handling root requests, static files, and SPA client routing."""
-        # Unmatched API routes must not serve frontend HTML; trigger 404 JSON handler
-        if path.startswith("api/") or path == "api":
-            abort(404)
-        if request.method not in ("GET", "HEAD"):
-            abort(405)
         return _serve_dist_file(path)
 
     return app

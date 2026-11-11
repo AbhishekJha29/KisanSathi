@@ -1,14 +1,12 @@
 {
   "id": "wheat",
   "nameEn": "Wheat",
-  "nameHi": "गेहूं (Wheat)",
   "scientificName": "Triticum aestivum",
   "badge": "Rabi Staple",
   "badgeType": "rabi",
   "varietyTag": "HD-2967 / PBW-343 / Lokwan",
   "tagline": "Major Rabi cereal crop feeding the nation",
   "idealSoil": "Well-drained Loamy & Alluvial",
-  "idealSoilHi": "उपजाऊ दोमट एवं जलोढ़ मिट्टी",
   "duration": "110–130 Days",
   "waterNeed": "Medium (4–6 Irrigations)",
   "waterLevel": "medium",
@@ -16,12 +14,14 @@
   "metricValue": "High Demand",
   "hubs": "Punjab, Haryana, Uttar Pradesh, Madhya Pradesh, Rajasthan",
   "descriptionEn": "India's premier winter food grain crop. Requires cool winter during vegetative growth and warm dry weather during ripening.",
-  "descriptionHi": "भारत की प्रमुख रबी खाद्यान्न फसल। कल्ले फूटते समय और दाना भरते समय पर्याप्त नमी व खाद जरूरी है।",
   "avgYield": "18 - 24 Quintal / Acre (approx.)",
   "marketPrice": "₹2,275 - ₹2,450 / Qtl (approx.)",
   "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD4xm5fTpRz2tXPmffI55gBXZbEHdnVzhpZosxwKY8UhXwJhOlhi6xPwAO_St_sXT3cjs9XJtxRy_FqF5DOKvKNfSVx11wMQF6QU2KFz5VhSxjtqMb0eZcjZ9nVUQyrMgd0C4WhdlwIDbSr7G20EocWTbQX3Nhy5artkh4YfZlUb8Le4z-pUVZ24DtuJGOP51gsgjwHr6rbjIKTZfjqrjSLSkugE5Sn1-g3BwS6MOIKFs9v-HMLcOfj",
   "imageAlt": "Golden amber ripe wheat fields swaying under bright blue winter sky",
-  "category": ["rabi", "cash"],
+  "category": [
+    "rabi",
+    "cash"
+  ],
   "popularityScore": 97,
   "profitScore": 88,
   "durationDays": 120,
@@ -30,85 +30,68 @@
   "spacing": "20–22.5 cm row spacing",
   "harvestingIndicator": "Grains turn hard and golden; straw turns yellow and brittle with moisture below 12%.",
   "introTipEn": "Crown Root Initiation (CRI at 21 DAS) is the most critical stage. Never delay the first irrigation and top-dressing dose of Urea.",
-  "introTipHi": "मुकुट जड़ निकलने की अवस्था (CRI - बुवाई के 21 दिन बाद) अति संवेदनशील है। पहली सिंचाई और यूरिया की पहली टॉप-ड्रेसिंग में देरी न करें।",
   "efficiencyGain": "20% yield boost with timely CRI irrigation",
   "micronutrientNote": "Zinc deficiency causes yellowing between leaf veins. Spray 0.5% ZnSO4 + 0.25% Lime if deficient.",
   "stagnationAlert": "Avoid stagnant water for more than 24 hours. Prolonged waterlogging suffocates root respiration and turns leaves yellow.",
-  "seasons": ["rabi"],
-  "soils": ["loamy", "alluvial"],
+  "seasons": [
+    "rabi"
+  ],
+  "soils": [
+    "loamy",
+    "alluvial"
+  ],
   "fertilizerStages": [
     {
       "stageOrder": 1,
-      "stageEn": "Basal Dose (बुवाई के समय)",
-      "stageHi": "बुवाई के समय",
+      "stageEn": "Basal Dose",
       "timingEn": "At sowing",
-      "timingHi": "बुवाई के समय",
       "fertilizerEn": "DAP + Muriate of Potash + Zinc Sulphate",
-      "fertilizerHi": "डीएपी + पोटाश + जिंक सल्फेट",
       "quantityPerAcre": "50 kg DAP + 20 kg MOP + 10 kg ZnSO4",
       "applicationMethod": "Drill 4–5 cm below seed level during sowing"
     },
     {
       "stageOrder": 2,
       "stageEn": "First Top Dressing (21–25 DAS / CRI)",
-      "stageHi": "पहली सिंचाई (CRI अवस्था)",
       "timingEn": "21–25 DAS",
-      "timingHi": "21–25 दिन",
       "fertilizerEn": "Neem-Coated Urea",
-      "fertilizerHi": "नीम लेपित यूरिया",
       "quantityPerAcre": "35 kg Urea",
       "applicationMethod": "Broadcast just before first irrigation"
     },
     {
       "stageOrder": 3,
       "stageEn": "Second Top Dressing (50–55 DAS / Tillering)",
-      "stageHi": "दूसरी सिंचाई (कल्ले फूटते समय)",
       "timingEn": "50–55 DAS",
-      "timingHi": "50–55 दिन",
       "fertilizerEn": "Neem-Coated Urea + Water-Soluble NPK 19:19:19",
-      "fertilizerHi": "नीम लेपित यूरिया + घुलनशील एनपीके 19:19:19",
       "quantityPerAcre": "35 kg Urea",
       "applicationMethod": "Broadcast with irrigation; spray 19:19:19 at 1 kg/acre"
     }
   ],
   "irrigation": {
     "frequencyEn": "Every 18–22 Days (4–5 irrigations)",
-    "frequencyHi": "हर 18–22 दिन (4–5 सिंचाई)",
     "criticalStagesEn": "Crown Root Initiation (20–25 DAS), Booting & Flowering (70–85 DAS), Grain Filling (95–105 DAS)",
-    "criticalStagesHi": "मुकुट जड़ निकलने की अवस्था (20–25 दिन), फूल व बाली (70–85 दिन), दाना भराव (95–105 दिन)",
     "runtimePerZone": "2.5 hours per rotation",
     "waterConserved": "~30% via furrow / sprinkler",
-    "tipsEn": "Avoid stagnant water for more than 24 hours.",
-    "tipsHi": "खेत में 24 घंटे से अधिक पानी न रुकने दें।"
+    "tipsEn": "Avoid stagnant water for more than 24 hours."
   },
   "pestsDiseases": [
     {
       "nameEn": "Yellow / Brown Rust",
-      "nameHi": "पीला / भूरा रतुआ (गेरुआ)",
       "symptomsEn": "Yellow to orange-brown powdery pustules arranged in stripes on leaves.",
-      "symptomsHi": "पत्तियों पर धारियों में पीले-भूरे रंग के चूर्ण जैसे दाने।",
       "controlEn": "Spray Propiconazole 25% EC (1 ml/L water) at the first notice of pustules.",
-      "controlHi": "प्रोपिकोनाजोल 25% EC (1 मिली/लीटर पानी) का छिड़काव करें।",
       "severity": "High Alert",
       "type": "disease"
     },
     {
       "nameEn": "Loose Smut",
-      "nameHi": "कंडुआ रोग",
       "symptomsEn": "Earheads turn into black powdery fungal mass instead of grains.",
-      "symptomsHi": "बालियों में दानों के स्थान पर काला चूर्ण बन जाता है।",
       "controlEn": "Seed treatment with Carboxin + Thiram (2.5 g/kg seed) before sowing.",
-      "controlHi": "कार्बोक्सिन + थिरम (2.5 ग्राम/किग्रा बीज) से बीजोपचार करें।",
       "severity": "Medium Risk",
       "type": "disease"
     },
     {
       "nameEn": "Aphids / Termites",
-      "nameHi": "माहू / दीमक",
       "symptomsEn": "Tiny green insects suck sap from young leaves and developing ears.",
-      "symptomsHi": "छोटे हरे कीट कोमल पत्तियों और बालियों से रस चूसते हैं।",
       "controlEn": "Spray Imidacloprid 17.8% SL (0.5 ml/L water) if population exceeds 10 aphids/tiller.",
-      "controlHi": "इमिडाक्लोप्रिड 17.8% SL (0.5 मिली/लीटर पानी) का छिड़काव करें।",
       "severity": "Preventive",
       "type": "pest"
     }
@@ -118,33 +101,25 @@
       "stepOrder": 1,
       "letter": "A",
       "titleEn": "Maturity Testing",
-      "titleHi": "परिपक्वता जांच",
-      "textEn": "Grain moisture should drop below 12% and straw becomes dry golden yellow.",
-      "textHi": "दानों में नमी 12% से कम और भूसा सुनहरा पीला होना चाहिए।"
+      "textEn": "Grain moisture should drop below 12% and straw becomes dry golden yellow."
     },
     {
       "stepOrder": 2,
       "letter": "B",
       "titleEn": "Combine Harvesting",
-      "titleHi": "कटाई",
-      "textEn": "Harvest during dry sunny hours; ensure combine reel speed is optimized to minimize grain shattering.",
-      "textHi": "धूप वाले समय में कटाई करें ताकि दाने न झड़ें।"
+      "textEn": "Harvest during dry sunny hours; ensure combine reel speed is optimized to minimize grain shattering."
     },
     {
       "stepOrder": 3,
       "letter": "C",
       "titleEn": "Cleaning & Grading",
-      "titleHi": "सफाई एवं ग्रेडिंग",
-      "textEn": "Separate chaff and broken kernels using mechanical winnowing or seed graders.",
-      "textHi": "भूसे और टूटे दानों को अलग करें।"
+      "textEn": "Separate chaff and broken kernels using mechanical winnowing or seed graders."
     },
     {
       "stepOrder": 4,
       "letter": "D",
       "titleEn": "Target Yield Storage",
-      "titleHi": "भंडारण",
-      "textEn": "Store in moisture-proof bins treated with Celphos tablets. Expected yield: 18–24 Qtl/acre.",
-      "textHi": "नमी रहित कोठियों में सुरक्षित रखें। संभावित उपज: 18–24 क्विंटल/एकड़।"
+      "textEn": "Store in moisture-proof bins treated with Celphos tablets. Expected yield: 18–24 Qtl/acre."
     }
   ]
 }

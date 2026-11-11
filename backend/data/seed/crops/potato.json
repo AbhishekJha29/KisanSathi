@@ -1,14 +1,12 @@
 {
   "id": "potato",
   "nameEn": "Potato",
-  "nameHi": "आलू (Potato)",
   "scientificName": "Solanum tuberosum",
   "badge": "Horticulture King",
   "badgeType": "rabi",
   "varietyTag": "Kufri Jyoti / Kufri Pukhraj / Chipsona",
   "tagline": "High-yielding short-duration vegetable cash crop",
   "idealSoil": "Well-drained Sandy Loam",
-  "idealSoilHi": "भुरभुरी बलुई दोमट मिट्टी",
   "duration": "80–105 Days",
   "waterNeed": "High (Frequent Light Irrigations)",
   "waterLevel": "high",
@@ -16,12 +14,14 @@
   "metricValue": "High Tonnage",
   "hubs": "Uttar Pradesh, West Bengal, Bihar, Punjab, Gujarat",
   "descriptionEn": "India's most widely consumed vegetable tuber crop. Excellent cash returns with proper earthing up and blight management.",
-  "descriptionHi": "सर्वाधिक लोकप्रिय कंदवर्गीय नकदी फसल। कंद विकास (Tuberization) के समय हल्की सिंचाई और मिट्टी चढ़ाना जरूरी है।",
   "avgYield": "90 - 130 Quintal / Acre (approx.)",
   "marketPrice": "₹1,100 - ₹1,600 / Qtl (approx.)",
   "imageUrl": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=600&q=80",
   "imageAlt": "Freshly harvested potato tubers lying in fertile field soil",
-  "category": ["rabi", "cash"],
+  "category": [
+    "rabi",
+    "cash"
+  ],
   "popularityScore": 96,
   "profitScore": 93,
   "durationDays": 95,
@@ -30,85 +30,68 @@
   "spacing": "60 cm x 20 cm",
   "harvestingIndicator": "Vines turn yellow and naturally collapse; peel skins do not rub off easily.",
   "introTipEn": "Earthing up at 30–35 DAS is essential to prevent greening of tubers; keep soil consistently moist without over-saturating ridges.",
-  "introTipHi": "30-35 दिन पर मिट्टी चढ़ाना बेहद जरूरी है ताकि कंद हरे न पड़ें। मेड़ों पर हल्की और नियमित नमी बनाए रखें।",
   "efficiencyGain": "25% higher tuber bulking with split potash & earthing up",
   "micronutrientNote": "Spray Zinc Sulphate (0.2%) + Boron (0.1%) at 40 DAS to enhance tuber skin finish and prevent hollow heart.",
   "stagnationAlert": "Do not let water flood top of ridges; excessive moisture causes tuber rot and blight.",
-  "seasons": ["rabi"],
-  "soils": ["sandy", "loamy"],
+  "seasons": [
+    "rabi"
+  ],
+  "soils": [
+    "sandy",
+    "loamy"
+  ],
   "fertilizerStages": [
     {
       "stageOrder": 1,
-      "stageEn": "Basal Dose (बुवाई के समय)",
-      "stageHi": "बुवाई के समय",
+      "stageEn": "Basal Dose",
       "timingEn": "At planting",
-      "timingHi": "बुवाई के समय",
       "fertilizerEn": "DAP + Muriate of Potash + Urea",
-      "fertilizerHi": "डीएपी + पोटाश + यूरिया",
       "quantityPerAcre": "DAP 50 kg + MOP 40 kg + Urea 25 kg / acre",
       "applicationMethod": "Apply in furrows before placing seed tubers"
     },
     {
       "stageOrder": 2,
       "stageEn": "Earthing Up Dose (30 DAS)",
-      "stageHi": "मिट्टी चढ़ाने के समय (30 दिन)",
       "timingEn": "30 DAS",
-      "timingHi": "30 दिन",
       "fertilizerEn": "Neem-Coated Urea",
-      "fertilizerHi": "नीम लेपित यूरिया",
       "quantityPerAcre": "Urea 35 kg / acre",
       "applicationMethod": "Side-dress and cover with loose soil during earthing up"
     },
     {
       "stageOrder": 3,
       "stageEn": "Tuber Bulking Spray (60 DAS)",
-      "stageHi": "कंद फुलाव अवस्था (60 दिन)",
       "timingEn": "60 DAS",
-      "timingHi": "60 दिन",
       "fertilizerEn": "Water-Soluble Potassium Sulphate (0:0:50)",
-      "fertilizerHi": "घुलनशील पोटेशियम सल्फेट (0:0:50)",
       "quantityPerAcre": "1.5 kg / acre in 150 L water",
       "applicationMethod": "Foliar spray to maximize starch accumulation and tuber size"
     }
   ],
   "irrigation": {
     "frequencyEn": "Every 7–10 Days (Light irrigations in furrows)",
-    "frequencyHi": "हर 7–10 दिन (नालियों में हल्की सिंचाई)",
     "criticalStagesEn": "Stolon formation (20–25 DAS) and Tuber Bulking (45–65 DAS)",
-    "criticalStagesHi": "कंद बनना शुरू होना (20–25 दिन) और कंद फुलाव (45–65 दिन)",
     "runtimePerZone": "1.5 hours per rotation",
     "waterConserved": "~30% with drip under mulch",
-    "tipsEn": "Stop irrigation 10 days before harvest to allow tuber skin to cure and harden.",
-    "tipsHi": "छिलका मजबूत करने के लिए खुदाई से 10 दिन पहले सिंचाई रोक दें।"
+    "tipsEn": "Stop irrigation 10 days before harvest to allow tuber skin to cure and harden."
   },
   "pestsDiseases": [
     {
       "nameEn": "Late Blight",
-      "nameHi": "पछेती झुलसा",
       "symptomsEn": "Water-soaked dark lesions on leaf margins with white downy mildew on underside during cloudy cool weather.",
-      "symptomsHi": "पत्तियों के किनारों पर काले पानी जैसे धब्बे और निचली सतह पर सफेद फफूंद।",
       "controlEn": "Preventative spray with Mancozeb 75 WP (2.5 g/L); on symptoms spray Cymoxanil + Mancozeb (2 g/L) or Dimethomorph (1 g/L).",
-      "controlHi": "मैंकोजेब का सुरक्षात्मक छिड़काव करें; रोग दिखने पर साइमोक्सानिल या डाइमेशोमोर्फ का प्रयोग करें।",
       "severity": "High Alert",
       "type": "disease"
     },
     {
       "nameEn": "Early Blight",
-      "nameHi": "अगेती झुलसा",
       "symptomsEn": "Concentric target-board ring spots on lower leaves.",
-      "symptomsHi": "निचली पत्तियों पर गोल छल्लेदार भूरे धब्बे।",
       "controlEn": "Spray Chlorothalonil 75 WP (2 g/L) or Propineb 70 WP (2.5 g/L).",
-      "controlHi": "क्लोरोथैलोनिल या प्रोपिनेब का छिड़काव करें।",
       "severity": "Medium Risk",
       "type": "disease"
     },
     {
       "nameEn": "Aphids / Cutworm",
-      "nameHi": "माहू / कटवर्म (कटुआ कीट)",
       "symptomsEn": "Aphids transmit viral degenerations; cutworms cut young stems at soil level at night.",
-      "symptomsHi": "माहू वायरस फैलाता है; कटवर्म रात में पौधों को जमीन की सतह से काटता है।",
       "controlEn": "Spray Imidacloprid 17.8 SL (0.5 ml/L) for aphids; soil drench with Chlorpyrifos 20 EC for cutworm.",
-      "controlHi": "इमिडाक्लोप्रिड या क्लोरपायरीफॉस का प्रयोग करें।",
       "severity": "Medium Risk",
       "type": "pest"
     }
@@ -118,33 +101,25 @@
       "stepOrder": 1,
       "letter": "A",
       "titleEn": "De-haulming",
-      "titleHi": "बेल काटना (De-haulming)",
-      "textEn": "Cut off aerial vines 10–12 days prior to digging to harden tuber skins.",
-      "textHi": "खुदाई से 10-12 दिन पहले ऊपर की हरी बेल काट दें ताकि छिलका कड़ा हो जाए।"
+      "textEn": "Cut off aerial vines 10–12 days prior to digging to harden tuber skins."
     },
     {
       "stepOrder": 2,
       "letter": "B",
       "titleEn": "Careful Digging",
-      "titleHi": "सावधानीपूर्वक खुदाई",
-      "textEn": "Dig out with potato digger or country plough in dry soil to prevent skin cuts.",
-      "textHi": "आलू डिगर या हल से खुदाई करें ताकि कंद कटने न पाएं।"
+      "textEn": "Dig out with potato digger or country plough in dry soil to prevent skin cuts."
     },
     {
       "stepOrder": 3,
       "letter": "C",
       "titleEn": "Curing & Sorting",
-      "titleHi": "सुखाना एवं छंटाई",
-      "textEn": "Cure tubers in heaps under shade for 10–15 days; sort out cut, diseased, and green tubers.",
-      "textHi": "छायादार स्थान पर 10-15 दिन ढेर बनाकर रखें और कटे-फटे आलू अलग करें।"
+      "textEn": "Cure tubers in heaps under shade for 10–15 days; sort out cut, diseased, and green tubers."
     },
     {
       "stepOrder": 4,
       "letter": "D",
       "titleEn": "Cold Storage & Yield",
-      "titleHi": "कोल्ड स्टोरेज व उपज",
-      "textEn": "Pack in mesh bags for cold storage (2–4°C). Expected yield: 90–130 Qtl/acre.",
-      "textHi": "जालीदार बोरियों में भरकर कोल्ड स्टोरेज में रखें। संभावित उपज: 90–130 क्विंटल/एकड़।"
+      "textEn": "Pack in mesh bags for cold storage (2–4°C). Expected yield: 90–130 Qtl/acre."
     }
   ]
 }

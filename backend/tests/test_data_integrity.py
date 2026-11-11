@@ -10,9 +10,9 @@ Verifies that for every crop in the database:
     2. Constraint Adherence:
        - Every soil and season value belongs to canonical allowed enums.
        - Numerical attributes (durationDays, scores, stageOrder) are strictly positive.
-    3. Bilingual Completeness:
+    3. English-Only Completeness & Absence of Devanagari:
        - All English text fields are non-empty.
-       - All Hindi text fields are non-empty and contain valid Devanagari characters (U+0900 to U+097F).
+       - No text field contains any Devanagari character (U+0900 to U+097F).
     4. Uniqueness & Deduplication:
        - No duplicate rows per crop across seasons, soils, fertilizer stages, and harvest steps.
        - Exactly 18 distinct crop profiles seeded.
@@ -55,7 +55,7 @@ def seeded_db_path(tmp_path_factory: pytest.TempPathFactory) -> str:
 
 
 def test_crops_table_completeness(seeded_db_path: str) -> None:
-    """Verify that all 18 crops exist and have valid English and Hindi names, descriptions, and scores."""
+    """Verify that all 18 crops exist and have valid English names, descriptions, and scores."""
     conn = get_connection(seeded_db_path)
     try:
         cur = conn.execute("SELECT * FROM crops ORDER BY id;")
@@ -72,12 +72,20 @@ def test_crops_table_completeness(seeded_db_path: str) -> None:
             assert crop["name_en"] and crop["name_en"].strip(), f"Crop {cid} missing name_en"
             assert crop["description_en"] and crop["description_en"].strip(), f"Crop {cid} missing description_en"
 
-            # Hindi text fields must contain Devanagari script
-            assert crop["name_hi"] and crop["name_hi"].strip(), f"Crop {cid} missing name_hi"
-            assert _has_devanagari(crop["name_hi"]), f"Crop {cid} name_hi '{crop['name_hi']}' lacks Devanagari"
-
-            assert crop["description_hi"] and crop["description_hi"].strip(), f"Crop {cid} missing description_hi"
-            assert _has_devanagari(crop["description_hi"]), f"Crop {cid} description_hi lacks Devanagari"
+            # Check all text columns have no Devanagari
+            text_columns = (
+                "name_en", "scientific_name", "badge", "badge_type", "variety_tag",
+                "tagline", "ideal_soil", "duration", "water_need", "water_level",
+                "metric_title", "metric_value", "hubs", "description_en", "avg_yield",
+                "expected_yield", "market_price", "mandi_price_range", "image_url",
+                "image_alt", "category", "seed_rate", "sowing_depth", "spacing",
+                "harvesting_indicator", "intro_tip_en", "efficiency_gain",
+                "micronutrient_note", "stagnation_alert",
+            )
+            for col in text_columns:
+                val = crop[col]
+                if val:
+                    assert not _has_devanagari(str(val)), f"Crop {cid} column {col} contains Devanagari"
 
             # Numeric attributes
             assert crop["duration_days"] > 0, f"Crop {cid} duration_days must be > 0"
@@ -126,7 +134,7 @@ def test_crop_soils_integrity(seeded_db_path: str) -> None:
 
 
 def test_fertilizer_stages_integrity(seeded_db_path: str) -> None:
-    """Verify that every crop has >= 1 fertilizer stage with complete English and Hindi text."""
+    """Verify that every crop has >= 1 fertilizer stage with complete English text and no Devanagari."""
     conn = get_connection(seeded_db_path)
     try:
         cur_crops = conn.execute("SELECT id FROM crops;")
@@ -134,7 +142,7 @@ def test_fertilizer_stages_integrity(seeded_db_path: str) -> None:
 
         for cid in crop_ids:
             cur = conn.execute(
-                "SELECT stage_order, stage_en, stage_hi, fertilizer_en, fertilizer_hi "
+                "SELECT stage_order, stage_en, timing_en, fertilizer_en, quantity_per_acre, application_method "
                 "FROM fertilizer_stages WHERE crop_id = ? ORDER BY stage_order;",
                 (cid,),
             )
@@ -147,18 +155,23 @@ def test_fertilizer_stages_integrity(seeded_db_path: str) -> None:
             for stage in stages:
                 assert stage["stage_order"] >= 1, f"Crop {cid} stage_order must be >= 1"
                 assert stage["stage_en"] and stage["stage_en"].strip(), f"Crop {cid} stage missing stage_en"
-                assert stage["stage_hi"] and stage["stage_hi"].strip(), f"Crop {cid} stage missing stage_hi"
-                assert _has_devanagari(stage["stage_hi"]), f"Crop {cid} stage_hi lacks Devanagari"
+                assert not _has_devanagari(stage["stage_en"]), f"Crop {cid} stage_en contains Devanagari"
 
                 assert stage["fertilizer_en"] and stage["fertilizer_en"].strip(), f"Crop {cid} missing fertilizer_en"
-                if stage["fertilizer_hi"]:
-                    assert _has_devanagari(stage["fertilizer_hi"]), f"Crop {cid} fertilizer_hi lacks Devanagari"
+                assert not _has_devanagari(stage["fertilizer_en"]), f"Crop {cid} fertilizer_en contains Devanagari"
+
+                if stage["timing_en"]:
+                    assert not _has_devanagari(stage["timing_en"]), f"Crop {cid} timing_en contains Devanagari"
+                if stage["quantity_per_acre"]:
+                    assert not _has_devanagari(stage["quantity_per_acre"]), f"Crop {cid} quantity_per_acre contains Devanagari"
+                if stage["application_method"]:
+                    assert not _has_devanagari(stage["application_method"]), f"Crop {cid} application_method contains Devanagari"
     finally:
         conn.close()
 
 
 def test_pests_and_diseases_integrity(seeded_db_path: str) -> None:
-    """Verify that every crop has >= 1 pest or disease with bilingual diagnostics and treatment."""
+    """Verify that every crop has >= 1 pest or disease with English diagnostics and treatment without Devanagari."""
     conn = get_connection(seeded_db_path)
     try:
         cur_crops = conn.execute("SELECT id FROM crops;")
@@ -166,7 +179,7 @@ def test_pests_and_diseases_integrity(seeded_db_path: str) -> None:
 
         for cid in crop_ids:
             cur = conn.execute(
-                "SELECT name_en, name_hi, symptoms_en, symptoms_hi, control_en, control_hi "
+                "SELECT name_en, symptoms_en, control_en, severity, type "
                 "FROM pests_diseases WHERE crop_id = ?;",
                 (cid,),
             )
@@ -175,22 +188,16 @@ def test_pests_and_diseases_integrity(seeded_db_path: str) -> None:
 
             for pest in pests:
                 assert pest["name_en"] and pest["name_en"].strip(), f"Crop {cid} pest missing name_en"
-                assert pest["name_hi"] and pest["name_hi"].strip(), f"Crop {cid} pest missing name_hi"
-                assert _has_devanagari(pest["name_hi"]), f"Crop {cid} pest name_hi lacks Devanagari"
-
-                assert pest["symptoms_en"] and pest["symptoms_en"].strip(), f"Crop {cid} pest missing symptoms_en"
-                assert pest["symptoms_hi"] and pest["symptoms_hi"].strip(), f"Crop {cid} pest missing symptoms_hi"
-                assert _has_devanagari(pest["symptoms_hi"]), f"Crop {cid} pest symptoms_hi lacks Devanagari"
-
-                assert pest["control_en"] and pest["control_en"].strip(), f"Crop {cid} pest missing control_en"
-                assert pest["control_hi"] and pest["control_hi"].strip(), f"Crop {cid} pest missing control_hi"
-                assert _has_devanagari(pest["control_hi"]), f"Crop {cid} pest control_hi lacks Devanagari"
+                for col in ("name_en", "symptoms_en", "control_en", "severity", "type"):
+                    val = pest[col]
+                    if val:
+                        assert not _has_devanagari(str(val)), f"Crop {cid} pest column {col} contains Devanagari"
     finally:
         conn.close()
 
 
-def test_harvest_steps_integrity(seeded_db_path: str) -> None:
-    """Verify that every crop has >= 1 harvest step with bilingual guidelines."""
+def test_irrigation_rules_integrity(seeded_db_path: str) -> None:
+    """Verify that every crop has >= 1 irrigation rule with English guidelines and no Devanagari."""
     conn = get_connection(seeded_db_path)
     try:
         cur_crops = conn.execute("SELECT id FROM crops;")
@@ -198,7 +205,32 @@ def test_harvest_steps_integrity(seeded_db_path: str) -> None:
 
         for cid in crop_ids:
             cur = conn.execute(
-                "SELECT step_order, title_en, title_hi, text_en, text_hi "
+                "SELECT frequency_en, critical_stages_en, runtime_per_zone, water_conserved, tips_en "
+                "FROM irrigation_rules WHERE crop_id = ?;",
+                (cid,),
+            )
+            rules = cur.fetchall()
+            assert len(rules) >= 1, f"Crop {cid} must have at least one irrigation rule"
+
+            for rule in rules:
+                for col in ("frequency_en", "critical_stages_en", "runtime_per_zone", "water_conserved", "tips_en"):
+                    val = rule[col]
+                    if val:
+                        assert not _has_devanagari(str(val)), f"Crop {cid} irrigation column {col} contains Devanagari"
+    finally:
+        conn.close()
+
+
+def test_harvest_steps_integrity(seeded_db_path: str) -> None:
+    """Verify that every crop has >= 1 harvest step with English guidelines without Devanagari."""
+    conn = get_connection(seeded_db_path)
+    try:
+        cur_crops = conn.execute("SELECT id FROM crops;")
+        crop_ids = [r["id"] for r in cur_crops.fetchall()]
+
+        for cid in crop_ids:
+            cur = conn.execute(
+                "SELECT step_order, letter, title_en, text_en "
                 "FROM harvest_steps WHERE crop_id = ? ORDER BY step_order;",
                 (cid,),
             )
@@ -211,11 +243,23 @@ def test_harvest_steps_integrity(seeded_db_path: str) -> None:
             for step in steps:
                 assert step["step_order"] >= 1, f"Crop {cid} harvest step_order must be >= 1"
                 assert step["title_en"] and step["title_en"].strip(), f"Crop {cid} harvest missing title_en"
-                assert step["title_hi"] and step["title_hi"].strip(), f"Crop {cid} harvest missing title_hi"
-                assert _has_devanagari(step["title_hi"]), f"Crop {cid} harvest title_hi lacks Devanagari"
+                for col in ("letter", "title_en", "text_en"):
+                    val = step[col]
+                    if val:
+                        assert not _has_devanagari(str(val)), f"Crop {cid} harvest column {col} contains Devanagari"
+    finally:
+        conn.close()
 
-                assert step["text_en"] and step["text_en"].strip(), f"Crop {cid} harvest missing text_en"
-                assert step["text_hi"] and step["text_hi"].strip(), f"Crop {cid} harvest missing text_hi"
-                assert _has_devanagari(step["text_hi"]), f"Crop {cid} harvest text_hi lacks Devanagari"
+
+def test_states_table_integrity(seeded_db_path: str) -> None:
+    """Verify states table contains all 36 Indian states and UTs with no Devanagari."""
+    conn = get_connection(seeded_db_path)
+    try:
+        cur = conn.execute("SELECT name, region FROM states;")
+        states = cur.fetchall()
+        assert len(states) == 36, f"Expected 36 states, got {len(states)}"
+        for s in states:
+            assert not _has_devanagari(s["name"]), f"State name contains Devanagari: {s['name']}"
+            assert not _has_devanagari(s["region"]), f"State region contains Devanagari: {s['region']}"
     finally:
         conn.close()
