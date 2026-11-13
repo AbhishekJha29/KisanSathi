@@ -108,8 +108,14 @@ export const ResultsPage: React.FC<ResultsPageProps> = ({
         if (controller.signal.aborted) return;
         if (currentReqId === explainRequestIdRef.current) {
           let msg = 'Could not load explanation.';
-          if (err instanceof ApiError && err.status === 429) {
-            msg = 'Too many requests, please wait a minute.';
+          if (err instanceof ApiError) {
+            if (err.status === 429) {
+              msg = 'Too many requests, please wait a minute.';
+            } else if (err.status === 400 && err.fields && Object.keys(err.fields).length > 0) {
+              msg = Object.values(err.fields).join(' ');
+            } else if (err.message) {
+              msg = err.message;
+            }
           }
           setExplainError(msg);
           // Set fallback explanation so user still sees meaningful advice
@@ -165,9 +171,13 @@ export const ResultsPage: React.FC<ResultsPageProps> = ({
     const trimmed = questionText.trim();
     if (!trimmed || isChatLoading || !advisory?.fieldData) return;
 
-    const userMsg: ChatMessage = { role: 'user', text: trimmed };
-    const historyToSend = messages.slice(-6);
+    // Send only completed history items with {role, text} in order, at most last 6
+    const historyToSend: ChatMessage[] = messages
+      .filter((m) => (m.role === 'user' || m.role === 'assistant') && typeof m.text === 'string' && m.text.trim())
+      .slice(-6)
+      .map((m) => ({ role: m.role, text: m.text.trim() }));
 
+    const userMsg: ChatMessage = { role: 'user', text: trimmed };
     setMessages((prev) => [...prev, userMsg]);
     setChatInput('');
     setIsChatLoading(true);
@@ -176,12 +186,22 @@ export const ResultsPage: React.FC<ResultsPageProps> = ({
 
     try {
       const res = await postChat(advisory.fieldData, trimmed, historyToSend);
-      const assistantMsg: ChatMessage = { role: 'assistant', text: res.answer };
-      setMessages((prev) => [...prev, assistantMsg]);
+      if (res && typeof res.answer === 'string') {
+        const assistantMsg: ChatMessage = { role: 'assistant', text: res.answer };
+        setMessages((prev) => [...prev, assistantMsg]);
+      }
     } catch (err: unknown) {
+      // Failed request must NOT add a fake answer; roll back unfulfilled user question
+      setMessages((prev) => prev.filter((m, i, arr) => i < arr.length - 1 || m.role !== 'user' || m.text !== trimmed));
       let errorMsg = 'Failed to get answer. Please try again.';
-      if (err instanceof ApiError && err.status === 429) {
-        errorMsg = 'Too many requests, please wait a minute.';
+      if (err instanceof ApiError) {
+        if (err.status === 429) {
+          errorMsg = 'Too many requests, please wait a minute.';
+        } else if (err.status === 400 && err.fields && Object.keys(err.fields).length > 0) {
+          errorMsg = Object.values(err.fields).join(' ');
+        } else if (err.message) {
+          errorMsg = err.message;
+        }
       }
       setChatError(errorMsg);
       setLastFailedQuestion(trimmed);
@@ -434,9 +454,17 @@ export const ResultsPage: React.FC<ResultsPageProps> = ({
                   <div className="h-4 bg-outline-variant/30 rounded w-2/3"></div>
                 </div>
               ) : (
-                <p className="font-body-xl text-body-xl text-on-surface leading-relaxed whitespace-pre-line">
-                  {explainData?.explanation || speechText}
-                </p>
+                <>
+                  {explainError && (
+                    <div className="p-3 rounded-xl bg-error-container/20 border border-error/30 flex items-center gap-2 text-sm text-error">
+                      <span className="material-symbols-outlined text-base shrink-0">error</span>
+                      <span>{explainError}</span>
+                    </div>
+                  )}
+                  <p className="font-body-xl text-body-xl text-on-surface leading-relaxed whitespace-pre-line">
+                    {explainData?.explanation || speechText}
+                  </p>
+                </>
               )}
 
               {/* One-Line AI Disclaimer */}

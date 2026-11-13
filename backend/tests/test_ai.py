@@ -459,3 +459,102 @@ def test_is_ai_configured() -> None:
     assert is_ai_configured({"GEMINI_API_KEY": "   "}) is False
     assert is_ai_configured({}) is False
     assert is_ai_configured({"GEMINI_API_KEY": "valid-api-key"}) is True
+
+
+# ==============================================================================
+# Exact Frontend Client Payload Tests (No Null Values, No 'soil' key)
+# ==============================================================================
+
+# Exact JSON payload produced by frontend buildFormPayload() when user does NOT specify
+# optional block or farmerName (or when they are null/empty in state/fieldData).
+# Notice: no null values, no undefined, extra 'soil' key dropped in favor of 'soilType' only.
+EXACT_FRONTEND_EXPLAIN_BODY: Dict[str, Any] = {
+    "form": {
+        "crop": "wheat",
+        "soilType": "loamy",
+        "season": "rabi",
+        "state": "Uttar Pradesh",
+        "district": "Varanasi",
+        "landSize": 5.0,
+        "landUnit": "acres",
+        "waterSource": "canal",
+    }
+}
+
+# Exact JSON payload produced by frontend buildFormPayload() and postChat()
+# with multi-turn conversation history (user and assistant roles only, at most 6).
+EXACT_FRONTEND_CHAT_BODY: Dict[str, Any] = {
+    "form": {
+        "crop": "wheat",
+        "soilType": "loamy",
+        "season": "rabi",
+        "state": "Uttar Pradesh",
+        "district": "Varanasi",
+        "landSize": 5.0,
+        "landUnit": "acres",
+        "waterSource": "canal",
+    },
+    "question": "When should I apply the second dose of urea?",
+    "history": [
+        {"role": "user", "text": "What is the recommended fertilizer schedule?"},
+        {
+            "role": "assistant",
+            "text": "For your 5.0 acres wheat crop, apply DAP and MOP at sowing, followed by top dressings.",
+        },
+    ],
+}
+
+
+def test_explain_exact_frontend_body_succeeds(client: FlaskClient) -> None:
+    """Verify POST /api/advisory/explain succeeds (200) with the exact JSON body the frontend sends (no nulls)."""
+    response = client.post("/api/advisory/explain", json=EXACT_FRONTEND_EXPLAIN_BODY)
+    assert response.status_code == 200
+    assert response.is_json
+    data = response.get_json()
+    assert "explanation" in data
+    assert data["source"] in ("ai", "fallback")
+    assert len(data["explanation"]) > 0
+
+
+def test_chat_exact_frontend_body_succeeds(client: FlaskClient) -> None:
+    """Verify POST /api/chat succeeds (200) with the exact JSON body the frontend sends (no nulls)."""
+    response = client.post("/api/chat", json=EXACT_FRONTEND_CHAT_BODY)
+    assert response.status_code == 200
+    assert response.is_json
+    data = response.get_json()
+    assert "answer" in data
+    assert data["source"] in ("ai", "fallback")
+    assert len(data["answer"]) > 0
+
+
+def test_explain_and_chat_reject_null_block_and_farmer_name(client: FlaskClient) -> None:
+    """Verify backend correctly rejects explicit null in form fields (validation is NOT weakened)."""
+    bad_form = {
+        "crop": "wheat",
+        "soilType": "loamy",
+        "season": "rabi",
+        "state": "Uttar Pradesh",
+        "district": "Varanasi",
+        "block": None,  # Explicit null must be rejected
+        "landSize": 5.0,
+        "landUnit": "acres",
+        "waterSource": "canal",
+        "farmerName": None,  # Explicit null must be rejected
+    }
+
+    res_explain = client.post("/api/advisory/explain", json={"form": bad_form})
+    assert res_explain.status_code == 400
+    explain_data = res_explain.get_json()
+    assert "fields" in explain_data
+    assert "block" in explain_data["fields"]
+    assert "farmerName" in explain_data["fields"]
+
+    res_chat = client.post(
+        "/api/chat",
+        json={"form": bad_form, "question": "Any question?", "history": []},
+    )
+    assert res_chat.status_code == 400
+    chat_data = res_chat.get_json()
+    assert "fields" in chat_data
+    assert "block" in chat_data["fields"]
+    assert "farmerName" in chat_data["fields"]

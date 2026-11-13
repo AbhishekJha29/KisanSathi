@@ -34,6 +34,9 @@ export class ApiError extends Error {
     this.name = 'ApiError';
     this.status = status;
     this.fields = fields;
+    if (status === 400 && fields && Object.keys(fields).length > 0) {
+      console.error('API 400 validation fields error:', fields);
+    }
     Object.setPrototypeOf(this, ApiError.prototype);
   }
 }
@@ -99,6 +102,10 @@ export async function apiRequest<T>(
         }
       } catch {
         // Body is not JSON; fallback to statusText
+      }
+
+      if (response.status === 400 && errorFields) {
+        console.error('API request failed with 400 validation error:', errorFields);
       }
 
       throw new ApiError(errorMessage, response.status, errorFields);
@@ -219,6 +226,96 @@ export async function getCrop(id: string, options?: RequestOptions): Promise<Cro
 }
 
 /**
+ * Clean and normalize advisory form data for API submission.
+ *
+ * Returns a sanitized copy containing ONLY the fields accepted by backend validation:
+ *   - crop, soilType, season, state, district, landSize (number), landUnit, waterSource
+ *   - block and farmerName ONLY when they are non-empty strings after trimming.
+ * Drops null, undefined, whitespace-only values, and extra fields (e.g. 'soil').
+ *
+ * @param form Raw form data from UI state or advisory.fieldData
+ * @returns Clean form payload matching backend schema
+ */
+export function buildFormPayload(form: any): Record<string, any> {
+  if (!form || typeof form !== 'object') {
+    return {};
+  }
+
+  const payload: Record<string, any> = {};
+
+  // 1. crop
+  if (form.crop !== undefined && form.crop !== null) {
+    const cropStr = String(form.crop).trim();
+    if (cropStr) payload.crop = cropStr;
+  }
+
+  // 2. soilType (handles soilType or legacy soil key, output is strictly soilType)
+  const rawSoil = form.soilType !== undefined && form.soilType !== null
+    ? form.soilType
+    : form.soil;
+  if (rawSoil !== undefined && rawSoil !== null) {
+    const soilStr = String(rawSoil).trim();
+    if (soilStr) payload.soilType = soilStr;
+  }
+
+  // 3. season
+  if (form.season !== undefined && form.season !== null) {
+    const seasonStr = String(form.season).trim();
+    if (seasonStr) payload.season = seasonStr;
+  }
+
+  // 4. state
+  if (form.state !== undefined && form.state !== null) {
+    const stateStr = String(form.state).trim();
+    if (stateStr) payload.state = stateStr;
+  }
+
+  // 5. district
+  if (form.district !== undefined && form.district !== null) {
+    const districtStr = String(form.district).trim();
+    if (districtStr) payload.district = districtStr;
+  }
+
+  // 6. landSize (number)
+  if (form.landSize !== undefined && form.landSize !== null && form.landSize !== '') {
+    const num = typeof form.landSize === 'number' ? form.landSize : Number(form.landSize);
+    if (!isNaN(num)) {
+      payload.landSize = num;
+    }
+  }
+
+  // 7. landUnit
+  if (form.landUnit !== undefined && form.landUnit !== null) {
+    const unitStr = String(form.landUnit).trim();
+    if (unitStr) payload.landUnit = unitStr;
+  }
+
+  // 8. waterSource
+  if (form.waterSource !== undefined && form.waterSource !== null) {
+    const waterStr = String(form.waterSource).trim();
+    if (waterStr) payload.waterSource = waterStr;
+  }
+
+  // 9. block (ONLY when non-empty string after trimming)
+  if (form.block !== undefined && form.block !== null && typeof form.block === 'string') {
+    const trimmedBlock = form.block.trim();
+    if (trimmedBlock) {
+      payload.block = trimmedBlock;
+    }
+  }
+
+  // 10. farmerName (ONLY when non-empty string after trimming)
+  if (form.farmerName !== undefined && form.farmerName !== null && typeof form.farmerName === 'string') {
+    const trimmedFarmer = form.farmerName.trim();
+    if (trimmedFarmer) {
+      payload.farmerName = trimmedFarmer;
+    }
+  }
+
+  return payload;
+}
+
+/**
  * Generate tailored crop advisory report from field parameters.
  *
  * @param form Farmer field parameters
@@ -229,10 +326,11 @@ export async function postAdvisory(
   form: AdvisoryFormData,
   options?: RequestOptions
 ): Promise<AdvisoryResultData> {
+  const cleanForm = buildFormPayload(form);
   return apiRequest<AdvisoryResultData>('/api/advisory', {
     ...options,
     method: 'POST',
-    body: JSON.stringify(form),
+    body: JSON.stringify(cleanForm),
   });
 }
 
@@ -247,10 +345,11 @@ export async function postExplain(
   form: AdvisoryFormData,
   options?: RequestOptions
 ): Promise<ExplainResponse> {
+  const cleanForm = buildFormPayload(form);
   return apiRequest<ExplainResponse>('/api/advisory/explain', {
     ...options,
     method: 'POST',
-    body: JSON.stringify({ form }),
+    body: JSON.stringify({ form: cleanForm }),
   });
 }
 
@@ -269,10 +368,20 @@ export async function postChat(
   history: ChatMessage[],
   options?: RequestOptions
 ): Promise<ChatResponse> {
+  const cleanForm = buildFormPayload(form);
+  const cleanHistory = (history || [])
+    .slice(-6)
+    .filter((m) => m && (m.role === 'user' || m.role === 'assistant') && typeof m.text === 'string')
+    .map((m) => ({
+      role: m.role,
+      text: m.text.trim(),
+    }))
+    .filter((m) => m.text.length > 0);
+
   return apiRequest<ChatResponse>('/api/chat', {
     ...options,
     method: 'POST',
-    body: JSON.stringify({ form, question, history }),
+    body: JSON.stringify({ form: cleanForm, question: (question || '').trim(), history: cleanHistory }),
   });
 }
 
